@@ -1,0 +1,3 @@
+User-Agent: *
+Allow: /
+Sitemap: https://flagasamascotas.com/sitemap.xml
