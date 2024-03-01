@@ -238,8 +238,8 @@ const Page = async () => {
                   })}
               </div>
 
-              <div className="row" style={{ backgroundColor: "#EAEAEA" }}>
-                <div className="col col-lg-6">
+              <div className="row" style={{ backgroundColor: "#EAEAEA", marginTop:"70px" }}>
+                <div className="col-section col-md-6">
                   <div className="banner_item banner_item2" style={{justifyContent:"center"}}>
                     <img
                       src="https://agencianuba.com/flagasamascotas_front_images/banners/mini-michi-flipped.jpg"
@@ -255,7 +255,7 @@ const Page = async () => {
                   </div>
                 </div>
 
-                <div className="col col-lg-6">
+                <div className="col-section col-md-6">
                   <div className="banner_item banner_item2" style={{justifyContent:"center"}}>
                     <img
                       src="https://agencianuba.com/flagasamascotas_front_images/banners/mini-peque.jpg"
@@ -267,12 +267,6 @@ const Page = async () => {
                         los peques
                       </h3>
                       <p style={{color:"white"}} >y su sano desarrollo</p>
-                      <a
-                        className="btn btn_primary btn_rounded"
-                        href="shop.html"
-                      >
-                        Ver más
-                      </a>
                     </div>
                   </div>
                 </div>
@@ -281,7 +275,7 @@ const Page = async () => {
           </section>
 
           {/* Productos */}
-          <section className="product_section sec_space_xlarge">
+          <section className="product_section ">
             <div className="space_rl_large">
               <div className="section_title_4 text-center">
                 <h2 className="small_title">Productos</h2>
@@ -430,10 +424,10 @@ const Page = async () => {
 
               <div className="row">
                 {/* VALOR 1 */}
-                <div className="col col-lg-2 col-md-2 col-sm-2">
+                <div className="col-lg-2 col-md-4 col-sm-6 col-6">
                   <div className="shop_layout_4">
                     <div className="shop_image_wrap">
-                      <div className="tab-content">
+                      <div align="center">
                           <img
                             src="https://agencianuba.com/flagasamascotas_front_images/icons/icon-pasion.png"
                             alt="image_not_found"
@@ -441,7 +435,7 @@ const Page = async () => {
                       </div>
                     </div>
                     <div className="shop_content">
-                      <h3 className="item_title" style={{fontSize:"1.2rem",textAlign:"center"}}>
+                      <h3 className="item_title">
                         Pasión
                       </h3>
                     </div>
@@ -449,10 +443,10 @@ const Page = async () => {
                 </div>
 
                 {/* VALOR 2 */}
-                <div className="col col-lg-2 col-md-2 col-sm-2">
+                <div className="col-lg-2 col-md-4 col-sm-6 col-6">
                   <div className="shop_layout_4">
                     <div className="shop_image_wrap">
-                      <div className="tab-content">
+                      <div align="center">
                         
                           <img
                             src="https://agencianuba.com/flagasamascotas_front_images/icons/icon-compromiso.png"
@@ -462,7 +456,7 @@ const Page = async () => {
                       </div>
                     </div>
                     <div className="shop_content">
-                      <h3 className="item_title" style={{fontSize:"1.2rem",textAlign:"center"}}>
+                      <h3 className="item_title">
                         Compromiso
                       </h3>
                     </div>
@@ -470,10 +464,10 @@ const Page = async () => {
                 </div>
 
                 {/* VALOR 3 */}
-                <div className="col col-lg-2 col-md-2 col-sm-2">
+                <div className="col-lg-2 col-md-4 col-sm-6 col-6">
                   <div className="shop_layout_4">
                     <div className="shop_image_wrap">
-                      <div className="tab-content">
+                      <div align="center">
                         
                           <img
                             src="https://agencianuba.com/flagasamascotas_front_images/icons/icon-calidad.png"
@@ -483,7 +477,7 @@ const Page = async () => {
                       </div>
                     </div>
                     <div className="shop_content">
-                      <h3 className="item_title" style={{fontSize:"1.2rem",textAlign:"center"}}>
+                      <h3 className="item_title">
                         Calidad
                       </h3>
                     </div>
@@ -491,10 +485,10 @@ const Page = async () => {
                 </div>
 
                 {/* VALOR 4 */}
-                <div className="col col-lg-2 col-md-2 col-sm-2">
+                <div className="col-lg-2 col-md-4 col-sm-6 col-6">
                   <div className="shop_layout_4">
                     <div className="shop_image_wrap">
-                      <div className="tab-content">
+                      <div align="center">
                         
                           <img
                             src="https://agencianuba.com/flagasamascotas_front_images/icons/icon-responsabilidad.png"
@@ -504,7 +498,7 @@ const Page = async () => {
                       </div>
                     </div>
                     <div className="shop_content">
-                      <h3 className="item_title" style={{fontSize:"1.2rem",textAlign:"center"}}>
+                      <h3 className="item_title">
                         Responsabilidad
                       </h3>
                     </div>
@@ -512,10 +506,10 @@ const Page = async () => {
                 </div>
 
                 {/* VALOR 5 */}
-                <div className="col col-lg-2 col-md-2 col-sm-2">
+                <div className="col-lg-2 col-md-4 col-sm-6 col-6">
                   <div className="shop_layout_4">
                     <div className="shop_image_wrap">
-                      <div className="tab-content">
+                      <div align="center">
                         
                           <img
                             src="https://agencianuba.com/flagasamascotas_front_images/icons/icon-nutricion.png"
@@ -525,7 +519,7 @@ const Page = async () => {
                       </div>
                     </div>
                     <div className="shop_content">
-                      <h3 className="item_title" style={{fontSize:"1.2rem",textAlign:"center"}}>
+                      <h3 className="item_title">
                         Nutrición
                       </h3>
                     </div>
@@ -533,10 +527,10 @@ const Page = async () => {
                 </div>
 
                 {/* VALOR 6 */}
-                <div className="col col-lg-2 col-md-2 col-sm-2">
+                <div className="col-lg-2 col-md-4 col-sm-6 col-6">
                   <div className="shop_layout_4">
                     <div className="shop_image_wrap">
-                      <div className="tab-content">
+                      <div align="center">
                         
                           <img
                             src="https://agencianuba.com/flagasamascotas_front_images/icons/icon-respaldo.png"
@@ -546,7 +540,7 @@ const Page = async () => {
                       </div>
                     </div>
                     <div className="shop_content">
-                      <h3 className="item_title" style={{fontSize:"1.2rem",textAlign:"center"}}>
+                      <h3 className="item_title">
                         Respaldo
                       </h3>
                     </div>
@@ -557,7 +551,7 @@ const Page = async () => {
           </section>
 
           {/* ultima seccion */}
-          <section className="fullwidth_feature_1 sec_space_large">
+          <section className="fullwidth_feature_1 sec_space_large" style={{paddingTop:"70px"}}>
             <div className="space_rl_large">
               <div className="row align-items-center justify-content-center">
                 <div className="col col-lg-6 col-md-8">

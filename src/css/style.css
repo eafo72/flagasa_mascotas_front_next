@@ -251,6 +251,14 @@ hr {
   margin-right: -15px;
 }
 
+.col-section{
+  -webkit-box-flex: unset;
+      -ms-flex: unset;
+          flex: unset;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .col {
   -webkit-box-flex: unset;
       -ms-flex: unset;
@@ -8676,7 +8684,7 @@ hr {
 /* shop layout 3 - end */
 /* shop layout 4 - start */
 .shop_layout_4 {
-  margin-bottom: 70px;
+  /*margin-bottom: 70px;*/
 }
 .shop_layout_4 .shop_image_wrap {
   position: relative;
@@ -8748,7 +8756,10 @@ hr {
 }
 .shop_layout_4 .item_title {
   margin-bottom: 3px;
+  font-size: 1.2rem;
+  text-align: center;
 }
+
 .shop_layout_4 .item_title a {
   color: #151515;
   font-size: 20px;
@@ -15032,7 +15043,7 @@ hr {
   }
 
   .category_item_3 .section_title_4 .small_title {
-    font-size: 30px;
+    font-size: 32px;
   }
 
   .category_item_3 .section_title_4 .big_title {
@@ -16290,6 +16301,18 @@ hr {
 /* media screen and (max-width: 991px) - start
 ================================================== */
 @media screen and (max-width: 991px) {
+  .main_slider_4 .slider_image {
+    width: 100%;
+    height: auto;
+  }
+
+  .banner_item2 .item_title{
+    font-size: 18px;
+  }
+  .banner_item2 p {
+    font-size: 14px;
+  }
+
   /* responsive reset - start */
   .order-first,
 .order-last {
@@ -16900,7 +16923,7 @@ hr {
   }
 
   .slider_section .slider_item {
-    padding: 100px 0 150px;
+    padding: 0px;
   }
 
   .main_slider_8 .item_title {
@@ -17315,11 +17338,11 @@ hr {
   }
 
   .section_title_4 .small_title {
-    font-size: 42px;
+    font-size: 32px;
   }
 
   .section_title_4 .big_title {
-    font-size: 100px;
+    font-size: 56px;
   }
 
   /* section title - end */
@@ -17619,7 +17642,7 @@ hr {
   /* home 4 - start */
   .main_slider_4 .slider_image {
     width: 100%;
-    height: 100vh;
+    height: auto;
   }
 
   .main_slider_4 .slider_content {
@@ -17858,9 +17881,15 @@ hr {
 /* media screen and (max-width: 575px) - start
 ================================================== */
 @media screen and (max-width: 575px) {
+
+  .shop_layout_4 .item_title {
+    font-size: .85rem;
+  }
+
+
   /* section title - start */
   .section_title_4 .big_title {
-    font-size: 80px;
+    font-size: 46px;
   }
 
   /* section title - end */
@@ -18854,7 +18883,7 @@ hr {
   }
 
   .section_title_4 .big_title {
-    font-size: 66px;
+    font-size: 46px;
   }
 
   .banner_item2 .banner_content {
