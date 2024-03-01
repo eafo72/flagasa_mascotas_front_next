@@ -26,7 +26,11 @@ export const ProductCard = ({ stockTotal, fotos_carrusel, producto, allSizes }) 
   const [color, setColor] = useState();
   const [cantidad, setCantidad] = useState(1);
 
-  let images = []; 
+  let images = [{
+    original: producto.foto_principal,
+    thumbnail: producto.foto_principal,
+    originalClass: "img-fluid",
+  }]; 
  
   for (let i = 0; i < fotos_carrusel.length; i++) {
       images.push(
@@ -37,6 +41,8 @@ export const ProductCard = ({ stockTotal, fotos_carrusel, producto, allSizes }) 
       },
       );
   }
+
+  
 
   const currentPageUrl =
     "https://flagasamascotas.com/shop_details/" +
@@ -59,16 +65,13 @@ export const ProductCard = ({ stockTotal, fotos_carrusel, producto, allSizes }) 
   };
 
   const addToCart = (event) => {
-    event.preventDefault();
 
+    event.preventDefault();
+/*
     let onCart = 0;
 
     //validamos campos
-    if (color === "" || color === undefined) {
-      mostrarMensaje("Debes seleccionar un color");
-    } else if (talla === "" || talla === undefined) {
-      mostrarMensaje("Debes seleccionar una talla");
-    } else if (cantidad === "" || cantidad === undefined) {
+    if (cantidad === "" || cantidad === undefined) {
       mostrarMensaje("Debes escribir una cantidad");
     } else {
 
@@ -112,6 +115,7 @@ export const ProductCard = ({ stockTotal, fotos_carrusel, producto, allSizes }) 
 
 
     }
+    */
   };
 
   function closeModal() {
@@ -184,7 +188,9 @@ export const ProductCard = ({ stockTotal, fotos_carrusel, producto, allSizes }) 
               <h4>{producto && producto.marca}</h4>
               <div className="item_price">
                 <span className="sale_price">
+                  {/*
                   $ {producto && producto.precio}
+                  */}
                 </span>
                 {/*
                   <del>$130.00</del>
@@ -192,6 +198,8 @@ export const ProductCard = ({ stockTotal, fotos_carrusel, producto, allSizes }) 
               </div>
               <p className="mb-0">{producto && producto.descripcion}</p>
               <hr />
+
+              {/*
               <div className="sd_info_layout">
                 <h4 className="title_text">Color:</h4>
 
@@ -226,6 +234,7 @@ export const ProductCard = ({ stockTotal, fotos_carrusel, producto, allSizes }) 
                   ></Select>
                 </div>
               </div>
+              */}
 
               <ul className="sd_btns_group ul_li">
                 <li>

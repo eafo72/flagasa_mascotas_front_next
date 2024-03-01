@@ -71,6 +71,7 @@ export const ProductPreviewCard = ({ item }) => {
 
   const addToCart = async (event) => {
     event.preventDefault();
+    /*
 
     let onCart = 0;
 
@@ -135,6 +136,7 @@ export const ProductPreviewCard = ({ item }) => {
         setContinueModal(true);
       }
     }
+    */
   };
 
   function closeModal() {
@@ -325,7 +327,9 @@ export const ProductPreviewCard = ({ item }) => {
             </Link>
           </h3>
           <div className="shop_price">
+            {/*
             <span className="sale_price">$ {item.precio}</span>
+            */}
           </div>
           <ul className="shop_category ul_li">
             <li>{item.marca}</li>
@@ -409,10 +413,14 @@ export const ProductPreviewCard = ({ item }) => {
                         </h3>
                         <h4>{item.marca}</h4>
                         <div className="item_price">
+                          {/*
                           <span className="sale_price">$ {item.precio}</span>
+                          */}
                         </div>
                         <p className="mb-0">{item.descripcion}</p>
                         <hr />
+
+                        {/*
                         <div className="sd_info_layout">
                           <h4 className="title_text">Color:</h4>
 
@@ -445,6 +453,7 @@ export const ProductPreviewCard = ({ item }) => {
                             ></Select>
                           </div>
                         </div>
+                        */}
 
                         <ul className="sd_btns_group ul_li">
                           <li>

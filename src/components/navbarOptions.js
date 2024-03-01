@@ -157,12 +157,14 @@ export const NavbarOptions = ({ categories }) => {
                   </button>
                 </li>
                 */}
+        {/*
         <li>
           <Link className="cart_btn" href="/cart" onClick={() => {closeNav()}} style={{marginRight:"20px"}}>
             <i className="far fa-shopping-bag"></i>
             <small className="cart_counter">{cart.length}</small>
           </Link>
         </li>
+        */}
       </ul>
     </div>
 
