@@ -76,14 +76,14 @@ const Page = async () => {
                   <p data-animation="fadeInUp2" data-delay=".5s">
                     Para cualquier industria y en cualquier cantidad.
                   </p>
-                  <a
+                  <Link
                     className="btn btn_primary btn_rounded"
-                    href="shop.html"
+                    href="/categories/Todas/Premium"
                     data-animation="fadeInUp2"
                     data-delay=".7s"
                   >
                     Ver más
-                  </a>
+                  </Link>
                 </div>
                 <span className="item_type">NUTRICIÓN MASCOTAS</span>
               </div>
@@ -108,14 +108,14 @@ const Page = async () => {
                   <p data-animation="fadeInUp2" data-delay=".5s">
                   Para cualquier industria y en cualquier cantidad.
                   </p>
-                  <a
+                  <Link
                     className="btn btn_primary btn_rounded"
-                    href="shop.html"
+                    href="/categories/Todas/Premium"
                     data-animation="fadeInUp2"
                     data-delay=".7s"
                   >
                     Ver más
-                  </a>
+                  </Link>
                 </div>
                 <span className="item_type">NUTRICIÓN MASCOTAS</span>
               </div>
@@ -140,14 +140,14 @@ const Page = async () => {
                   <p data-animation="fadeInUp2" data-delay=".5s">
                     Para cualquier industria y en cualquier cantidad.
                   </p>
-                  <a
+                  <Link
                     className="btn btn_primary btn_rounded"
-                    href="shop.html"
+                    href="/categories/Todas/Premium"
                     data-animation="fadeInUp2"
                     data-delay=".7s"
                   >
                     Ver más
-                  </a>
+                  </Link>
                 </div>
                 <span className="item_type">NUTRICIÓN MASCOTAS</span>
               </div>
@@ -551,7 +551,7 @@ const Page = async () => {
           </section>
 
           {/* ultima seccion */}
-          <section className="fullwidth_feature_1 sec_space_large" style={{paddingTop:"70px"}}>
+          <section className="fullwidth_feature_1 sec_space_large" style={{paddingTop:"70px",paddingBottom:"30px"}}>
             <div className="space_rl_large">
               <div className="row align-items-center justify-content-center">
                 <div className="col col-lg-6 col-md-8">
@@ -615,9 +615,11 @@ const Page = async () => {
                         </div>
                       </li>
                     </ul>
-                    <a className="btn btn_primary btn_rounded" href="shop.html">
+                    {/*
+                    <Link className="btn btn_primary btn_rounded" href="shop.html">
                       Ver más
-                    </a>
+                    </Link>
+                    */}
                   </div>
                 </div>
               </div>
