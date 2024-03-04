@@ -4567,7 +4567,8 @@ hr {
   -webkit-box-ordinal-group: 14;
       -ms-flex-order: 13;
           order: 13;
-  height: 100vh;
+  /*height: 100vh;*/
+  height: auto;
   overflow: hidden;
 }
 .main_slider_4 .image_wrap {
@@ -4585,7 +4586,8 @@ hr {
 }
 .main_slider_4 .item_title {
   line-height: 1;
-  font-size: 95px;
+  /*font-size: 95px;*/
+  font-size: 4vw;
   font-weight: 800;
   margin-bottom: 20px;
 }
@@ -4636,7 +4638,7 @@ hr {
 }
 .main_slider_4 .carousel_nav button {
   width: 50%;
-  height: 90px;
+  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14346,7 +14348,8 @@ hr {
   /* home 3 - end */
   /* home 4 - start */
   .main_slider_4 .item_title {
-    font-size: 60px;
+    /*font-size: 60px;*/
+    font-size:4vw;
     line-height: 1.2;
   }
 
@@ -14364,7 +14367,7 @@ hr {
   }
 
   .main_slider_4 .carousel_nav button {
-    height: 70px;
+    height: 50px;
   }
 
   .main_slider_4 .item_type {
@@ -15956,7 +15959,8 @@ hr {
   /* home 3 - end */
   /* home 4 - start */
   .main_slider_4 .item_title {
-    font-size: 48px;
+    /*font-size: 48px;*/
+    font-size: 4vw;
   }
 
   .fullwidth_feature_1 .item_content {
@@ -16302,7 +16306,7 @@ hr {
 ================================================== */
 @media screen and (max-width: 991px) {
   .main_slider_4 .slider_image {
-    width: 100%;
+    width: 50%;
     height: auto;
   }
 
@@ -17409,7 +17413,8 @@ hr {
   }
 
   .main_slider_4 .item_title {
-    font-size: 34px;
+    /*font-size: 34px;*/
+    font-size:4vw;
     margin-bottom: 10px;
   }
 
@@ -17659,13 +17664,16 @@ hr {
             transform: translateY(-50%);
   }
   .main_slider_4 .slider_content p {
-    color: #ffffff;
+    display:none;
+    /*color: #ffffff;*/
     font-size: 20px;
   }
 
   .main_slider_4 .item_title {
-    color: #ffffff;
-    font-size: 58px;
+    display:none;
+    /*color: #ffffff; */
+    /*font-size: 58px;*/
+    font-size:4vw;
   }
 
   .main_slider_4 .carousel_nav {
@@ -18026,7 +18034,8 @@ hr {
   }
 
   .main_slider_4 .item_title {
-    font-size: 36px;
+    /*font-size: 36px;*/
+    font-size:4vw;
   }
 
   .main_slider_4 .item_type {
@@ -18879,7 +18888,8 @@ hr {
   /* home 2 - end */
   /* home 4 - start */
   .main_slider_4 .item_title {
-    font-size: 32px;
+    /*font-size: 32px;*/
+    font-size:4vw;
   }
 
   .section_title_4 .big_title {

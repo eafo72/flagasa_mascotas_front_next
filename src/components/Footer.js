@@ -92,7 +92,7 @@ export async function Footer() {
                     <li>
                       <a
                         className="bg_facebook"
-                        href="https://www.facebook.com/fashionistaa.boutique"
+                        href="https://www.facebook.com"
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -136,13 +136,15 @@ export async function Footer() {
                     <h3 className="footer_widget_title text-white">
                       Información
                     </h3>
-                    <ul className="ul_li_block">
+                   <ul className="ul_li_block">
                       <li>
                         <Link href="/nop">Aviso de privacidad</Link>
                       </li>
+                       {/*
                       <li>
                         <Link href="/terminos">Términos y Condiciones</Link>
                       </li>
+                      */}
                     </ul>
                   </div>
                 </div>

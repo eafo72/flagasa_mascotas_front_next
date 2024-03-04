@@ -236,6 +236,7 @@ export const ProductCard = ({ stockTotal, fotos_carrusel, producto, allSizes }) 
               </div>
               */}
 
+              {/*
               <ul className="sd_btns_group ul_li">
                 <li>
                   <div className="quantity_form">
@@ -271,7 +272,7 @@ export const ProductCard = ({ stockTotal, fotos_carrusel, producto, allSizes }) 
                   </button>
                 </li>
               </ul>
-
+              */}
               <hr />
 
               <div className="row align-items-center justify-content-between">
