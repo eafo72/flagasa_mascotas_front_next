@@ -17653,7 +17653,7 @@ hr {
   .main_slider_4 .slider_content {
     left: 0;
     right: 0;
-    top: 50%;
+    top: 15vh;
     z-index: 1;
     width: 100%;
     color: #ffffff;
@@ -17664,14 +17664,14 @@ hr {
             transform: translateY(-50%);
   }
   .main_slider_4 .slider_content p {
-    display:none;
-    /*color: #ffffff;*/
+    /*display:none;*/
+    color: #ffffff;
     font-size: 20px;
   }
 
   .main_slider_4 .item_title {
-    display:none;
-    /*color: #ffffff; */
+    /*display:none;*/
+    color: #ffffff;
     /*font-size: 58px;*/
     font-size:4vw;
   }
