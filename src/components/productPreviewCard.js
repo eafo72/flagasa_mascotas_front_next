@@ -17,7 +17,6 @@ import { FacebookShareButton, FacebookIcon } from "react-share";
 import { toast } from "sonner";
 
 export const ProductPreviewCard = ({ item }) => {
-  
   const addCartItem = useCartStore((state) => state.add_cart_item);
   const { cart } = useCartStore();
 
@@ -228,32 +227,33 @@ export const ProductPreviewCard = ({ item }) => {
                 />
               </Link>
             </div>
-            {/*fotos carrusel*/}        
+            {/*fotos carrusel*/}
             {item.fotos_carrusel.map((item2, index) => {
-              return index < 4 ? 
-            (
-              <div
-                key={index}
-                className="tab-pane fade"
-                id={item.codigo + index}
-                role="tabpanel"
-              >
-                <Link
-                  className="shop_image"
-                  href={`/shop_details/${item.categoria
-                    .trim()
-                    .replace(/\s/g, "-")}/${item.nombre
-                    .trim()
-                    .replace(/\s/g, "-")}/${item.codigo}`}
+              return index < 4 ? (
+                <div
+                  key={index}
+                  className="tab-pane fade"
+                  id={item.codigo + index}
+                  role="tabpanel"
                 >
-                  <img
-                    src={`${item2.image}`}
-                    alt={`${item2.image}`}
-                    className="img-fluid"
-                  />
-                </Link>
-              </div>
-            ):(<></>)
+                  <Link
+                    className="shop_image"
+                    href={`/shop_details/${item.categoria
+                      .trim()
+                      .replace(/\s/g, "-")}/${item.nombre
+                      .trim()
+                      .replace(/\s/g, "-")}/${item.codigo}`}
+                  >
+                    <img
+                      src={`${item2.image}`}
+                      alt={`${item2.image}`}
+                      className="img-fluid"
+                    />
+                  </Link>
+                </div>
+              ) : (
+                <></>
+              );
             })}
           </div>
 
@@ -291,26 +291,26 @@ export const ProductPreviewCard = ({ item }) => {
             </button>
           </li>
           {item.fotos_carrusel.map((item2, index) => {
-            return index < 4 ? 
-          (
-            <li key={index} role="presentation">
-              <button
-                data-bs-toggle="tab"
-                data-bs-target={"#" + item.codigo + index}
-                type="button"
-                role="tab"
-                aria-selected="false"
-              >
-                <img
-                  src={`${item2.image}`}
-                  alt={`${item2.image}`}
-                  className="img-fluid"
-                />
-              </button>
-            </li>
-          ):(<></>)
+            return index < 4 ? (
+              <li key={index} role="presentation">
+                <button
+                  data-bs-toggle="tab"
+                  data-bs-target={"#" + item.codigo + index}
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                >
+                  <img
+                    src={`${item2.image}`}
+                    alt={`${item2.image}`}
+                    className="img-fluid"
+                  />
+                </button>
+              </li>
+            ) : (
+              <></>
+            );
           })}
-          
         </ul>
 
         {/*info producto*/}
@@ -420,6 +420,35 @@ export const ProductPreviewCard = ({ item }) => {
                         <p className="mb-0">{item.descripcion}</p>
                         <hr />
 
+                        <a
+                          href={item.link}
+                          style={{ textDecoration: "none" }}
+                          target="_blank"
+                        >
+                          <div
+                            style={{
+                              display: "flex",
+                              alignItems: "center",
+                              backgroundColor: "#ffe600",
+                              color: "#000",
+                              padding: "10px 20px",
+                              borderRadius: "5px",
+                              fontSize: "16px",
+                              fontWeight: "bold",
+                              textAlign: "center",
+                              width: "fit-content",
+                              boxShadow: "0 2px 4px rgba(0,0,0,0.2)",
+                            }}
+                          >
+                            <img
+                              src="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.22.12/mercadolibre/logo__small.png"
+                              alt="Mercado Libre"
+                              style={{ height: "24px", marginRight: "10px" }}
+                            />
+                            Comprar en Mercado Libre
+                          </div>
+                        </a>
+
                         {/*
                         <div className="sd_info_layout">
                           <h4 className="title_text">Color:</h4>
@@ -455,6 +484,7 @@ export const ProductPreviewCard = ({ item }) => {
                         </div>
                         */}
 
+                        {/*
                         <ul className="sd_btns_group ul_li">
                           <li>
                             <div className="quantity_form">
@@ -492,6 +522,7 @@ export const ProductPreviewCard = ({ item }) => {
                             </button>
                           </li>
                         </ul>
+                        */}
 
                         <hr />
                         <div className="row align-items-center justify-content-between">
