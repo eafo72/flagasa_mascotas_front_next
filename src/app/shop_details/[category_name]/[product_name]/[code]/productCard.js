@@ -214,8 +214,8 @@ export const ProductCard = ({
                 </div>
                 <p className="mb-0">{producto && producto.descripcion}</p>
                 <hr />
-                <a href="https://listado.mercadolibre.com.mx/_CustId_613207285?item_id=MLM797610603&category_id=MLM1077&seller_id=613207285&client=recoview-selleritems&recos_listing=true#origin=vip&component=sellerData&typeSeller=classic" style="text-decoration: none;">
-                  <div style="background-color: #ffe600; color: #000; padding: 10px 20px; border-radius: 5px; font-size: 16px; font-weight: bold; text-align: center; width: fit-content;">
+                <a href="https://listado.mercadolibre.com.mx/_CustId_613207285?item_id=MLM797610603&category_id=MLM1077&seller_id=613207285&client=recoview-selleritems&recos_listing=true#origin=vip&component=sellerData&typeSeller=classic" style={{textDecoration: "none"}}>
+                  <div style={{backgroundColor: "#ffe600", color: "#000", padding: "10px 20px", borderRadius: "5px", fontSize: "16px", fontWeight: "bold", textAlign: "center", width: "fit-content"}}>
                     Comprar en Mercado Libre
                   </div>
                 </a>
