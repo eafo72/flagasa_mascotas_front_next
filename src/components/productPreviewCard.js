@@ -224,6 +224,7 @@ export const ProductPreviewCard = ({ item }) => {
                   src={`${item.foto_principal}`}
                   alt={`${item.foto_principal}`}
                   className="img-fluid"
+                  unoptimized={true}
                 />
               </Link>
             </div>
@@ -248,6 +249,7 @@ export const ProductPreviewCard = ({ item }) => {
                       src={`${item2.image}`}
                       alt={`${item2.image}`}
                       className="img-fluid"
+                      unoptimized={true}
                     />
                   </Link>
                 </div>

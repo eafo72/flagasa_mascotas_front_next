@@ -219,6 +219,7 @@ const Page = async () => {
                                 <img
                                   src={`${item1.imagen}`}
                                   alt={`${item1.imagen}`}
+                                  unoptimized={true}
                                 />
                               </Link>
                             </div>
