@@ -60,8 +60,9 @@ const Page = async () => {
                 <div className="slider_image">
                   <div className="image_wrap">
                     <img
-                      src="https://agencianuba.com/flagasamascotas_front_images/banners/banner1.jpg"
+                      src="https://agencianuba.com/flagasamascotas_front_images/banners/banner1NEW.jpg"
                       alt="image_not_found"
+                      unoptimized={true}
                     />
                   </div>
                 </div>
@@ -92,8 +93,9 @@ const Page = async () => {
                 <div className="slider_image">
                   <div className="image_wrap">
                     <img
-                      src="https://agencianuba.com/flagasamascotas_front_images/banners/banner2.jpg"
+                      src="https://agencianuba.com/flagasamascotas_front_images/banners/banner2NEW.jpg"
                       alt="image_not_found"
+                      unoptimized={true}
                     />
                   </div>
                 </div>
@@ -124,8 +126,9 @@ const Page = async () => {
                 <div className="slider_image">
                   <div className="image_wrap">
                     <img
-                       src="https://agencianuba.com/flagasamascotas_front_images/banners/banner3.jpg"
+                       src="https://agencianuba.com/flagasamascotas_front_images/banners/banner3NEW.jpg"
                       alt="image_not_found"
+                      unoptimized={true}
                     />
                   </div>
                 </div>
@@ -161,7 +164,7 @@ const Page = async () => {
             >
               <div className="thumbnail_item">
                 <img
-                  src="https://agencianuba.com/flagasamascotas_front_images/banners/banner1.jpg"
+                  src="https://agencianuba.com/flagasamascotas_front_images/banners/banner1NEW.jpg"
                   alt="image_not_found"
                   unoptimized={true}
                 />
@@ -169,7 +172,7 @@ const Page = async () => {
 
               <div className="thumbnail_item">
                 <img
-                  src="https://agencianuba.com/flagasamascotas_front_images/banners/banner2.jpg"
+                  src="https://agencianuba.com/flagasamascotas_front_images/banners/banner2NEW.jpg"
                   alt="image_not_found"
                   unoptimized={true}
                 />
@@ -177,7 +180,7 @@ const Page = async () => {
 
               <div className="thumbnail_item">
                 <img
-                  src="https://agencianuba.com/flagasamascotas_front_images/banners/banner3.jpg"
+                  src="https://agencianuba.com/flagasamascotas_front_images/banners/banner3NEW.jpg"
                   alt="image_not_found"
                   unoptimized={true}
                 />
