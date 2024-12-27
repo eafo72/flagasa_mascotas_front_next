@@ -75,13 +75,14 @@ const Page = async () => {
                     Alimento especializado y formulado con salmón.
                   </h3>
                   <p data-animation="fadeInUp2" data-delay=".5s">
-                    Para cualquier industria y en cualquier cantidad.
+                  Alimentación para una vida longeva.
                   </p>
                   <Link
                     className="btn btn_primary btn_rounded"
                     href="/categories/Todas/Premium"
                     data-animation="fadeInUp2"
                     data-delay=".7s"
+                    style={{color: "#25bc6c", backgroundColor: "transparent"}}
                   >
                     Ver más
                   </Link>
@@ -105,16 +106,17 @@ const Page = async () => {
                     data-animation="fadeInUp2"
                     data-delay=".3s"
                   >
-                    Alimento especializado y formulado con salmón.
+                    Alimento balanceado para tu gato.
                   </h3>
                   <p data-animation="fadeInUp2" data-delay=".5s">
-                  Alimentación para una vida longeva.
+                  Dale una optima alimentación a tu mascota.
                   </p>
                   <Link
                     className="btn btn_primary btn_rounded"
                     href="/categories/Todas/Premium"
                     data-animation="fadeInUp2"
                     data-delay=".7s"
+                    style={{color: "#25bc6c", backgroundColor: "transparent"}}
                   >
                     Ver más
                   </Link>
@@ -138,16 +140,17 @@ const Page = async () => {
                     data-animation="fadeInUp2"
                     data-delay=".3s"
                   >
-                    Alimento balanceado para tu gato.
+                    Alimento premium para todas las razas.
                   </h3>
                   <p data-animation="fadeInUp2" data-delay=".5s">
-                    Dale una optima alimentación a tu mascota.
+                  Enriquecido con harinas, cereales y carne.
                   </p>
                   <Link
                     className="btn btn_primary btn_rounded"
                     href="/categories/Todas/Premium"
                     data-animation="fadeInUp2"
                     data-delay=".7s"
+                    style={{color: "#25bc6c", backgroundColor: "transparent"}}
                   >
                     Ver más
                   </Link>
