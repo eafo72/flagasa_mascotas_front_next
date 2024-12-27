@@ -170,7 +170,7 @@ export const NavbarOptions = ({ categories }) => {
 
     <div id="mySidenav" className="sidenav">
 
-      <button className="closebtn" onClick={() => {closeNav()}}  >X</button>
+      <button className="closebtn" onClick={() => {closeNav()}}  ><i className="fal fa-times"></i></button>
 
       <Link href="#menu_categorias" data-bs-toggle="collapse" aria-expanded="true">Categorías</Link>
       
