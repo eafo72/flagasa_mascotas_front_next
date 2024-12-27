@@ -17639,8 +17639,8 @@ hr {
 ================================================== */
 @media screen and (max-width: 680px) {
   .btn-view{
-    color: #25bc6c;
-    background-color: transparent;
+    color: #25bc6c !important; 
+    background-color: transparent !important;
   }
   /* header - start */
   .megamenu .homepage_list > li {
