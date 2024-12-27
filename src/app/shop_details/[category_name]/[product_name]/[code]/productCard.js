@@ -192,7 +192,7 @@ export const ProductCard = ({
                 {/*
                 <div className="item_badge">Sale</div>
                 */}
-                <h2 className="item_subtitle pt-2">
+                <h2 className="item_subtitle pt-4">
                   {producto && producto.categoria}
                 </h2>
                 <h3
