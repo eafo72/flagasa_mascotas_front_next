@@ -178,7 +178,7 @@ export const NavbarOptions = ({ categories }) => {
         {categories && categories.map((item, index) => (
           
             <Link href={`/categories/Todas/${item.nombre}`}  onClick={() => {closeNav()}} key={index} className="submenu" >
-              <img src={item.imagen} alt={item.imagen} style={{height:"30px",width:"30px", borderRadius:"50px"}}/> {item.nombre}
+              {item.nombre}
               <FontAwesomeIcon
                 icon={faArrowRight}
                 style={{position:"absolute",right:"25px"}}
