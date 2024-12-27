@@ -17638,6 +17638,10 @@ hr {
 /* media screen and (max-width: 680px) - start
 ================================================== */
 @media screen and (max-width: 680px) {
+  .btn-view{
+    color: #25bc6c;
+    background-color: transparent;
+  }
   /* header - start */
   .megamenu .homepage_list > li {
     width: 20%;

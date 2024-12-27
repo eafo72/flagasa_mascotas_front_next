@@ -78,11 +78,10 @@ const Page = async () => {
                   Alimentación para una vida longeva.
                   </p>
                   <Link
-                    className="btn btn_primary btn_rounded"
+                    className="btn btn_primary btn_rounded btn-view"
                     href="/shop_details/Premium/Flaga-Can-Adulto-20kg/006"
                     data-animation="fadeInUp2"
                     data-delay=".7s"
-                    style={{color: "#25bc6c", backgroundColor: "transparent"}}
                   >
                     Ver más
                   </Link>
@@ -112,11 +111,10 @@ const Page = async () => {
                   Dale una optima alimentación a tu mascota.
                   </p>
                   <Link
-                    className="btn btn_primary btn_rounded"
+                    className="btn btn_primary btn_rounded btn-view"
                     href="/shop_details/Premium/Ktyto-10Kg/0020"
                     data-animation="fadeInUp2"
                     data-delay=".7s"
-                    style={{color: "#25bc6c", backgroundColor: "transparent"}}
                   >
                     Ver más
                   </Link>
@@ -146,11 +144,10 @@ const Page = async () => {
                   Enriquecido con harinas, cereales y carne.
                   </p>
                   <Link
-                    className="btn btn_primary btn_rounded"
+                    className="btn btn_primary btn_rounded btn-view"
                     href="/shop_details/Premium/Bark-Adulto-todos-los-tama%C3%B1os-20Kg/0030"
                     data-animation="fadeInUp2"
                     data-delay=".7s"
-                    style={{color: "#25bc6c", backgroundColor: "transparent"}}
                   >
                     Ver más
                   </Link>
