@@ -72,7 +72,7 @@ const Page = async () => {
                     data-animation="fadeInUp2"
                     data-delay=".3s"
                   >
-                    Alimento especializado y formulado con salmón
+                    Alimento especializado y formulado con salmón.
                   </h3>
                   <p data-animation="fadeInUp2" data-delay=".5s">
                     Para cualquier industria y en cualquier cantidad.
@@ -105,10 +105,10 @@ const Page = async () => {
                     data-animation="fadeInUp2"
                     data-delay=".3s"
                   >
-                    Alimento especializado y formulado con salmón
+                    Alimento especializado y formulado con salmón.
                   </h3>
                   <p data-animation="fadeInUp2" data-delay=".5s">
-                  Para cualquier industria y en cualquier cantidad.
+                  Alimentación para una vida longeva.
                   </p>
                   <Link
                     className="btn btn_primary btn_rounded"
@@ -138,10 +138,10 @@ const Page = async () => {
                     data-animation="fadeInUp2"
                     data-delay=".3s"
                   >
-                    Alimento especializado y formulado con salmón
+                    Alimento balanceado para tu gato.
                   </h3>
                   <p data-animation="fadeInUp2" data-delay=".5s">
-                    Para cualquier industria y en cualquier cantidad.
+                    Dale una optima alimentación a tu mascota.
                   </p>
                   <Link
                     className="btn btn_primary btn_rounded"
