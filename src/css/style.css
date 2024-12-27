@@ -14407,7 +14407,7 @@ hr {
     min-height: 376px;
   }
   .category_item_3 .section_title_4 .big_title {
-    font-size: 86px;
+    font-size: 80px;
   }
   .category_item_3 .section_title_4 .small_title {
     font-size: 40px;
@@ -15050,7 +15050,7 @@ hr {
   }
 
   .category_item_3 .section_title_4 .big_title {
-    font-size: 85px;
+    font-size: 80px;
   }
 
   .category_item_3 ul li .item_title {
@@ -17346,7 +17346,7 @@ hr {
   }
 
   .section_title_4 .big_title {
-    font-size: 80px;
+    font-size: 75px;
   }
 
   /* section title - end */
@@ -17653,7 +17653,7 @@ hr {
   .main_slider_4 .slider_content {
     left: 0;
     right: 0;
-    top: 15vh;
+    bottom: 0;
     z-index: 1;
     width: 100%;
     color: #ffffff;
@@ -17897,7 +17897,7 @@ hr {
 
   /* section title - start */
   .section_title_4 .big_title {
-    font-size: 75px;
+    font-size: 70px;
   }
 
   /* section title - end */
@@ -18893,7 +18893,7 @@ hr {
   }
 
   .section_title_4 .big_title {
-    font-size: 75px;
+    font-size: 70px;
   }
 
   .banner_item2 .banner_content {
