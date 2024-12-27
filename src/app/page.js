@@ -79,7 +79,7 @@ const Page = async () => {
                   </p>
                   <Link
                     className="btn btn_primary btn_rounded"
-                    href="/categories/Todas/Premium"
+                    href="/shop_details/Premium/Flaga-Can-Adulto-20kg/006"
                     data-animation="fadeInUp2"
                     data-delay=".7s"
                     style={{color: "#25bc6c", backgroundColor: "transparent"}}
@@ -113,7 +113,7 @@ const Page = async () => {
                   </p>
                   <Link
                     className="btn btn_primary btn_rounded"
-                    href="/categories/Todas/Premium"
+                    href="/shop_details/Premium/Ktyto-10Kg/0020"
                     data-animation="fadeInUp2"
                     data-delay=".7s"
                     style={{color: "#25bc6c", backgroundColor: "transparent"}}
@@ -147,7 +147,7 @@ const Page = async () => {
                   </p>
                   <Link
                     className="btn btn_primary btn_rounded"
-                    href="/categories/Todas/Premium"
+                    href="/shop_details/Premium/Bark-Adulto-todos-los-tama%C3%B1os-20Kg/0030"
                     data-animation="fadeInUp2"
                     data-delay=".7s"
                     style={{color: "#25bc6c", backgroundColor: "transparent"}}
