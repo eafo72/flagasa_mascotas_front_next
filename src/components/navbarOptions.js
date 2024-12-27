@@ -181,7 +181,7 @@ export const NavbarOptions = ({ categories }) => {
               {item.nombre}
               <FontAwesomeIcon
                 icon={faArrowRight}
-                style={{position:"absolute",right:"25px"}}
+                style={{position:"absolute",right:"25px",color:"#25BC6C"}}
               />
             </Link>
           
