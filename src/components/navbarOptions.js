@@ -18,7 +18,7 @@ export const NavbarOptions = ({ categories }) => {
   const pathname = usePathname();
 
   function openNav() {
-    document.getElementById("mySidenav").style.width = "100vw";
+    document.getElementById("mySidenav").style.width = "70%";
   }
   
   function closeNav() {
@@ -172,7 +172,7 @@ export const NavbarOptions = ({ categories }) => {
 
       <button className="closebtn" onClick={() => {closeNav()}}  >X</button>
 
-      <Link href="#menu_categorias" data-bs-toggle="collapse" aria-expanded="true">Categorias</Link>
+      <Link href="#menu_categorias" data-bs-toggle="collapse" aria-expanded="true">Categorías</Link>
       
       <div id="menu_categorias" className="collapse show">
         {categories && categories.map((item, index) => (
