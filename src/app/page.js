@@ -200,7 +200,7 @@ const Page = async () => {
           </section>
 
           {/* Categorias */}
-          <section className="product_section sec_space_xlarge">
+          <section className="product_section sec_space_small">
             <div className="space_rl_large">
               <div className="section_title_4 text-center">
                 <h2 className="small_title">Categorías</h2>
