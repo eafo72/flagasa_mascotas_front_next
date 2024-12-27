@@ -17662,6 +17662,9 @@ hr {
     position: absolute;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.29);
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
   }
   .main_slider_4 .slider_content p {
     /*display:none;*/
