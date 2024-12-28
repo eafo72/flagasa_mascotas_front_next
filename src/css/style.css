@@ -17638,8 +17638,11 @@ hr {
 /* media screen and (max-width: 680px) - start
 ================================================== */
 @media screen and (max-width: 680px) {
-  .shop_layout_1{
-    transition: none !important;
+  .shop_layout_1 .child_image{
+    display: none;
+  }
+  .shop_layout_1 .action_btns_group{
+    display: none;
   }
   .btn-view{
     color: #25bc6c !important; 
