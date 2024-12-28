@@ -188,8 +188,8 @@ export const NavbarOptions = ({ categories }) => {
         ))}
       </div>              
 
-      <Link href="/faq" onClick={() => {closeNav()}}>FAQ</Link>
-      <Link href="/contact" onClick={() => {closeNav()}} >Contacto</Link>
+      <Link href="/faq" onClick={() => {closeNav()}} className="submenu">FAQ</Link>
+      <Link href="/contact" onClick={() => {closeNav()}} className="submenu">Contacto</Link>
 
       
 
