@@ -274,7 +274,7 @@ hr {
 .width_desktop {
   max-width: 1560px;
   min-height:60px;
-  border-bottom: 3px solid #25bc6c;
+  
 }
 
 .width_laptop_lg {
@@ -1633,6 +1633,7 @@ hr {
   z-index: 99;
   position: absolute;
   background-color: #ffffff;
+  border-bottom: 3px solid #25bc6c;
 }
 .header_section.sticky {
   position: fixed;
