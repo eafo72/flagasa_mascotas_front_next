@@ -44,6 +44,8 @@ export async function Navbar() {
   
     <header className="header_section header_1">
         <div className="container width_desktop">
+          
+          {/*
           <div className="header_top">
             <p className="welcome_text">{slogan}</p>
             <ul className="header_icons_list ul_li">
@@ -60,6 +62,7 @@ export async function Navbar() {
               </li>
             </ul>
           </div>
+          */}
 
           
               <a className="brand_link" href="/" style={{display:"block"}}>
