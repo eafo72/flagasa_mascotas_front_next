@@ -574,11 +574,7 @@ const Page = async () => {
                     <h2 className="item_title">
                       Libera el potencial de tu lomito
                     </h2>
-                    <p>
-                      Neque porro quisquam est qui dolorem ipsum quia dolor sit
-                      amet, consectetur, adipisci velit Neque porro quisquam est
-                      qui dolum quia dolor sit amet, consectetur
-                    </p>
+                    
                     <ul className="info_list ul_li_block">
                       <li>
                         <div className="icon">

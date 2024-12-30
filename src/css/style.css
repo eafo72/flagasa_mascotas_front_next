@@ -3820,7 +3820,7 @@ hr {
   display: flex;
   /*min-height: 680px;*/
   position: relative;
-  padding-top: 150px;
+  padding-top: 100px;
   padding-bottom: 0px;
   -webkit-box-align: center;
       -ms-flex-align: center;
