@@ -274,6 +274,7 @@ hr {
 .width_desktop {
   max-width: 1560px;
   min-height:60px;
+  border-bottom: 3px solid #25bc6c;
 }
 
 .width_laptop_lg {
@@ -19085,7 +19086,7 @@ hr {
 .logo_position_float{
   position:absolute;
   left:30px;
-  top:55px;
+  top:5px;
 }
 .logo_position_normal{
   position:absolute;
