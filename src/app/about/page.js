@@ -1,12 +1,12 @@
 import Link from "next/link";
+import Image from 'next/image'
+import about_image from "../images/about/about-vision.jpg";
 
 
 const About = async () => {
- 
-
   return (
     <>
-      <main style={{minHeight:"70vh"}}>
+      <main style={{ minHeight: "70vh" }}>
         <section className="breadcrumb_section">
           <div className="container">
             <div className="row">
@@ -30,18 +30,64 @@ const About = async () => {
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-lg-8">
-                <div style={{padding:"30px 0px"}}>
-                  
+                <div style={{ padding: "30px 0px" }}>
+                  <p>
+                    Somos una empresa 100% mexicana, líder en la producción de
+                    alimento balanceado para animales. Tenemos más de 65 años de
+                    experiencia en el mercado iniciando actividades en 1995
+                    produciendo alimento para el establo ganadero Santa Mónica
+                    .Tres años más tarde se inicia formalmente la
+                    comercialización de alimentos balanceados,ampliando la gama
+                    de productos al introducir alimentos para aves, cerdos y
+                    especialidades.
+                  </p>
 
+                  <p>
+                    Actualmente operamos en nuestra planta ubicada en la Ciudad
+                    de México, produciendo y comercializando alimentos
+                    balanceados , ya que contamos con instalaciones y procesos
+                    de clase mundial, en los cuales se lleva acabo estrictos
+                    controles de calidad.Nuestro equipo de trabajo,compuesto por
+                    nutriologos especializados en cada una de las especies ,está
+                    altamente calificado y comprometido para satisfacer las
+                    necesidades de nuestros clientes;esto nos permite incorporar
+                    avances nutricionales más relevantes en la
+                    actualidad.Entendemos perfectamente las necesidades del
+                    mercado ya que somos una planta de alimentos comercial
+                    integrada con granjas de producción de cerdos y pollos.
+                  </p>
 
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      <Image
+                        class="img-fluid"
+                        src={about_image}
+                        alt={about_image}
+                      />
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <h3 class="fw-bold p-3">Nuestros Valores</h3>
 
+                      <h4 class="fw-bold">Misión</h4>
+                      <p>
+                        Fabricar alimentos balanceados de la más alta calidad
+                        que sean rentables para Nuestros Clientes.
+                      </p>
 
+                      <h4 class="fw-bold">Visión</h4>
+                      <p>
+                        Contribuir al bienestar de todos los integrantes de la
+                        cadena productiva ofreciendo servicios y alimentos
+                        seguros, diseñados con los últimos avances en nutrición
+                        y tecnología en la elaboración de Alimentos Balanceados.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-
       </main>
     </>
   );

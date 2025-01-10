@@ -147,13 +147,13 @@ export const NavbarOptions = ({ categories }) => {
               {pathname === "/about" ? (
                 <li className="active dropdown">
                   <Link className="nav-link" href="/about">
-                    QUIÉNES SOMOS
+                    ¿Quiénes somos?
                   </Link>
                 </li>
               ) : (
                 <li className="dropdown">
                   <Link className="nav-link" href="/about">
-                    QUIÉNES SOMOS
+                  ¿Quiénes somos?
                   </Link>
                 </li>
               )}
@@ -161,13 +161,13 @@ export const NavbarOptions = ({ categories }) => {
               {pathname === "/resellers" ? (
                 <li className="active dropdown">
                   <Link className="nav-link" href="/resellers">
-                    DISTRIBUIDORES
+                    Distribuidores
                   </Link>
                 </li>
               ) : (
                 <li className="dropdown">
                   <Link className="nav-link" href="/resellers">
-                  DISTRIBUIDORES
+                  Distribuidores
                   </Link>
                 </li>
               )}
@@ -272,7 +272,7 @@ export const NavbarOptions = ({ categories }) => {
           }}
           className="submenu"
         >
-          QUIÉNES SOMOS
+          ¿Quiénes somos?
         </Link>
 
         <Link
@@ -282,7 +282,7 @@ export const NavbarOptions = ({ categories }) => {
           }}
           className="submenu"
         >
-          DISTRIBUIDORES
+          Distribuidores
         </Link>
 
 
