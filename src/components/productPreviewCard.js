@@ -33,7 +33,7 @@ export const ProductPreviewCard = ({ item }) => {
 
   const currentPageUrl =
     "https://flagasamascotas.com/shop_details/" +
-    item.categoria +
+    item.categoriaSlugged +
     "/" +
     item.nombre.trim().replace(/\s/g, "-") +
     "/" +
@@ -214,11 +214,7 @@ export const ProductPreviewCard = ({ item }) => {
             >
               <Link
                 className="shop_image"
-                href={`/shop_details/${item.categoria
-                  .trim()
-                  .replace(/\s/g, "-")}/${item.nombre
-                  .trim()
-                  .replace(/\s/g, "-")}/${item.codigo}`}
+                href={`/shop_details/${item.categoriaSlugged}/${item.nombre.trim().replace(/\s/g, "-")}/${item.codigo}`}
               >
                 <img
                   src={`${item.foto_principal}`}
@@ -239,11 +235,7 @@ export const ProductPreviewCard = ({ item }) => {
                 >
                   <Link
                     className="shop_image"
-                    href={`/shop_details/${item.categoria
-                      .trim()
-                      .replace(/\s/g, "-")}/${item.nombre
-                      .trim()
-                      .replace(/\s/g, "-")}/${item.codigo}`}
+                    href={`/shop_details/${item.categoriaSlugged}/${item.nombre.trim().replace(/\s/g, "-")}/${item.codigo}`}
                   >
                     <img
                       src={`${item2.image}`}
