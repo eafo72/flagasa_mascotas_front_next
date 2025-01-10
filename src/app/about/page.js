@@ -29,7 +29,7 @@ const About = async () => {
         <section className="faq_section sec_space_small">
           <div className="container">
             <div className="row justify-content-center">
-              <div className="col-lg-8">
+              <div className="col-lg-10">
                 <div style={{ padding: "30px 0px" }}>
                   <p>
                     Somos una empresa 100% mexicana, líder en la producción de
@@ -67,7 +67,7 @@ const About = async () => {
                       />
                     </div>
                     <div class="col-12 col-md-6">
-                      <h3 class="fw-bold p-3">Nuestros Valores</h3>
+                      <h2 class="fw-bold p-3">Nuestros Valores</h2>
 
                       <h4 class="fw-bold">Misión</h4>
                       <p>
