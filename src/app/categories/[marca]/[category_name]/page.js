@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useState } from "react";
+
 
 import clienteAxios from "../../../../config/axios";
 
@@ -10,7 +10,6 @@ import {ProductPreviewCard} from "../../../../components/productPreviewCard"
 
 const AllCategories = async ({ params }) => {
 
-  const [categoryName, setCategoryName] = useState();
 
   const getCategories = async () => {
     try {
@@ -44,10 +43,13 @@ const AllCategories = async ({ params }) => {
 
   const categories = await getCategories();
   const allCategories = [];
+
+  let categoryName;
+
   for(let i = 0; i < categories.length; i++){
     allCategories.push({"value": categories[i]['nombre'], "label": categories[i]['nombre']});
     if(categories[i]['nombreSlugged'] == params.category_name){
-      setCategoryName(categories[i]['nombre']);
+      categoryName = categories[i]['nombre'];
     }
   }
 
