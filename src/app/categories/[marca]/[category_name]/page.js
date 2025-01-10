@@ -47,7 +47,7 @@ const AllCategories = async ({ params }) => {
   let categoryName;
 
   for(let i = 0; i < categories.length; i++){
-    allCategories.push({"value": categories[i]['nombre'], "label": categories[i]['nombre']});
+    allCategories.push({"value": categories[i]['nombreSlugged'], "label": categories[i]['nombre']});
     if(categories[i]['nombreSlugged'] == params.category_name){
       categoryName = categories[i]['nombre'];
     }
@@ -97,6 +97,7 @@ const AllCategories = async ({ params }) => {
                       <CategorySelector
                         brand_name={params.marca.replace("-", " ")}
                         category_name={categoryName}
+                        category_slugged_name={params.category_name}
                         allCategories={allCategories}
                       />
                     </div>

@@ -4,10 +4,10 @@ import { useRouter } from "next/navigation";
 
 import Select from "react-select";
 
-export const CategorySelector = ({ brand_name, category_name, allCategories }) => {
+export const CategorySelector = ({ brand_name, category_name, category_slugged_name, allCategories }) => {
   const router = useRouter();
 
-  const actualValue = {"value": category_name, "label": category_name}
+  const actualValue = {"value": category_slugged_name, "label": category_name}
 
   const handleCategoryChange = (selectedOption) => {
     const cat = selectedOption.value
