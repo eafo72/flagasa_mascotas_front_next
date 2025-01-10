@@ -113,8 +113,8 @@ const Shop_details = async ({params}) => {
                     </Link>
                   </li>
                   <li>
-                    <Link className="home_btn" href= {`/categories/Todas/${params.category_name.replace("-", ' ')}`}>
-                      {params.category_name.replace("-", ' ')}
+                    <Link className="home_btn" href= {`/categories/Todas/${params.category_name}`}>
+                      {categoria}
                     </Link>  
                    </li>
                   <li>{nombre_original}</li>
