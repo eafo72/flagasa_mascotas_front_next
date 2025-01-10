@@ -56,11 +56,12 @@ const About = async () => {
                     mercado ya que somos una planta de alimentos comercial
                     integrada con granjas de producción de cerdos y pollos.
                   </p>
-
-                  <div class="row">
-                    <div class="col-12 col-md-6">
+                  <br/>
+                  <br/>
+                  <div class="row ">
+                    <div class="col-12 col-md-6 img-container">
                       <Image
-                        class="img-fluid"
+                        class="img-full"
                         src={about_image}
                         alt={about_image}
                       />
