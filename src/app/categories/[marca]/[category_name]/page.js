@@ -128,8 +128,8 @@ const AllCategories = async ({ params }) => {
               >
                 {categories &&
                   categories.map((item) => {
-                    return item.nombre ===
-                      params.category_name.replace("-", " ") ? (
+                    return item.nombreSlugged ===
+                      params.category_name ? (
                       <li key={item._id}>
                         <button
                           id={`${item.nombre.split(" ").join("_")}_btn`}
@@ -175,8 +175,8 @@ const AllCategories = async ({ params }) => {
             <div className="tab-content">
               {categories &&
                 categories.map((item1) => {
-                  return item1.nombre ===
-                    params.category_name.replace("-", " ") ? (
+                  return item1.nombreSlugged ===
+                    params.category_name ? (
                     <div
                       key={item1._id}
                       className="tab-pane fade show active"
