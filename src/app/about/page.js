@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Image from 'next/image'
-import about_image from "../images/about/about-vision.jpg";
+import Image from 'next/image';
+import about_image from "../../images/about/about-vision.jpg";
 
 
 const About = async () => {
