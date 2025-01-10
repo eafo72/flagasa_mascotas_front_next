@@ -67,7 +67,7 @@ const About = async () => {
                       />
                     </div>
                     <div class="col-12 col-md-6">
-                      <h2 class="fw-bold p-3">Nuestros Valores</h2>
+                      <h2 class="fw-bold pt-3 pb-3">Nuestros Valores</h2>
 
                       <h4 class="fw-bold">Misión</h4>
                       <p>
