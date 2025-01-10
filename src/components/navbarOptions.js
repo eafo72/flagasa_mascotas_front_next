@@ -65,7 +65,7 @@ export const NavbarOptions = ({ categories }) => {
                         <ul className="homepage_list ul_li">
                           {categories && categories.map((item, index) => (
                             <li key={index}>
-                              <a href={`/categories/Todas/${item.nombre.trim().replace(/\s/g, "-").normalize("NFD").replace(/[\u0300-\u036f]/g, "")}`}>
+                              <a href={`/categories/Todas/${item.nombreSlugged}`}>
                                 <span className="item_image" style={{backgroundColor:"transparent"}}>
                                   <img src={item.imagen} style={{height:"60px"}} alt={item.imagen} className="img-fluid"/>
                                 </span>
@@ -87,7 +87,7 @@ export const NavbarOptions = ({ categories }) => {
                         <ul className="homepage_list ul_li">
                           {categories && categories.map((item, index) => (
                             <li key={index}>
-                              <a href={`/categories/Todas/${item.nombre.trim().replace(/\s/g, "-").normalize("NFD").replace(/[\u0300-\u036f]/g, "")}`}>
+                              <a href={`/categories/Todas/${item.nombreSlugged}`}>
                                 <span className="item_image" style={{backgroundColor:"transparent"}}>
                                   <img src={item.imagen} style={{height:"60px"}} alt={item.imagen} className="img-fluid"/>
                                 </span>
@@ -177,7 +177,7 @@ export const NavbarOptions = ({ categories }) => {
       <div id="menu_categorias" className="collapse show">
         {categories && categories.map((item, index) => (
           
-            <Link href={`/categories/Todas/${item.nombre.trim().replace(/\s/g, "-").normalize("NFD").replace(/[\u0300-\u036f]/g, "")}`}  onClick={() => {closeNav()}} key={index} className="submenu" >
+            <Link href={`/categories/Todas/${item.nombreSlugged}`}  onClick={() => {closeNav()}} key={index} className="submenu" >
               {item.nombre}
               <FontAwesomeIcon
                 icon={faArrowRight}
