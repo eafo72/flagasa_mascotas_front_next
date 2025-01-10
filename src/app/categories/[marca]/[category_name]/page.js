@@ -96,7 +96,7 @@ const AllCategories = async ({ params }) => {
                     <div className="select_option clearfix">
                       <CategorySelector
                         brand_name={params.marca.replace("-", " ")}
-                        category_name={params.category_name.replace("-", " ")}
+                        category_name={categoryName}
                         allCategories={allCategories}
                       />
                     </div>
