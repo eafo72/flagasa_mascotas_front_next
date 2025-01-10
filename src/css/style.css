@@ -19193,10 +19193,6 @@ hr {
   height: auto; /* Mantiene la proporción de la imagen */
 }
 
-.img-container {
-  height: 100%; /* Asegura que la columna ocupe el 100% de la altura disponible */
-}
-
 .img-stretch {
   object-fit: cover; /* Hace que la imagen llene el contenedor sin distorsión */
   width: 100%;

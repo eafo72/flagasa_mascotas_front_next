@@ -59,9 +59,9 @@ const About = async () => {
                   <br/>
                   <br/>
                   <div class="row ">
-                    <div class="col-12 col-md-6 img-container">
+                    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
                       <Image
-                        class="img-full"
+                        class="img-stretch"
                         src={about_image}
                         alt={about_image}
                       />
