@@ -66,7 +66,7 @@ export async function Footer() {
 
               <div className="col col-lg-2 col-md-3 col-sm-6">
                 <div className="footer_widget fooetr_useful_links">
-                  <h3 className="footer_widget_title text-white">Categorías</h3>
+                  <h3 className="footer_widget_title text-white">Fórmulas especializadas</h3>
                   <ul className="ul_li_block">
                     {categories &&
                       categories.map((item, index) => {

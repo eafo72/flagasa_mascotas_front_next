@@ -58,7 +58,7 @@ export const NavbarOptions = ({ categories }) => {
             {pathname.startsWith("/categories") ? (
               <li className="active dropdown">
                   <a className="nav-link" href="#" id="categories_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Categorías
+                  Fórmulas especializadas
                   </a>
                   <div className="megamenu dropdown-menu" aria-labelledby="categories_submenu">
                     <div className="container">
@@ -80,7 +80,7 @@ export const NavbarOptions = ({ categories }) => {
             ) : (
               <li className="dropdown">
                   <a className="nav-link" href="#" id="categories_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Categorías
+                  Fórmulas especializadas
                   </a>
                   <div className="megamenu dropdown-menu" aria-labelledby="categories_submenu">
                     <div className="container">
@@ -172,7 +172,7 @@ export const NavbarOptions = ({ categories }) => {
 
       <button className="closebtn" onClick={() => {closeNav()}}  ><i className="fal fa-times"></i></button>
 
-      <Link href="#menu_categorias" data-bs-toggle="collapse" aria-expanded="true">Categorías</Link>
+      <Link href="#menu_categorias" data-bs-toggle="collapse" aria-expanded="true">Fórmulas especializadas</Link>
       
       <div id="menu_categorias" className="collapse show">
         {categories && categories.map((item, index) => (

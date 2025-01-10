@@ -72,10 +72,10 @@ const Page = async () => {
                     data-animation="fadeInUp2"
                     data-delay=".3s"
                   >
-                    Alimento especializado y formulado con salmón.
+                    Nutrición balanceada con proteína de salmón, para una vida más sana y longeva.
                   </h3>
                   <p data-animation="fadeInUp2" data-delay=".5s">
-                  Alimentación para una vida longeva.
+                  Mejora el desarrollo cognitivo y reduce alergias.
                   </p>
                   <Link
                     className="btn btn_primary btn_rounded btn-view"
@@ -105,10 +105,10 @@ const Page = async () => {
                     data-animation="fadeInUp2"
                     data-delay=".3s"
                   >
-                    Alimento balanceado para tu gato.
+                    Alimento super premium formulado con proteínas de salmón y carne.
                   </h3>
                   <p data-animation="fadeInUp2" data-delay=".5s">
-                  Dale una optima alimentación a tu mascota.
+                  Óptima nutrición.
                   </p>
                   <Link
                     className="btn btn_primary btn_rounded btn-view"
@@ -138,10 +138,10 @@ const Page = async () => {
                     data-animation="fadeInUp2"
                     data-delay=".3s"
                   >
-                    Alimento premium para todas las razas.
+                    Fórmula super premium con proteínas de carne como primer ingrediente.
                   </h3>
                   <p data-animation="fadeInUp2" data-delay=".5s">
-                  Enriquecido con harinas, cereales y carne.
+                  Una  nueva y excelente opción de nutrición para tu consentido.
                   </p>
                   <Link
                     className="btn btn_primary btn_rounded btn-view"
@@ -203,7 +203,7 @@ const Page = async () => {
           <section className="product_section sec_space_xlarge">
             <div className="space_rl_large">
               <div className="section_title_4 text-center">
-                <h2 className="small_title">Categorías</h2>
+                <h2 className="small_title">Fórmulas especializadas</h2>
                 <span className="big_title">FLAGASA</span>
               </div>
 
