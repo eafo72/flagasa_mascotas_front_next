@@ -48,7 +48,7 @@ const Aviso = async () => {
         <section className="faq_section sec_space_small">
           <div className="container">
             <div className="row justify-content-center">
-              <div className="col-lg-6">
+              <div className="col-lg-8">
                 <div style={{padding:"30px 0px"}}>
                   <h4>Aviso de Privacidad</h4>
                   {avisoDeP}                
