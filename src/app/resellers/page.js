@@ -64,6 +64,7 @@ const Resellers = async () => {
                         alt={img_vision}
                       />
                       <h4>Visión de crecimiento</h4>
+                      <br/>
                       <p>
                         Buscamos distribuidores con una visión de negocio de
                         largo plazo para desarrollar mercados locales y
@@ -77,6 +78,7 @@ const Resellers = async () => {
                         alt={img_solvencia}
                       />
                       <h4>Solvencia económica</h4>
+                      <br/>
                       <p>
                         Contar con el capital económico necesario para la
                         demanda del mercado en la zona.
@@ -89,6 +91,7 @@ const Resellers = async () => {
                         alt={img_potencial}
                       />
                       <h4>Mercado local o regional</h4>
+                      <br/>
                       <p>
                         Buscamos distribuidores locales o regionales que
                         conozcan el potencial de mercado de la zona acordada.
