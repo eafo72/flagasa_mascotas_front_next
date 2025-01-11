@@ -42,7 +42,8 @@ const Faq = async () => {
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-lg-6">
-                <h2 className="faq_title text-center" >Preguntas Frecuentes</h2>
+                <h2 class="fw-bold pt-3 pb-3 text-center">Preguntas Frecuentes</h2>
+
                 <div className="accordion_primary" id="accordion_primary">
                   {faqs &&
                     faqs.map((item, index) => (
