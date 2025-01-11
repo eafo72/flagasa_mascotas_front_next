@@ -44,7 +44,7 @@ const Aviso = async () => {
             <div className="row justify-content-center">
               <div className="col-lg-8">
                 <div style={{ padding: "30px 0px" }}>
-                  <div class="pb-5 text-center">
+                  <div class="text-center">
                     <h4 class="fw-bold pt-3 pb-3">Aviso de Privacidad</h4>
                   </div>
                   {avisoDeP}
