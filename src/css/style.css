@@ -19018,7 +19018,7 @@ hr {
 
 /* menu lateral*/
 .sidenav {
-	height: 50%; /* 100% Full-height */
+	/*height: 50%; */ 
 	width: 0; /* 0 width - change this with JavaScript */
 	position: fixed; /* Stay in place */
 	z-index: 99999999; /* Stay on top */
