@@ -32,10 +32,10 @@ const Resellers = async () => {
         <section className="faq_section sec_space_small">
           <div className="container">
             <div className="row justify-content-center">
-              <div className="col-lg-10">
+              <div className="col-lg-12">
                 <div style={{ padding: "30px 0px" }}>
                   <div class="pt-3 pb-3 text-center">
-                    <h2 class="fw-bold pt-3 pb-3">Distribución Centinela</h2>
+                    <h2 class="fw-bold pt-5 pb-5">Distribución Centinela</h2>
 
                     <p>
                       Buscamos distribuidores locales y regionales de nuestro
@@ -50,6 +50,7 @@ const Resellers = async () => {
                         alt={img_infraestructura}
                       />
                       <h4>Infraestructura</h4>
+                      <br/>
                       <p>
                         Capacidad de compra, almacenamiento y distribución de al
                         menos 4 toneladas de producto al mes, correo electrónico
