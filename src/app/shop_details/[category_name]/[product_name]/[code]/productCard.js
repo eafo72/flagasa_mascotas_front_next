@@ -197,7 +197,6 @@ export const ProductCard = ({
                 </h2>
                 <h3
                   className="item_title"
-                  style={{ fontFamily: "Plantagenet" }}
                 >
                   {producto && producto.nombre}
                 </h3>

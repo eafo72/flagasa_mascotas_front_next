@@ -402,7 +402,6 @@ export const ProductPreviewCard = ({ item }) => {
                         <h2 className="item_subtitle pt-4">{item.categoria}</h2>
                         <h3
                           className="item_title"
-                          style={{ fontFamily: "Plantagenet" }}
                         >
                           {item.nombre}
                         </h3>
