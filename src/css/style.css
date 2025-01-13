@@ -25,10 +25,7 @@
   font-family: "Aligatai";
   src: local("Aligatai"), url("../fonts/Aligatai.woff") format("woff");
 }
-@font-face {
-  font-family: "Margarita";
-  src: local("Margarita"), url("../fonts/marguerite.ttf");
-}
+
 @font-face {
   font-family: "Plantagenet";
   src: local("Plantagenet"), url("../fonts/plantagenet-cherokee.ttf");
@@ -8371,7 +8368,7 @@ hr {
   color: #343434;
   font-size: 20px;
   font-weight: 600;
-  font-family: "Plantagenet";
+  font-family: "Jost";
 }
 .shop_layout_1 .shop_price {
   display: -webkit-box;
@@ -19083,6 +19080,9 @@ hr {
   font-family: "Plantagenet";
 }
 
+.fontJost {
+  font-family: "Jost";
+}
 
 .logo_position_float{
   position:absolute;

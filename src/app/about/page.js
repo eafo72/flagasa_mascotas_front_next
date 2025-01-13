@@ -31,6 +31,7 @@ const About = async () => {
             <div className="row justify-content-center">
               <div className="col-lg-10">
                 <div style={{ padding: "30px 0px" }}>
+                  <h2 class="fw-bold pt-3 pb-5">FLAGASA MASCOTAS</h2>
                   <p>
                     Somos una empresa 100% mexicana, líder en la producción de
                     alimento balanceado para animales. Tenemos más de 65 años de
@@ -52,7 +53,7 @@ const About = async () => {
                     altamente calificado y comprometido para satisfacer las
                     necesidades de nuestros clientes;esto nos permite incorporar
                     avances nutricionales más relevantes en la
-                    actualidad.Entendemos perfectamente las necesidades del
+                    actualidad. Entendemos perfectamente las necesidades del
                     mercado ya que somos una planta de alimentos comercial
                     integrada con granjas de producción de cerdos y pollos.
                   </p>
@@ -67,7 +68,7 @@ const About = async () => {
                       />
                     </div>
                     <div class="col-12 col-md-6">
-                      <h2 class="fw-bold pt-3 pb-3">Nuestros Valores</h2>
+                      <h2 class="fw-bold pt-3 pb-5">NUESTROS VALORES</h2>
 
                       <h4 class="fw-bold">Misión</h4>
                       <p>

@@ -294,7 +294,7 @@ const Page = async () => {
                   {/*Active*/}
                   <li>
                     <button
-                      className="active fontPlantagenet"
+                      className="active fontJost"
                       data-bs-toggle="tab"
                       data-bs-target={`#${
                         categoriesSix &&
@@ -322,7 +322,7 @@ const Page = async () => {
                       .map((item) => (
                         <li key={item._id}>
                           <button
-                            className="fontPlantagenet"
+                            className="fontJost"
                             data-bs-toggle="tab"
                             data-bs-target={`#${item.nombre
                               .split(" ")
