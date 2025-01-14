@@ -1374,9 +1374,13 @@ hr {
   color: #a0a0a0;
   display: block;
   font-size: 27px;
+  border-radius: 10px;
+  border-color: #25BC6C;
 }
 .product_tabnav_4 button:hover, .product_tabnav_4 button.active {
   color: #252525;
+  background-color: #25BC6C;
+  border-color: #25BC6C;
 }
 
 /* product tab nav 4 - end */
