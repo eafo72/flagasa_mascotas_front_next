@@ -290,6 +290,28 @@ export const NavbarOptions = ({ categories }) => {
           Inicio
         </button>
 
+        <div className="accordion-item">
+                        <button
+                          className="collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target={`#accordion_primary`}
+                          aria-expanded="false"
+                          aria-controls={`accordion_primary`}
+                        >
+                          Boton
+                        </button>
+                        <div
+                          id={`accordion_primary`}
+                          className="collapse"
+                          data-bs-parent={`#accordion_primary`}
+                        >
+                          <div className="accordion-body">
+                            <p>contenido</p>
+                          </div>
+                        </div>
+                      </div>
+
         <Link
           class="collapsed sidenav_menu_item separator d-flex justify-content-between align-items-center"
           href="#menu_categorias"
