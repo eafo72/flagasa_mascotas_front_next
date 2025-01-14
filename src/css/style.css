@@ -19103,6 +19103,12 @@ hr {
   color:#25bc6c !important;
 }
 
+/*AJUSTE DE COLORES CUANDO SE USA EL EDITOR DE TEXTOS QUILL*/
+p strong, p span {
+  background-color: transparent !important;
+}
+
+
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
 	transition: margin-left .5s;
