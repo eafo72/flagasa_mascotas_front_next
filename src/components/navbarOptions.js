@@ -295,6 +295,8 @@ export const NavbarOptions = ({ categories }) => {
           href="#menu_categorias"
           data-bs-toggle="collapse"
           aria-expanded={isExpanded}
+          aria-controls="menu_categorias"
+          role="button"
           onClick={toggleMenu}
         >
           Fórmulas especializadas
