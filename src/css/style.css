@@ -1377,6 +1377,7 @@ hr {
   font-size: 27px;
   border-radius: 10px;
   border-color: #25BC6C;
+  margin:10px;
 }
 .product_tabnav_4 button:hover, .product_tabnav_4 button.active {
   color: white;
