@@ -261,117 +261,115 @@ export const NavbarOptions = ({ categories }) => {
       {/*--------------------------------------------------------SIDENAV ----------------------------------------------*/}
 
       <div id="mySidenav" className="sidenav">
-        <div style={{paddingLeft:"10px", paddingRight:"10px"}}>
-        
-        <button
-          className="closebtn"
-          onClick={() => {
-            closeNav();
-          }}
-        >
-          <i className="fal fa-times"></i>
-        </button>
+        <div style={{ paddingLeft: "10px", paddingRight: "10px" }}>
+          <button
+            className="closebtn"
+            onClick={() => {
+              closeNav();
+            }}
+          >
+            <i className="fal fa-times"></i>
+          </button>
 
-        <div align="center" class="pb-3">
-          <Image
-            style={{ height: "100px", width: "100px" }}
-            src={logo_footer}
-            alt={logo_footer}
-          />
-        </div>
+          <div align="center" class="pb-3">
+            <Image
+              style={{ height: "100px", width: "100px" }}
+              src={logo_footer}
+              alt={logo_footer}
+            />
+          </div>
 
-        <button
-          class="sidenav_menu_item"
-          onClick={() => {
-            closeNav(); // Llama a la función para cerrar el menú
-            window.location.href = "/"; // Redirige a la página de inicio
-          }}
-        >
-          Inicio
-        </button>
+          
+          <button
+            class={`sidenav_menu_item ${pathname === "/" ? "text-color-green" : ""}`}
+            onClick={() => {
+              closeNav(); // Llama a la función para cerrar el menú
+              window.location.href = "/"; // Redirige a la página de inicio
+            }}
+          >
+            Inicio
+          </button>
+          
 
-        <div className="accordion-item">
-                        <button
-                          className="collapsed sidenav_menu_item separator d-flex justify-content-between align-items-center"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target={`#accordion_primary`}
-                          aria-expanded={isExpanded}
-                          aria-controls={`accordion_primary`}
-                          onClick={toggleMenu}
-                        >
-                          Fórmulas especializadas
-                          <span className="text-primary toggle-icon">{isExpanded ? "-" : "+"}</span> {/* Ícono o indicador */}
-                        </button>
-                        <div
-                          id={`accordion_primary`}
-                          className="collapse"
-                          data-bs-parent={`#accordion_primary`}
-                        >
-                          <div className="accordion-body">
-                          {categories &&
-            categories.map((item, index) => (
-              <Link
-                style={{borderTop: "1px solid #a2a2a2"}}
-                href={`/categories/Todas/${item.nombreSlugged}`}
-                onClick={() => {
-                  closeNav();
-                }}
-                key={index}
-                className="submenu"
-              >
-                {item.nombre}
-              </Link>
-            ))}
+          <div className="accordion-item">
+            <button
+              class={`collapsed sidenav_menu_item separator d-flex justify-content-between align-items-center ${pathname.startsWith("/categories") ? "text-color-green" : ""}`}
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target={`#accordion_primary`}
+              aria-expanded={isExpanded}
+              aria-controls={`accordion_primary`}
+              onClick={toggleMenu}
+            >
+              Fórmulas especializadas
+              <span className="text-primary toggle-icon">
+                {isExpanded ? "-" : "+"}
+              </span>{" "}
+              {/* Ícono o indicador */}
+            </button>
+            <div
+              id={`accordion_primary`}
+              className="collapse"
+              data-bs-parent={`#accordion_primary`}
+            >
+              <div className="accordion-body">
+                {categories &&
+                  categories.map((item, index) => (
+                    <Link
+                      style={{ borderTop: "1px solid #a2a2a2" }}
+                      href={`/categories/Todas/${item.nombreSlugged}`}
+                      onClick={() => {
+                        closeNav();
+                      }}
+                      key={index}
+                      className="submenu"
+                    >
+                      {item.nombre}
+                    </Link>
+                  ))}
+              </div>
+            </div>
+          </div>
 
+          <Link
+            class={`sidenav_menu_item separator ${pathname === "/about" ? "text-color-green" : ""}`}
+            href="/about"
+            onClick={() => {
+              closeNav();
+            }}
+          >
+            ¿Quiénes somos?
+          </Link>
 
+          <Link
+            class={`sidenav_menu_item separator ${pathname === "/resellers" ? "text-color-green" : ""}`}
+            href="/resellers"
+            onClick={() => {
+              closeNav();
+            }}
+          >
+            Distribuidores
+          </Link>
 
-                          </div>
-                        </div>
-                      </div>
+          <Link
+            class={`sidenav_menu_item separator ${pathname === "/faq" ? "text-color-green" : ""}`}
+            href="/faq"
+            onClick={() => {
+              closeNav();
+            }}
+          >
+            FAQ
+          </Link>
 
-       
-        
-
-        <Link
-          class="sidenav_menu_item separator"
-          href="/about"
-          onClick={() => {
-            closeNav();
-          }}
-        >
-          ¿Quiénes somos?
-        </Link>
-
-        <Link
-          class="sidenav_menu_item separator"
-          href="/resellers"
-          onClick={() => {
-            closeNav();
-          }}
-        >
-          Distribuidores
-        </Link>
-
-        <Link
-          class="sidenav_menu_item separator"
-          href="/faq"
-          onClick={() => {
-            closeNav();
-          }}
-        >
-          FAQ
-        </Link>
-
-        <Link
-          class="sidenav_menu_item separator"
-          href="/contact"
-          onClick={() => {
-            closeNav();
-          }}
-        >
-          Contacto
-        </Link>
+          <Link
+            class={`sidenav_menu_item separator ${pathname === "/contact" ? "text-color-green" : ""}`}
+            href="/contact"
+            onClick={() => {
+              closeNav();
+            }}
+          >
+            Contacto
+          </Link>
         </div>
       </div>
     </>
