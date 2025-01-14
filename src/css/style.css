@@ -1351,6 +1351,7 @@ hr {
   margin-right: 35px;
   padding-right: 35px;
 }
+/*
 .product_tabnav_4 > li:after {
   top: 50%;
   width: 4px;
@@ -1362,6 +1363,8 @@ hr {
           transform: translateY(-50%);
   background-color: #252525;
 }
+*/
+
 .product_tabnav_4 > li:last-child:after {
   display: none;
 }
