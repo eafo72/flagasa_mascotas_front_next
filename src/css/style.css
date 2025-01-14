@@ -19080,12 +19080,15 @@ hr {
 .sidenav .separator{
   border-top: 1px solid #a2a2a2;
 }
+.sidenav .row_divider{
+  border-left: 1px solid white;
+}
 .sidenav span {
   color:white !important;
-  border-left: 1px solid white;
   width: 40px;
   text-align: center;
 }
+
 
 .toggle-icon {
   transition: transform 0.3s ease;
