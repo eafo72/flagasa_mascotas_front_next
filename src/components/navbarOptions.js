@@ -1,5 +1,7 @@
 "use client";
 
+import { useState } from "react";
+
 import { motion } from "framer-motion";
 
 import Link from "next/link";
@@ -26,6 +28,12 @@ export const NavbarOptions = ({ categories }) => {
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
   }
+
+  const [isExpanded, setIsExpanded] = useState(true);
+
+  const toggleMenu = () => {
+    setIsExpanded(!isExpanded);
+  };
 
   return (
     <>
@@ -286,17 +294,18 @@ export const NavbarOptions = ({ categories }) => {
           class="sidenav_menu_item separator d-flex justify-content-between align-items-center"
           href="#menu_categorias"
           data-bs-toggle="collapse"
-          aria-expanded="false"
+          aria-expanded={isExpanded}
+          onClick={toggleMenu}
         >
           Fórmulas especializadas
-          <span className="text-primary">+</span> {/* Ícono o indicador */}
+          <span className="text-primary">{isExpanded ? "-" : "+"}</span> {/* Ícono o indicador */}
         </Link>
 
-        <div id="menu_categorias" className="collapse">
+        <div id="menu_categorias" className={`collapse ${isExpanded ? "show" : ""}`}>
           {categories &&
             categories.map((item, index) => (
               <Link
-                style={{borderBottom: "1px solid #a2a2a2"}}
+                style={{borderTop: "1px solid #a2a2a2"}}
                 href={`/categories/Todas/${item.nombreSlugged}`}
                 onClick={() => {
                   closeNav();
