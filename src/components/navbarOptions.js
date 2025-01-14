@@ -281,7 +281,7 @@ export const NavbarOptions = ({ categories }) => {
         </button>
 
         <Link
-          class="sidenav_menu_item"
+          class="sidenav_menu_item separator"
           href="#menu_categorias"
           data-bs-toggle="collapse"
           aria-expanded="true"
@@ -306,7 +306,7 @@ export const NavbarOptions = ({ categories }) => {
         </div>
 
         <Link
-          class="sidenav_menu_item"
+          class="sidenav_menu_item separator"
           href="/about"
           onClick={() => {
             closeNav();
@@ -316,7 +316,7 @@ export const NavbarOptions = ({ categories }) => {
         </Link>
 
         <Link
-          class="sidenav_menu_item"
+          class="sidenav_menu_item separator"
           href="/resellers"
           onClick={() => {
             closeNav();
@@ -326,7 +326,7 @@ export const NavbarOptions = ({ categories }) => {
         </Link>
 
         <Link
-          class="sidenav_menu_item"
+          class="sidenav_menu_item separator"
           href="/faq"
           onClick={() => {
             closeNav();
@@ -336,7 +336,7 @@ export const NavbarOptions = ({ categories }) => {
         </Link>
 
         <Link
-          class="sidenav_menu_item"
+          class="sidenav_menu_item separator"
           href="/contact"
           onClick={() => {
             closeNav();

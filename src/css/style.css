@@ -19075,8 +19075,12 @@ hr {
   width:100%;
   align-items: center; /* Alinea el texto verticalmente */
   text-align: left; /* Alinea el texto a la izquierda */
-  border-bottom: 1px solid #a2a2a2;
 }
+
+.sidenav .separator{
+  border-top: 1px solid #a2a2a2;
+}
+
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
