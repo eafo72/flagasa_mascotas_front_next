@@ -1347,11 +1347,13 @@ hr {
 .product_tabnav_4 > li {
   position: relative;
 }
+
+/*
 .product_tabnav_4 > li:not(:last-child) {
   margin-right: 35px;
   padding-right: 35px;
 }
-/*
+
 .product_tabnav_4 > li:after {
   top: 50%;
   width: 4px;
