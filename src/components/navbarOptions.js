@@ -52,18 +52,27 @@ export const NavbarOptions = ({ categories }) => {
             id="main_menu_dropdown"
           >
             <ul className="main_menu_list ul_li">
-
-            {pathname === "/" ? (
+              {pathname === "/" ? (
                 <li className="active dropdown">
-                  <Link className="nav-link" href="/">
+                  <button
+                    className="nav-link"
+                    onClick={() => {
+                      window.location.href = "/"; // Redirige a la página de inicio
+                    }}
+                  >
                     Inicio
-                  </Link>
+                  </button>
                 </li>
               ) : (
                 <li className="dropdown">
-                  <Link className="nav-link" href="/">
-                  Inicio
-                  </Link>
+                  <button
+                    className="nav-link"
+                    onClick={() => {
+                      window.location.href = "/"; // Redirige a la página de inicio
+                    }}
+                  >
+                    Inicio
+                  </button>
                 </li>
               )}
 
@@ -168,7 +177,7 @@ export const NavbarOptions = ({ categories }) => {
               ) : (
                 <li className="dropdown">
                   <Link className="nav-link" href="/about">
-                  ¿Quiénes somos?
+                    ¿Quiénes somos?
                   </Link>
                 </li>
               )}
@@ -182,7 +191,7 @@ export const NavbarOptions = ({ categories }) => {
               ) : (
                 <li className="dropdown">
                   <Link className="nav-link" href="/resellers">
-                  Distribuidores
+                    Distribuidores
                   </Link>
                 </li>
               )}
@@ -248,15 +257,15 @@ export const NavbarOptions = ({ categories }) => {
           <i className="fal fa-times"></i>
         </button>
 
-        <Link
-          href="/"
-          onClick={() => {
-            closeNav();
-          }}
+        <button
           className="submenu"
+          onClick={() => {
+            closeNav(); // Llama a la función para cerrar el menú
+            window.location.href = "/"; // Redirige a la página de inicio
+          }}
         >
           Inicio
-        </Link>
+        </button>
 
         <Link
           href="#menu_categorias"
@@ -310,7 +319,6 @@ export const NavbarOptions = ({ categories }) => {
           Distribuidores
         </Link>
 
-
         <Link
           href="/faq"
           onClick={() => {
@@ -330,7 +338,6 @@ export const NavbarOptions = ({ categories }) => {
         >
           Contacto
         </Link>
-
       </div>
     </>
   );
