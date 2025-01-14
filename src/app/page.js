@@ -71,8 +71,7 @@ const Page = async () => {
                     data-animation="fadeInUp2"
                     data-delay=".3s"
                   >
-                    Nutrición balanceada con proteína de salmón, para una vida
-                    más sana y longeva.
+                    Nutrición balanceada con proteína de salmón.
                   </h3>
                   <p data-animation="fadeInUp2" data-delay=".5s">
                     Mejora el desarrollo cognitivo y reduce alergias.
@@ -105,11 +104,10 @@ const Page = async () => {
                     data-animation="fadeInUp2"
                     data-delay=".3s"
                   >
-                    Alimento super premium formulado con proteínas de salmón y
-                    carne.
+                    Alimento para gato super premium
                   </h3>
                   <p data-animation="fadeInUp2" data-delay=".5s">
-                    Óptima nutrición.
+                  con proteínas de salmón y carne.
                   </p>
                   <Link
                     className="btn btn_primary btn_rounded btn-view"
@@ -139,12 +137,10 @@ const Page = async () => {
                     data-animation="fadeInUp2"
                     data-delay=".3s"
                   >
-                    Fórmula super premium con proteínas de carne como primer
-                    ingrediente.
+                    Fórmula para perro super premium.
                   </h3>
                   <p data-animation="fadeInUp2" data-delay=".5s">
-                    Una nueva y excelente opción de nutrición para tu
-                    consentido.
+                  Proteínas de carne como primer ingrediente.
                   </p>
                   <Link
                     className="btn btn_primary btn_rounded btn-view"
