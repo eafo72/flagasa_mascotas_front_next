@@ -303,7 +303,7 @@ export const NavbarOptions = ({ categories }) => {
           <span className="text-primary toggle-icon">{isExpanded ? "-" : "+"}</span> {/* Ícono o indicador */}
         </Link>
 
-        <div id="menu_categorias" className={`collapse ${isExpanded ? "show" : ""}`}>
+        <div id="menu_categorias" className={`collapse ${isExpanded ? "show" : ""}`} data-bs-parent="#menu_categorias">
           {categories &&
             categories.map((item, index) => (
               <Link
