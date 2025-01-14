@@ -19087,15 +19087,15 @@ hr {
   text-align: center;
 }
 
-.sidenav .toggle-icon {
+.toggle-icon {
   transition: transform 0.3s ease;
 }
 
-[aria-expanded="true"] .sidenav .toggle-icon {
+[aria-expanded="true"] .toggle-icon {
   transform: rotate(0deg); /* Símbolo "-" */
 }
 
-[aria-expanded="false"] .sidenav .toggle-icon {
+[aria-expanded="false"] .toggle-icon {
   transform: rotate(90deg); /* Símbolo "+" */
 }
 
