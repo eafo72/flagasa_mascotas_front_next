@@ -284,7 +284,6 @@ export const NavbarOptions = ({ categories }) => {
 
         <Link
           class="sidenav_menu_item separator d-flex justify-content-between align-items-center"
-          style={{borderBottom: "1px solid #a2a2a2"}}
           href="#menu_categorias"
           data-bs-toggle="collapse"
           aria-expanded="false"
@@ -297,6 +296,7 @@ export const NavbarOptions = ({ categories }) => {
           {categories &&
             categories.map((item, index) => (
               <Link
+                style={{borderBottom: "1px solid #a2a2a2"}}
                 href={`/categories/Todas/${item.nombreSlugged}`}
                 onClick={() => {
                   closeNav();
