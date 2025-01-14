@@ -262,7 +262,7 @@ export const NavbarOptions = ({ categories }) => {
           <i className="fal fa-times"></i>
         </button>
 
-        <div align="center">
+        <div align="center" class="pb-3">
           <Image
             style={{ height: "100px", width: "100px" }}
             src={logo_footer}
@@ -281,12 +281,13 @@ export const NavbarOptions = ({ categories }) => {
         </button>
 
         <Link
-          class="sidenav_menu_item separator"
+          class="sidenav_menu_item separator d-flex justify-content-between align-items-center"
           href="#menu_categorias"
           data-bs-toggle="collapse"
           aria-expanded="true"
         >
           Fórmulas especializadas
+          <span className="text-primary">+</span> {/* Ícono o indicador */}
         </Link>
 
         <div id="menu_categorias" className="collapse show">
