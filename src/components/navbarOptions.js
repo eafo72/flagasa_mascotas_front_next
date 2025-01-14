@@ -253,6 +253,8 @@ export const NavbarOptions = ({ categories }) => {
       {/*--------------------------------------------------------SIDENAV ----------------------------------------------*/}
 
       <div id="mySidenav" className="sidenav">
+        <div style={{paddingLeft:"10px", paddingRight:"10px"}}>
+        
         <button
           className="closebtn"
           onClick={() => {
@@ -345,6 +347,7 @@ export const NavbarOptions = ({ categories }) => {
         >
           Contacto
         </Link>
+        </div>
       </div>
     </>
   );
