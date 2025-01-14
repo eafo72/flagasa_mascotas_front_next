@@ -292,14 +292,15 @@ export const NavbarOptions = ({ categories }) => {
 
         <div className="accordion-item">
                         <button
-                          className="collapsed"
+                          className="collapsed sidenav_menu_item separator d-flex justify-content-between align-items-center"
                           type="button"
                           data-bs-toggle="collapse"
                           data-bs-target={`#accordion_primary`}
                           aria-expanded="false"
                           aria-controls={`accordion_primary`}
+                          onClick={toggleMenu}
                         >
-                          Boton
+                          Fórmulas especializadas
                         </button>
                         <div
                           id={`accordion_primary`}
