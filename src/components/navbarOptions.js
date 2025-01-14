@@ -260,6 +260,7 @@ export const NavbarOptions = ({ categories }) => {
         </button>
 
         <button
+          class="sidenav_menu_item"
           onClick={() => {
             closeNav(); // Llama a la función para cerrar el menú
             window.location.href = "/"; // Redirige a la página de inicio
@@ -269,6 +270,7 @@ export const NavbarOptions = ({ categories }) => {
         </button>
 
         <Link
+          class="sidenav_menu_item"
           href="#menu_categorias"
           data-bs-toggle="collapse"
           aria-expanded="true"
@@ -288,19 +290,12 @@ export const NavbarOptions = ({ categories }) => {
                 className="submenu"
               >
                 {item.nombre}
-                <FontAwesomeIcon
-                  icon={faArrowRight}
-                  style={{
-                    position: "absolute",
-                    right: "25px",
-                    color: "#25BC6C",
-                  }}
-                />
               </Link>
             ))}
         </div>
 
         <Link
+          class="sidenav_menu_item"
           href="/about"
           onClick={() => {
             closeNav();
@@ -310,6 +305,7 @@ export const NavbarOptions = ({ categories }) => {
         </Link>
 
         <Link
+          class="sidenav_menu_item"
           href="/resellers"
           onClick={() => {
             closeNav();
@@ -319,6 +315,7 @@ export const NavbarOptions = ({ categories }) => {
         </Link>
 
         <Link
+          class="sidenav_menu_item"
           href="/faq"
           onClick={() => {
             closeNav();
@@ -328,6 +325,7 @@ export const NavbarOptions = ({ categories }) => {
         </Link>
 
         <Link
+          class="sidenav_menu_item"
           href="/contact"
           onClick={() => {
             closeNav();
