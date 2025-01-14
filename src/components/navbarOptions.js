@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 
 import Link from "next/link";
 
+import logo_footer from "../images/logo/logo-small-footer.png";
+
 import { usePathname } from "next/navigation";
 
 import { useCartStore } from "../store/cart";
@@ -51,6 +53,14 @@ export const NavbarOptions = ({ categories }) => {
             className="main_menu_inner collapse navbar-collapse"
             id="main_menu_dropdown"
           >
+            <div align="center">
+              <Image
+                style={{ height: "100px", width: "100px" }}
+                src={logo_footer}
+                alt={logo_footer}
+              />
+            </div>
+
             <ul className="main_menu_list ul_li">
               {pathname === "/" ? (
                 <li className="active dropdown">
