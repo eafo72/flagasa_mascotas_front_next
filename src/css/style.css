@@ -1342,6 +1342,9 @@ hr {
 /* product tab nav 3 - end */
 /* product tab nav 4 - start */
 .product_tabnav_4 {
+  -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   margin-bottom: 45px;
 }
 .product_tabnav_4 > li {
