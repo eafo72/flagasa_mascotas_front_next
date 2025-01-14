@@ -305,7 +305,7 @@ export const NavbarOptions = ({ categories }) => {
                         </button>
                         <div
                           id={`accordion_primary`}
-                          className={`collapse ${isExpanded ? "show" : ""}`}
+                          className="collapse"
                           data-bs-parent={`#accordion_primary`}
                         >
                           <div className="accordion-body">
