@@ -19039,7 +19039,9 @@ hr {
 
 /* The navigation menu links */
 .sidenav a, .sidenav button {
-	padding: 8px 8px 8px 32px;
+	/*padding: 8px 8px 8px 32px;*/
+  height: 44px;
+  line-height: 44px;
 	text-decoration: none;
 	font-size: 18px;
 	color: white;
@@ -19079,6 +19081,12 @@ hr {
 
 .sidenav .separator{
   border-top: 1px solid #a2a2a2;
+}
+.sidenav span {
+  color:white;
+  border-left: 1px solid white;
+  width: 40px;
+  text-align: center;
 }
 
 

@@ -284,13 +284,13 @@ export const NavbarOptions = ({ categories }) => {
           class="sidenav_menu_item separator d-flex justify-content-between align-items-center"
           href="#menu_categorias"
           data-bs-toggle="collapse"
-          aria-expanded="true"
+          aria-expanded="false"
         >
           Fórmulas especializadas
           <span className="text-primary">+</span> {/* Ícono o indicador */}
         </Link>
 
-        <div id="menu_categorias" className="collapse show">
+        <div id="menu_categorias" className="collapse">
           {categories &&
             categories.map((item, index) => (
               <Link
