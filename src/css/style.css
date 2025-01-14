@@ -19082,11 +19082,12 @@ hr {
 }
 .sidenav .row_divider{
   border-left: 1px solid white;
-}
-.sidenav span {
-  color:white !important;
   width: 40px;
   text-align: center;
+}
+
+.sidenav span {
+  color:white !important;
 }
 
 
