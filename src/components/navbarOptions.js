@@ -29,7 +29,7 @@ export const NavbarOptions = ({ categories }) => {
     document.getElementById("mySidenav").style.width = "0";
   }
 
-  const [isExpanded, setIsExpanded] = useState(true);
+  const [isExpanded, setIsExpanded] = useState(false);
 
   const toggleMenu = () => {
     setIsExpanded(!isExpanded);
@@ -298,7 +298,7 @@ export const NavbarOptions = ({ categories }) => {
           onClick={toggleMenu}
         >
           Fórmulas especializadas
-          <span className="text-primary">{isExpanded ? "-" : "+"}</span> {/* Ícono o indicador */}
+          <span className="text-primary toggle-icon">{isExpanded ? "-" : "+"}</span> {/* Ícono o indicador */}
         </Link>
 
         <div id="menu_categorias" className={`collapse ${isExpanded ? "show" : ""}`}>
