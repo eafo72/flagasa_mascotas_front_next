@@ -203,7 +203,7 @@ const Page = async () => {
               </div>
               {/*Controles*/}
               <div className="col ">
-                <ul className="product_tabnav_4 nav ul_li_right" role="tablist">
+                <ul className="product_tabnav_4 nav" role="tablist">
                   {/*Active*/}
                   <li>
                     <button
