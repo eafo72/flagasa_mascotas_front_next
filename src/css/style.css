@@ -19099,6 +19099,19 @@ hr {
   transform: rotate(90deg); /* Símbolo "+" */
 }
 
+.collapse {
+  transition: max-height 0.3s ease-out; /* Suaviza el colapso */
+  overflow: hidden; /* Evita que el contenido se salga */
+}
+
+.collapse.show {
+  max-height: 1000px; /* Un valor grande para permitir expansión */
+}
+
+.collapse:not(.show) {
+  max-height: 0;
+}
+
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
 	transition: margin-left .5s;
