@@ -19094,11 +19094,11 @@ hr {
   transition: transform 0.3s ease;
 }
 
-[aria-expanded="true"] .toggle-icon {
+[aria-expanded="true"] .row_divider .toggle-icon {
   transform: rotate(0deg); /* Símbolo "-" */
 }
 
-[aria-expanded="false"] .toggle-icon {
+[aria-expanded="false"] .row_divider .toggle-icon {
   transform: rotate(90deg); /* Símbolo "+" */
 }
 
