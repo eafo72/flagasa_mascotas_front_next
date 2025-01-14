@@ -296,38 +296,20 @@ export const NavbarOptions = ({ categories }) => {
                           type="button"
                           data-bs-toggle="collapse"
                           data-bs-target={`#accordion_primary`}
-                          aria-expanded="false"
+                          aria-expanded={isExpanded}
                           aria-controls={`accordion_primary`}
                           onClick={toggleMenu}
                         >
                           Fórmulas especializadas
+                          <span className="text-primary toggle-icon">{isExpanded ? "-" : "+"}</span> {/* Ícono o indicador */}
                         </button>
                         <div
                           id={`accordion_primary`}
-                          className="collapse"
+                          className={`collapse ${isExpanded ? "show" : ""}`}
                           data-bs-parent={`#accordion_primary`}
                         >
                           <div className="accordion-body">
-                            <p>contenido</p>
-                          </div>
-                        </div>
-                      </div>
-
-        <Link
-          class="collapsed sidenav_menu_item separator d-flex justify-content-between align-items-center"
-          href="#menu_categorias"
-          data-bs-toggle="collapse"
-          aria-expanded={isExpanded}
-          aria-controls="menu_categorias"
-          role="button"
-          onClick={toggleMenu}
-        >
-          Fórmulas especializadas
-          <span className="text-primary toggle-icon">{isExpanded ? "-" : "+"}</span> {/* Ícono o indicador */}
-        </Link>
-
-        <div id="menu_categorias" className={`collapse ${isExpanded ? "show" : ""}`}>
-          {categories &&
+                          {categories &&
             categories.map((item, index) => (
               <Link
                 style={{borderTop: "1px solid #a2a2a2"}}
@@ -341,7 +323,15 @@ export const NavbarOptions = ({ categories }) => {
                 {item.nombre}
               </Link>
             ))}
-        </div>
+
+
+
+                          </div>
+                        </div>
+                      </div>
+
+       
+        
 
         <Link
           class="sidenav_menu_item separator"
