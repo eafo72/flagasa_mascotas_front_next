@@ -291,7 +291,7 @@ export const NavbarOptions = ({ categories }) => {
         </button>
 
         <Link
-          class="sidenav_menu_item separator d-flex justify-content-between align-items-center"
+          class="collapsed sidenav_menu_item separator d-flex justify-content-between align-items-center"
           href="#menu_categorias"
           data-bs-toggle="collapse"
           aria-expanded={isExpanded}
@@ -303,7 +303,7 @@ export const NavbarOptions = ({ categories }) => {
           <span className="text-primary toggle-icon">{isExpanded ? "-" : "+"}</span> {/* Ícono o indicador */}
         </Link>
 
-        <div id="menu_categorias" className={`collapse ${isExpanded ? "show" : ""}`} data-bs-parent="#menu_categorias">
+        <div id="menu_categorias" className={`collapse ${isExpanded ? "show" : ""}`}>
           {categories &&
             categories.map((item, index) => (
               <Link
