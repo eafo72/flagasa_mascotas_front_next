@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 
 import Link from "next/link";
 
+import Image from 'next/image'
 import logo_footer from "../images/logo/logo-small-footer.png";
 
 import { usePathname } from "next/navigation";

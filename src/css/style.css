@@ -19029,7 +19029,9 @@ hr {
 	/*background-image: linear-gradient(115deg, rgba(194,88,133,1), rgba(255,211,211,1), rgba(246,153,126,1));*/
   background-color: #000;
 	overflow: hidden; /* Disable horizontal scroll */
-	padding-top: 60px; /* Place content 60px from the top */
+	padding-top: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
 	transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
   border-bottom: 2px solid #25BC6C;
   border-right:  2px solid #25BC6C;
