@@ -19020,14 +19020,14 @@ hr {
 
 /* menu lateral*/
 .sidenav {
-	/*height: 50%; */ 
+	height: 100%;
 	width: 0; /* 0 width - change this with JavaScript */
 	position: fixed; /* Stay in place */
 	z-index: 99999999; /* Stay on top */
 	top: 0; /* Stay at the top */
-	left: 0;
+	right: 0;
 	/*background-image: linear-gradient(115deg, rgba(194,88,133,1), rgba(255,211,211,1), rgba(246,153,126,1));*/
-  background-color: #f4f6f7;
+  background-color: #000;
 	overflow: hidden; /* Disable horizontal scroll */
 	padding-top: 60px; /* Place content 60px from the top */
 	transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -19036,7 +19036,7 @@ hr {
 }
 
 /* The navigation menu links */
-.sidenav a {
+.sidenav a, .sidenav button {
 	padding: 8px 8px 8px 32px;
 	text-decoration: none;
 	font-size: 18px;
@@ -19050,7 +19050,7 @@ hr {
 }  
 
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
+.sidenav a:hover, .sidenav button:hover  {
 	color: #25BC6C;
 }
 

@@ -17,7 +17,7 @@ export const NavbarOptions = ({ categories }) => {
   const pathname = usePathname();
 
   function openNav() {
-    document.getElementById("mySidenav").style.width = "70%";
+    document.getElementById("mySidenav").style.width = "320px";
   }
 
   function closeNav() {
@@ -247,6 +247,8 @@ export const NavbarOptions = ({ categories }) => {
         </ul>
       </div>
 
+      {/*--------------------------------------------------------SIDENAV ----------------------------------------------*/}
+
       <div id="mySidenav" className="sidenav">
         <button
           className="closebtn"
@@ -258,7 +260,6 @@ export const NavbarOptions = ({ categories }) => {
         </button>
 
         <button
-          className="submenu"
           onClick={() => {
             closeNav(); // Llama a la función para cerrar el menú
             window.location.href = "/"; // Redirige a la página de inicio
@@ -304,7 +305,6 @@ export const NavbarOptions = ({ categories }) => {
           onClick={() => {
             closeNav();
           }}
-          className="submenu"
         >
           ¿Quiénes somos?
         </Link>
@@ -314,7 +314,6 @@ export const NavbarOptions = ({ categories }) => {
           onClick={() => {
             closeNav();
           }}
-          className="submenu"
         >
           Distribuidores
         </Link>
@@ -324,7 +323,6 @@ export const NavbarOptions = ({ categories }) => {
           onClick={() => {
             closeNav();
           }}
-          className="submenu"
         >
           FAQ
         </Link>
@@ -334,7 +332,6 @@ export const NavbarOptions = ({ categories }) => {
           onClick={() => {
             closeNav();
           }}
-          className="submenu"
         >
           Contacto
         </Link>
