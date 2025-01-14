@@ -211,7 +211,7 @@ const Page = async () => {
                   {/*Active*/}
                   <li>
                     <button
-                      className="active"
+                      className="btn tab_btn active"
                       data-bs-toggle="tab"
                       data-bs-target={`#${
                         categoriesSix &&
@@ -239,6 +239,7 @@ const Page = async () => {
                       .map((item) => (
                         <li key={item._id}>
                           <button
+                            class="btn tab_btn"
                             data-bs-toggle="tab"
                             data-bs-target={`#${item.nombre
                               .split(" ")
