@@ -52,6 +52,21 @@ export const NavbarOptions = ({ categories }) => {
             id="main_menu_dropdown"
           >
             <ul className="main_menu_list ul_li">
+
+            {pathname === "/" ? (
+                <li className="active dropdown">
+                  <Link className="nav-link" href="/">
+                    Inicio
+                  </Link>
+                </li>
+              ) : (
+                <li className="dropdown">
+                  <Link className="nav-link" href="/">
+                  Inicio
+                  </Link>
+                </li>
+              )}
+
               {pathname.startsWith("/categories") ? (
                 <li className="active dropdown">
                   <a
@@ -232,6 +247,16 @@ export const NavbarOptions = ({ categories }) => {
         >
           <i className="fal fa-times"></i>
         </button>
+
+        <Link
+          href="/"
+          onClick={() => {
+            closeNav();
+          }}
+          className="submenu"
+        >
+          Inicio
+        </Link>
 
         <Link
           href="#menu_categorias"

@@ -429,7 +429,7 @@ const Page = async () => {
                             <div className="tab-content">
                               <Link
                                 className="shop_image"
-                                href={`/categories/Todas/${item1.nombre}`}
+                                href={`/categories/Todas/${item1.nombreSlugged}`}
                               >
                                 <img
                                   src={`${item1.imagen}`}
@@ -444,7 +444,7 @@ const Page = async () => {
                               className="item_title"
                               style={{ textAlign: "center" }}
                             >
-                              <Link href={`/categories/Todas/${item1.nombre}`}>
+                              <Link href={`/categories/Todas/${item1.nombreSlugged}`}>
                                 {item1.nombre}
                               </Link>
                             </h3>
