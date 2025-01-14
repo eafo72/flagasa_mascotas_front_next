@@ -199,7 +199,7 @@ const Page = async () => {
           </section>
 
           {/* Productos */}
-          <section className="product_section ">
+          <section className="product_section sec_space_xlarge">
             <div className="space_rl_large">
               <div className="section_title_4 text-center">
                 <h2 className="small_title">Fórmulas</h2>
