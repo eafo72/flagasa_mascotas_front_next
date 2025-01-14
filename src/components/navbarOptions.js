@@ -298,9 +298,7 @@ export const NavbarOptions = ({ categories }) => {
           onClick={toggleMenu}
         >
           Fórmulas especializadas
-          <div class="row_divider">
-            <span className="text-primary toggle-icon">{isExpanded ? "-" : "+"}</span> {/* Ícono o indicador */}
-          </div>
+          <span className="text-primary toggle-icon">{isExpanded ? "-" : "+"}</span> {/* Ícono o indicador */}
         </Link>
 
         <div id="menu_categorias" className={`collapse ${isExpanded ? "show" : ""}`}>
