@@ -1,4 +1,3 @@
-
 import "bootstrap/dist/css/bootstrap.min.css";
 import ImportJSFiles from "./importJsFiles";
 
@@ -12,10 +11,9 @@ import "../css/image-gallery.css";
 import "../css/slick.css";
 import "../css/slick-theme.css";
 
-
 import clienteAxios from "../config/axios";
 
-import { Toaster, toast } from 'sonner';
+import { Toaster, toast } from "sonner";
 
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
@@ -25,14 +23,13 @@ const getSeo = async () => {
   try {
     const res = await clienteAxios.get(`/seo/single/658db30b8b40c216d72c8278`);
     //console.log(res.data.single)
-    
+
     /*
     setTitle(res.data.single.title);
     setWords(res.data.single.words);
     setDescription(res.data.single.description);
     */
     return res.data.single;
-    
   } catch (error) {
     console.log(error);
   }
@@ -44,23 +41,24 @@ export const metadata = {
   title: seoData.title,
   description: seoData.description,
   keywords: seoData.words,
-  author: "Goma Lab", 
   alternates: {
     canonical: "https://www.flagasamascotas.com",
   },
 };
 
 export default function RootLayout({ children }) {
-   
   return (
     <html lang="es">
+      <head>
+        <meta name="author" content="Goma Lab" />
+      </head>
       <body>
         <ImportJSFiles />
         <BackToTopButton />
-        <Navbar/>
-        <Toaster richColors position="top-right"/>
+        <Navbar />
+        <Toaster richColors position="top-right" />
         {children}
-        <Footer /> 
+        <Footer />
       </body>
     </html>
   );
