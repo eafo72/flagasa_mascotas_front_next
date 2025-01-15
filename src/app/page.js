@@ -195,7 +195,7 @@ const Page = async () => {
           </section>
 
           {/* Productos */}
-          <section className="product_section sec_constant">
+          <section className="product_section sec_space_constant">
             <div className="space_rl_large">
               <div className="section_title_4 text-center">
                 <h2 className="small_title">Fórmulas</h2>
