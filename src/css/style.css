@@ -18513,10 +18513,12 @@ hr {
     font-size: 18px;
   }
 
+  /*
   .product_tabnav_4 > li:not(:last-child) {
     margin-right: 20px;
     padding-right: 20px;
   }
+  */
 
   .product_tabnav_4 {
     margin-bottom: 30px;
