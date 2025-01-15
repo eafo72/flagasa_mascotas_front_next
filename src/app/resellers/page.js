@@ -168,51 +168,57 @@ const Resellers = async () => {
           </div>
         </section>
 
-        <form onSubmit={(e) => goSendMail(e)}>
-          <h2>Contacto</h2>
-          <div className="form_item">
-            <h3 className="input_title">Nombre</h3>
-            <input
-              onChange={(e) => setNombre(e.target.value)}
-              type="text"
-              name="nombre"
-              placeholder="Nombre"
-              id="nombre"
-            />
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-12">
+              <form onSubmit={(e) => goSendMail(e)}>
+                <h2>Solicita información</h2>
+                <div className="form_item">
+                  <h3 className="input_title">Nombre</h3>
+                  <input
+                    onChange={(e) => setNombre(e.target.value)}
+                    type="text"
+                    name="nombre"
+                    placeholder="Nombre"
+                    id="nombre"
+                  />
+                </div>
+                <div className="form_item">
+                  <h3 className="input_title">Teléfono</h3>
+                  <input
+                    onChange={(e) => setTelefono(e.target.value)}
+                    type="tel"
+                    name="telefono"
+                    placeholder="Teléfono"
+                    id="telefono"
+                  />
+                </div>
+                <div className="form_item">
+                  <h3 className="input_title">Correo</h3>
+                  <input
+                    onChange={(e) => setCorreo(e.target.value)}
+                    type="email"
+                    name="correo"
+                    placeholder="Correo"
+                    id="correo"
+                  />
+                </div>
+                <div className="form_item">
+                  <h3 className="input_title">Mensaje</h3>
+                  <textarea
+                    onChange={(e) => setMensaje(e.target.value)}
+                    name="mensaje"
+                    placeholder="Escribe tu mensaje"
+                    id="mensaje"
+                  ></textarea>
+                </div>
+                <button className="btn btn_primary btn_rounded" type="submit">
+                  Enviar
+                </button>
+              </form>
+            </div>
           </div>
-          <div className="form_item">
-            <h3 className="input_title">Teléfono</h3>
-            <input
-              onChange={(e) => setTelefono(e.target.value)}
-              type="tel"
-              name="telefono"
-              placeholder="Teléfono"
-              id="telefono"
-            />
-          </div>
-          <div className="form_item">
-            <h3 className="input_title">Correo</h3>
-            <input
-              onChange={(e) => setCorreo(e.target.value)}
-              type="email"
-              name="correo"
-              placeholder="Correo"
-              id="correo"
-            />
-          </div>
-          <div className="form_item">
-            <h3 className="input_title">Mensaje</h3>
-            <textarea
-              onChange={(e) => setMensaje(e.target.value)}
-              name="mensaje"
-              placeholder="Escribe tu mensaje"
-              id="mensaje"
-            ></textarea>
-          </div>
-          <button className="btn btn_primary btn_rounded" type="submit">
-            Enviar
-          </button>
-        </form>
+        </div>
       </main>
     </>
   );
