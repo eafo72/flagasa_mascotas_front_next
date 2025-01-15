@@ -12108,10 +12108,24 @@ hr {
 
 /* cart 3 - end */
 /* cart - end
+
+/*================================================ */
+/* contact page - start
 ================================================== */
+/* faq section - start */
+.contact_section {
+  background-color: #f4f6f7;
+}
+/*================================================ */
+/* contact page - end
+================================================== */
+/*================================================== */
 /* faq page - start
 ================================================== */
 /* faq section - start */
+.faq_section {
+  background-color: #f4f6f7;
+}
 .faq_section.bg_black {
   background-color: #1d1d1d;
 }
@@ -18979,7 +18993,7 @@ hr {
   }
 
   .sec_space_custom {
-    padding-top: 30px;
+    padding-top: 50px;
     padding-bottom: 30px;
   }
 
