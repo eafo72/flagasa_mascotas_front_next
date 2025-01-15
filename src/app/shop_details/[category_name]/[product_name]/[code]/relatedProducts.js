@@ -18,7 +18,7 @@ export const RelatedProducts = ({ productosRelacionados, codigo }) => {
                   element.codigo !== codigo 
               )
               .map((item, index) => (
-                <div key={index} className="col col-lg-3 col-md-4 col-sm-6">
+                <div key={index} className="col-6 col-md-4 col-lg-3">
                   <ProductPreviewCard item={item}/>
                 </div>
               ))}
