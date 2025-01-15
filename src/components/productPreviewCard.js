@@ -17,6 +17,7 @@ import { FacebookShareButton, FacebookIcon } from "react-share";
 import { toast } from "sonner";
 
 export const ProductPreviewCard = ({ item }) => {
+  console.log(item);
   const addCartItem = useCartStore((state) => state.add_cart_item);
   const { cart } = useCartStore();
 
