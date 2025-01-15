@@ -4423,7 +4423,7 @@ hr {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  margin-top: 57px;
+  margin-top: 0px;
 }
 .slider_section .thumbnail_item {
   cursor: pointer;
@@ -16695,7 +16695,7 @@ hr {
   .slider_section .slider_item {
     min-height: auto;
     padding: 100px 0 200px;
-    margin-top: 100px;
+    margin-top: 0px;
   }
 
   .main_slider_5 .slider_nav {
