@@ -15,29 +15,29 @@ import img_solvencia from "../../images/resellers/solvencia.png";
 import img_vision from "../../images/resellers/vision.png";
 
 const Resellers = async () => {
-  const [nombre, setNombre] = useState();
-  const [telefono, setTelefono] = useState();
-  const [correo, setCorreo] = useState();
-  const [mensaje, setMensaje] = useState();
+  const [nombre1, setNombre1] = useState();
+  const [telefono1, setTelefono1] = useState();
+  const [correo1, setCorreo1] = useState();
+  const [mensaje1, setMensaje1] = useState();
 
-  const mostrarMensaje = (mensaje) => {
-    toast.error(mensaje);
+  const mostrarMensaje = (mensaje1) => {
+    toast.error(mensaje1);
   };
 
-  const mostrarAviso = (mensaje) => {
-    toast.success(mensaje);
+  const mostrarAviso = (mensaje1) => {
+    toast.success(mensaje1);
   };
 
   async function goSendMail(event) {
     event.preventDefault();
 
-    if (nombre === "" || nombre === undefined) {
+    if (nombre1 === "" || nombre1 === undefined) {
       mostrarMensaje("Debes escribir tu nombre");
-    } else if (telefono === "" || telefono === undefined) {
+    } else if (telefono1 === "" || telefono1 === undefined) {
       mostrarMensaje("Debes escribir tu teléfono");
-    } else if (correo === "" || correo === undefined) {
+    } else if (correo1 === "" || correo1 === undefined) {
       mostrarMensaje("Debes escribir tu correo");
-    } else if (mensaje === "" || mensaje === undefined) {
+    } else if (mensaje1 === "" || mensaje1 === undefined) {
       mostrarMensaje("Debes escribir un mensaje");
     } else {
       const sendMail = async (dataForm) => {
@@ -48,15 +48,15 @@ const Resellers = async () => {
             "Gracias, hemos recibido tu mensaje, pronto estarémos en contacto."
           );
 
-          setNombre(null);
-          setTelefono(null);
-          setCorreo(null);
-          setMensaje(null);
+          setNombre1(null);
+          setTelefono1(null);
+          setCorreo1(null);
+          setMensaje1(null);
 
-          document.getElementById("nombre").value = "";
-          document.getElementById("telefono").value = "";
-          document.getElementById("correo").value = "";
-          document.getElementById("mensaje").value = "";
+          document.getElementById("nombre1").value = "";
+          document.getElementById("telefono1").value = "";
+          document.getElementById("correo1").value = "";
+          document.getElementById("mensaje1").value = "";
         } catch (error) {
           console.log(error);
           mostrarMensaje(error.response.data.msg);
@@ -64,10 +64,10 @@ const Resellers = async () => {
       };
 
       sendMail({
-        nombre,
-        telefono,
-        correo,
-        mensaje,
+        nombre1,
+        telefono1,
+        correo1,
+        mensaje1,
       });
     }
   }
@@ -176,40 +176,40 @@ const Resellers = async () => {
                 <div className="form_item">
                   <h3 className="input_title">Nombre</h3>
                   <input
-                    onChange={(e) => setNombre(e.target.value)}
+                    onChange={(e) => setNombre1(e.target.value)}
                     type="text"
                     name="nombre"
                     placeholder="Nombre"
-                    id="nombre"
+                    id="nombre1"
                   />
                 </div>
                 <div className="form_item">
                   <h3 className="input_title">Teléfono</h3>
                   <input
-                    onChange={(e) => setTelefono(e.target.value)}
+                    onChange={(e) => setTelefono1(e.target.value)}
                     type="tel"
                     name="telefono"
                     placeholder="Teléfono"
-                    id="telefono"
+                    id="telefono1"
                   />
                 </div>
                 <div className="form_item">
                   <h3 className="input_title">Correo</h3>
                   <input
-                    onChange={(e) => setCorreo(e.target.value)}
+                    onChange={(e) => setCorreo1(e.target.value)}
                     type="email"
                     name="correo"
                     placeholder="Correo"
-                    id="correo"
+                    id="correo1"
                   />
                 </div>
                 <div className="form_item">
                   <h3 className="input_title">Mensaje</h3>
                   <textarea
-                    onChange={(e) => setMensaje(e.target.value)}
+                    onChange={(e) => setMensaje1(e.target.value)}
                     name="mensaje"
                     placeholder="Escribe tu mensaje"
-                    id="mensaje"
+                    id="mensaje1"
                   ></textarea>
                 </div>
                 <button className="btn btn_primary btn_rounded" type="submit">
