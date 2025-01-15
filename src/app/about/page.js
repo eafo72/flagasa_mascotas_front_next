@@ -35,8 +35,8 @@ const About = async () => {
                     <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
                       <Image
                         class="img-stretch"
-                        src={about_image}
-                        alt={about_image}
+                        src={about_banner}
+                        alt={about_banner}
                       />
                     </div>
                   </div>
