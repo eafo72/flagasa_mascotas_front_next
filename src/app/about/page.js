@@ -32,9 +32,9 @@ const About = async () => {
               <div className="col-lg-10">
                 <div style={{ padding: "30px 0px" }}>
                   <div class="row ">
-                    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                    <div class="col-12 d-flex justify-content-center align-items-center">
                       <Image
-                        class="img-stretch"
+                        class="img-stretch pb-3"
                         src={about_banner}
                         alt={about_banner}
                       />
