@@ -7918,6 +7918,10 @@ hr {
   display: inline-block;
 }
 
+.categories_control{
+  display: flex;
+}
+
 .filter_input_group {
   padding: 40px;
   margin-bottom: 30px;
@@ -17923,6 +17927,10 @@ hr {
 /* media screen and (max-width: 575px) - start
 ================================================== */
 @media screen and (max-width: 575px) {
+
+  .categories_control{
+    display: inline-block;
+  }
 
   .shop_layout_4 .item_title {
     font-size: .85rem;

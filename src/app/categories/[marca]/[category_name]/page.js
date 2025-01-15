@@ -91,7 +91,7 @@ const AllCategories = async ({ params }) => {
             <div className="filter_input_group">
               <form action="#">
                 <ul className="items_col ul_li">
-                  <li style={{display:"flex"}}>
+                  <li class="categories_control">
                     <h4 className="item_title text-uppercase">Fórmulas especializadas</h4>
                     <div className="select_option clearfix">
                       <CategorySelector
