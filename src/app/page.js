@@ -332,7 +332,7 @@ const Page = async () => {
 
           {/* ultima seccion */}
           <section
-            className="fullwidth_feature_1 sec_space_large"
+            className="fullwidth_feature_1 sec_space_small"
             style={{ paddingTop: "70px", paddingBottom: "30px" }}
           >
             <div className="space_rl_large">
