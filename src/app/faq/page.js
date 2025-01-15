@@ -7,7 +7,7 @@ const Faq = async () => {
   const getFaqs = async () => {
     try {
       const res = await clienteAxios.get(`/faq/obtener`);
-      //console.log(res.data.faqs)
+      console.log(res.data.faqs)
       return res.data.faqs;
     } catch (error) {
       console.log(error);
