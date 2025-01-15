@@ -14,8 +14,7 @@ import img_potencial from "../../images/resellers/potencial.png";
 import img_solvencia from "../../images/resellers/solvencia.png";
 import img_vision from "../../images/resellers/vision.png";
 
-
-export const Resellers = () => {  
+const Resellers = () => {
   const [nombre, setNombre] = useState();
   const [telefono, setTelefono] = useState();
   const [correo, setCorreo] = useState();
@@ -226,3 +225,4 @@ export const Resellers = () => {
   );
 };
 
+export default Resellers;
