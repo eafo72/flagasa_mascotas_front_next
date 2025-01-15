@@ -170,9 +170,10 @@ const Resellers = () => {
 
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-lg-12 text-center">
-              <form onSubmit={(e) => goSendMail(e)}>
-                <h2>Solicita información</h2>
+            <div className="col-lg-12">
+              <h2>Solicita información</h2>
+              <form class="text-center" onSubmit={(e) => goSendMail(e)}>
+                
                 <div className="form_item">
                   <h3 className="input_title">Nombre</h3>
                   <input
