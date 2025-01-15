@@ -170,7 +170,7 @@ const Resellers = async () => {
 
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-lg-12">
+            <div className="col-lg-12 text-center">
               <form onSubmit={(e) => goSendMail(e)}>
                 <h2>Solicita información</h2>
                 <div className="form_item">
@@ -216,6 +216,7 @@ const Resellers = async () => {
                   Enviar
                 </button>
               </form>
+              <br/>
             </div>
           </div>
         </div>
