@@ -1,7 +1,7 @@
 import Link from "next/link";
-import Image from 'next/image';
+import Image from "next/image";
 import about_image from "../../images/about/about-vision.jpg";
-
+import about_banner from "../../images/banner/flagasa_banner_quienes_somos.jpg";
 
 const About = async () => {
   return (
@@ -31,7 +31,16 @@ const About = async () => {
             <div className="row justify-content-center">
               <div className="col-lg-10">
                 <div style={{ padding: "30px 0px" }}>
-                  <h2 class="fw-bold pt-3 pb-5">FLAGASA MASCOTAS</h2>
+                  <div class="row ">
+                    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                      <Image
+                        class="img-stretch"
+                        src={about_image}
+                        alt={about_image}
+                      />
+                    </div>
+                  </div>
+
                   <p>
                     Somos una empresa 100% mexicana, líder en la producción de
                     alimento balanceado para animales. Tenemos más de 65 años de
@@ -52,13 +61,13 @@ const About = async () => {
                     nutriologos especializados en cada una de las especies ,está
                     altamente calificado y comprometido para satisfacer las
                     necesidades de nuestros clientes;esto nos permite incorporar
-                    avances nutricionales más relevantes en la
-                    actualidad. Entendemos perfectamente las necesidades del
-                    mercado ya que somos una planta de alimentos comercial
-                    integrada con granjas de producción de cerdos y pollos.
+                    avances nutricionales más relevantes en la actualidad.
+                    Entendemos perfectamente las necesidades del mercado ya que
+                    somos una planta de alimentos comercial integrada con
+                    granjas de producción de cerdos y pollos.
                   </p>
-                  <br/>
-                  <br/>
+                  <br />
+                  <br />
                   <div class="row ">
                     <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
                       <Image
