@@ -305,7 +305,7 @@ hr {
 
 /* right left space - end */
 /* top bottom space - start */
-.sec_space_constant {
+.sec_space_custom {
   padding-top: 100px;
   padding-bottom: 30px;
 }
@@ -14641,6 +14641,11 @@ hr {
 ================================================== */
 @media screen and (max-width: 1360px) {
   /* space - start */
+  .sec_space_custom {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  
   .sec_space_xlarge {
     padding-top: 50px;
     padding-bottom: 100px;
@@ -18971,6 +18976,11 @@ hr {
   .breadcrumb_section {
     padding-top: 100px;
     padding-bottom: 0px;
+  }
+
+  .sec_space_custom {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .sec_space_xlarge {
