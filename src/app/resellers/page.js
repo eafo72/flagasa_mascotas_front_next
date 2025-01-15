@@ -171,9 +171,8 @@ const Resellers = () => {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-12">
-              <h2>Solicita información</h2>
-              <form class="text-center" onSubmit={(e) => goSendMail(e)}>
-                
+              <form onSubmit={(e) => goSendMail(e)}>
+                <h2 class="text-center">Solicita información</h2>
                 <div className="form_item">
                   <h3 className="input_title">Nombre</h3>
                   <input
@@ -213,11 +212,13 @@ const Resellers = () => {
                     id="mensaje"
                   ></textarea>
                 </div>
-                <button className="btn btn_primary btn_rounded" type="submit">
-                  Enviar
-                </button>
+                <div class="text-center">
+                  <button className="btn btn_primary btn_rounded" type="submit">
+                    Enviar
+                  </button>
+                </div>
               </form>
-              <br/>
+              <br />
             </div>
           </div>
         </div>
