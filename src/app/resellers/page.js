@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 
 import clienteAxios from "../../config/axios";
@@ -12,7 +14,8 @@ import img_potencial from "../../images/resellers/potencial.png";
 import img_solvencia from "../../images/resellers/solvencia.png";
 import img_vision from "../../images/resellers/vision.png";
 
-const Resellers = async () => {
+
+export const Resellers = () => {  
   const [nombre, setNombre] = useState();
   const [telefono, setTelefono] = useState();
   const [correo, setCorreo] = useState();
@@ -223,4 +226,3 @@ const Resellers = async () => {
   );
 };
 
-export default Resellers;
