@@ -1,5 +1,5 @@
-import React from "react";
-import Link from "next/link";
+import React from 'react';
+import Link from 'next/link';
 
 export default function NotFound() {
   return (
@@ -9,15 +9,10 @@ export default function NotFound() {
       <p className="lead">
         Lo sentimos, la página que buscas no existe o ha sido movida.
       </p>
-
-      <button
-        className="btn btn-primary btn-rounded btn-view mt-3"
-        onClick={() => {
-          window.location.href = "/"; // Redirige a la página de inicio
-        }}
-      >
-        Volver al inicio
-      </button>
+      
+      <Link href="/">
+        <a className="btn btn-primary btn-rounded btn-view mt-3">Volver al inicio</a>
+      </Link>
     </div>
   );
 }
