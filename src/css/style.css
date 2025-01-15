@@ -3842,7 +3842,7 @@ hr {
   /*min-height: 680px;*/
   position: relative;
   padding-top: 100px;
-  padding-bottom: 0px;
+  padding-bottom: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -17021,7 +17021,7 @@ hr {
 
   .breadcrumb_section {
     padding-top: 100px;
-    padding-bottom: 0;
+    padding-bottom: 20px;
     
   }
 
@@ -18989,7 +18989,7 @@ hr {
 
   .breadcrumb_section {
     padding-top: 100px;
-    padding-bottom: 0px;
+    padding-bottom: 20px;
   }
 
   .sec_space_custom {
