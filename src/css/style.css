@@ -305,6 +305,11 @@ hr {
 
 /* right left space - end */
 /* top bottom space - start */
+.sec_space_constant {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .sec_space_xlarge {
   padding-top: 150px;
   padding-bottom: 150px;
