@@ -12,7 +12,7 @@ import { CategoryItemSmall } from "../components/CategoryItemSmall";
 
 import ImportSlickJS from "./importSlickJs";
 
-
+import { motion } from "framer-motion";
 
 const getCategories = async () => {
   try {
@@ -109,7 +109,7 @@ const Page = async () => {
                     Alimento para gato super premium
                   </h3>
                   <p data-animation="fadeInUp2" data-delay=".5s">
-                  con proteínas de salmón y carne.
+                    con proteínas de salmón y carne.
                   </p>
                   <Link
                     className="btn btn_primary btn_rounded btn-view"
@@ -142,7 +142,7 @@ const Page = async () => {
                     Fórmula para perro super premium.
                   </h3>
                   <p data-animation="fadeInUp2" data-delay=".5s">
-                  Proteínas de carne como primer ingrediente.
+                    Proteínas de carne como primer ingrediente.
                   </p>
                   <Link
                     className="btn btn_primary btn_rounded btn-view"
@@ -205,7 +205,10 @@ const Page = async () => {
               </div>
               {/*Controles*/}
               <div className="col ">
-                <ul className="product_tabnav_4 nav ul_li_center" role="tablist">
+                <ul
+                  className="product_tabnav_4 nav ul_li_center"
+                  role="tablist"
+                >
                   {/*Active*/}
                   <li>
                     <button
@@ -355,19 +358,20 @@ const Page = async () => {
 
                     <ul className="info_list ul_li_block">
                       <li>
-                        <motion.div className="icon"
-                         initial={{ opacity: 0, y: 50 }}
-                         whileInView={{ opacity: 1, y: 0 }}
-                         transition={{ duration: 0.5 }}
-                         viewport={{ once: true }}
-                        >
-                          <img
-                            src="https://agencianuba.com/flagasamascotas_front_images/icons/icon-insumos.png"
-                            alt="image_not_found"
-                            style={{ maxHeight: "60px" }}
-                            
-                          />
-                        </motion.div>
+                        <div className="icon">
+                          <motion.div
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5 }}
+                            viewport={{ once: true }}
+                          >
+                            <img
+                              src="https://agencianuba.com/flagasamascotas_front_images/icons/icon-insumos.png"
+                              alt="image_not_found"
+                              style={{ maxHeight: "60px" }}
+                            />
+                          </motion.div>
+                        </div>
                         <div className="content">
                           <h3>Insumos de primera</h3>
                           <span>Tenemos certificaciones que lo avalan.</span>
@@ -449,7 +453,9 @@ const Page = async () => {
                               className="item_title"
                               style={{ textAlign: "center" }}
                             >
-                              <Link href={`/categories/Todas/${item1.nombreSlugged}`}>
+                              <Link
+                                href={`/categories/Todas/${item1.nombreSlugged}`}
+                              >
                                 {item1.nombre}
                               </Link>
                             </h3>
