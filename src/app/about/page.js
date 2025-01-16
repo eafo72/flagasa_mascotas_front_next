@@ -3,6 +3,9 @@ import Image from "next/image";
 import about_image from "../../images/about/about-vision.jpg";
 import about_banner from "../../images/banner/flagasa_banner_quienes_somos.jpg";
 
+import mision_image from "../../images/about/mision_image.png";
+import vision_image from "../../images/about/vision_image.png";
+
 const About = async () => {
   return (
     <>
@@ -79,19 +82,42 @@ const About = async () => {
                     <div class="col-12 col-md-6">
                       <h2 class="fw-bold pt-3 pb-5">NUESTROS VALORES</h2>
 
-                      <h4 class="fw-bold">Misión</h4>
-                      <p>
-                        Fabricar alimentos balanceados de la más alta calidad
-                        que sean rentables para Nuestros Clientes.
-                      </p>
+                      <div class="row">
+                        <div class="col-12 col-md-4">
+                          <Image
+                            class="img-stretch"
+                            src={mision_image}
+                            alt={mision_image}
+                          />
+                        </div>
+                        <div class="col-12 col-md-8">
+                          <h4 class="fw-bold">Misión</h4>
+                          <p>
+                            Fabricar alimentos balanceados de la más alta
+                            calidad que sean rentables para Nuestros Clientes.
+                          </p>
+                        </div>
+                      </div>
 
-                      <h4 class="fw-bold">Visión</h4>
-                      <p>
-                        Contribuir al bienestar de todos los integrantes de la
-                        cadena productiva ofreciendo servicios y alimentos
-                        seguros, diseñados con los últimos avances en nutrición
-                        y tecnología en la elaboración de Alimentos Balanceados.
-                      </p>
+                      <div class="row">
+                        <div class="col-12 col-md-4">
+                          <Image
+                            class="img-stretch"
+                            src={mision_image}
+                            alt={mision_image}
+                          />
+                        </div>
+                        <div class="col-12 col-md-8">
+                          <h4 class="fw-bold">Visión</h4>
+                          <p>
+                            Contribuir al bienestar de todos los integrantes de
+                            la cadena productiva ofreciendo servicios y
+                            alimentos seguros, diseñados con los últimos avances
+                            en nutrición y tecnología en la elaboración de
+                            Alimentos Balanceados.
+                          </p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
