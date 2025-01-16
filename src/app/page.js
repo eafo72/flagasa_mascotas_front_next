@@ -68,7 +68,7 @@ const Page = async () => {
                 <div className="slider_content">
                   <h3
                     className="item_title"
-                    data-animation="fadeInUp2"
+                    data-animation="fadeInleft"
                     data-delay=".3s"
                   >
                     Nutrición balanceada con proteína de salmón.
@@ -353,8 +353,7 @@ const Page = async () => {
 
                     <ul className="info_list ul_li_block">
                       <li>
-                        <div className="icon" data-animation="fadeInLeft"
-                            data-delay=".3s">
+                        <div className="icon">
                           <img
                             src="https://agencianuba.com/flagasamascotas_front_images/icons/icon-insumos.png"
                             alt="image_not_found"
@@ -373,8 +372,6 @@ const Page = async () => {
                             src="https://agencianuba.com/flagasamascotas_front_images/icons/icon-especialistas.png"
                             alt="image_not_found"
                             style={{ maxHeight: "60px" }}
-                            data-animation="fadeInUp2"
-                            data-delay=".6s"
                           />
                         </div>
                         <div className="content">
@@ -388,8 +385,6 @@ const Page = async () => {
                             src="https://agencianuba.com/flagasamascotas_front_images/icons/icon-sabor.png"
                             alt="image_not_found"
                             style={{ maxHeight: "60px" }}
-                            data-animation="fadeInUp2"
-                            data-delay=".9s"
                           />
                         </div>
                         <div className="content">
