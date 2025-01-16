@@ -359,21 +359,21 @@ const Page = async () => {
                     <ul className="info_list ul_li_block">
                       <li>
                         <div className="icon">
-                          <motion.div
-                            initial={{ opacity: 0, y: 50 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.5 }}
-                            viewport={{ once: true }}
-                          >
                             <img
                               src="https://agencianuba.com/flagasamascotas_front_images/icons/icon-insumos.png"
                               alt="image_not_found"
                               style={{ maxHeight: "60px" }}
                             />
-                          </motion.div>
                         </div>
                         <div className="content">
+                        <motion.div
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5 }}
+                            viewport={{ once: true }}
+                          >
                           <h3>Insumos de primera</h3>
+                          </motion.div>
                           <span>Tenemos certificaciones que lo avalan.</span>
                         </div>
                       </li>
