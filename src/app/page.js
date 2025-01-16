@@ -68,7 +68,7 @@ const Page = async () => {
                 <div className="slider_content">
                   <h3
                     className="item_title"
-                    data-animation="fadeInleft"
+                    data-animation="fadeInLeft"
                     data-delay=".3s"
                   >
                     Nutrición balanceada con proteína de salmón.
