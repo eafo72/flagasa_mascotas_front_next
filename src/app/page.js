@@ -353,13 +353,13 @@ const Page = async () => {
 
                     <ul className="info_list ul_li_block">
                       <li>
-                        <div className="icon">
+                        <div className="icon" data-animation="fadeInLeft"
+                            data-delay=".3s">
                           <img
                             src="https://agencianuba.com/flagasamascotas_front_images/icons/icon-insumos.png"
                             alt="image_not_found"
                             style={{ maxHeight: "60px" }}
-                            data-animation="fadeInLeft"
-                            data-delay=".3s"
+                            
                           />
                         </div>
                         <div className="content">
