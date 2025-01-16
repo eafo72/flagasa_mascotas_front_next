@@ -13,6 +13,8 @@ import { CategoryItemSmall } from "../components/CategoryItemSmall";
 import ImportSlickJS from "./importSlickJs";
 
 import { IconOne } from "../components/IconOne";
+import { IconTwo } from "../components/IconTwo";
+import { IconThree } from "../components/IconThree";
 
 const getCategories = async () => {
   try {
@@ -362,26 +364,14 @@ const Page = async () => {
                         </div>
                       </li>
                       <li>
-                        <div className="icon">
-                          <img
-                            src="https://agencianuba.com/flagasamascotas_front_images/icons/icon-especialistas.png"
-                            alt="image_not_found"
-                            style={{ maxHeight: "60px" }}
-                          />
-                        </div>
+                        <IconTwo></IconTwo>
                         <div className="content">
                           <h3>Creado por especialistas</h3>
                           <span>Nutriólogos y Veterinarios apasionados.</span>
                         </div>
                       </li>
                       <li>
-                        <div className="icon">
-                          <img
-                            src="https://agencianuba.com/flagasamascotas_front_images/icons/icon-sabor.png"
-                            alt="image_not_found"
-                            style={{ maxHeight: "60px" }}
-                          />
-                        </div>
+                        <IconThree></IconThree>
                         <div className="content">
                           <h3>Sabor y nutrición</h3>
                           <span>

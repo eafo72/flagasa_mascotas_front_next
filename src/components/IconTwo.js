@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 
-export const IconOne = () => {
+export const IconTwo = () => {
   return (
     <>
       <motion.div
@@ -13,7 +13,7 @@ export const IconOne = () => {
         viewport={{ once: false, amount: 0.5 }} // Activa la animación cada vez que el 50% del elemento es visible
       >
         <img
-          src="https://agencianuba.com/flagasamascotas_front_images/icons/icon-insumos.png"
+          src="https://agencianuba.com/flagasamascotas_front_images/icons/icon-especialistas.png"
           alt="image_not_found"
           style={{ maxHeight: "60px" }}
         />
