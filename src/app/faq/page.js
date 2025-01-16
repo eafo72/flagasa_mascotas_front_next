@@ -38,7 +38,7 @@ const Faq = async () => {
           </div>
         </section>
 
-        <section className="faq_section" style={{paddingTop:"20px"}}>
+        <section className="faq_section" style={{paddingTop:"20px", minHeight:"50vh"}}>
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-lg-6">
