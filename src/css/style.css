@@ -333,6 +333,10 @@ hr {
 .load_more {
   margin-top: 60px;
 }
+.btn-view{
+  color: #25bc6c !important; 
+  background-color: transparent !important;
+}
 
 .btn {
   outline: none;
@@ -15113,6 +15117,12 @@ hr {
   .category_item_3 ul li .item_image img {
     max-height: 35px;
   }
+
+  .main_menu_list > li:not(:last-child) {
+    margin-right: 18px;
+    padding-right: 18px;
+  }
+
 }
 /* media screen and (max-width: 1360px) - end
 ================================================== */
@@ -17693,10 +17703,7 @@ hr {
   .shop_layout_1 .action_btns_group{
     display: none;
   }
-  .btn-view{
-    color: #25bc6c !important; 
-    background-color: transparent !important;
-  }
+  
   /* header - start */
   .megamenu .homepage_list > li {
     width: 20%;
