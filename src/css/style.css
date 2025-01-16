@@ -337,6 +337,10 @@ hr {
   color: #25bc6c !important; 
   background-color: transparent !important;
 }
+.btn-view:hover{
+  color: white !important; 
+  background-color: #25bc6c !important;
+}
 
 .btn {
   outline: none;
