@@ -68,7 +68,7 @@ const Page = async () => {
                 <div className="slider_content">
                   <h3
                     className="item_title"
-                    data-animation="fadeInLeft"
+                    data-animation="fadeInUp2"
                     data-delay=".3s"
                   >
                     Nutrición balanceada con proteína de salmón.
@@ -353,7 +353,8 @@ const Page = async () => {
 
                     <ul className="info_list ul_li_block">
                       <li>
-                        <div className="icon">
+                        <div className="icon"  data-animation="fadeInLeft"
+                    data-delay=".3s">
                           <img
                             src="https://agencianuba.com/flagasamascotas_front_images/icons/icon-insumos.png"
                             alt="image_not_found"
