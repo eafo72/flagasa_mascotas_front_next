@@ -358,6 +358,8 @@ const Page = async () => {
                             src="https://agencianuba.com/flagasamascotas_front_images/icons/icon-insumos.png"
                             alt="image_not_found"
                             style={{ maxHeight: "60px" }}
+                            data-animation="fadeInUp2"
+                            data-delay=".3s"
                           />
                         </div>
                         <div className="content">
@@ -371,6 +373,8 @@ const Page = async () => {
                             src="https://agencianuba.com/flagasamascotas_front_images/icons/icon-especialistas.png"
                             alt="image_not_found"
                             style={{ maxHeight: "60px" }}
+                            data-animation="fadeInUp2"
+                            data-delay=".6s"
                           />
                         </div>
                         <div className="content">
@@ -384,6 +388,8 @@ const Page = async () => {
                             src="https://agencianuba.com/flagasamascotas_front_images/icons/icon-sabor.png"
                             alt="image_not_found"
                             style={{ maxHeight: "60px" }}
+                            data-animation="fadeInUp2"
+                            data-delay=".9s"
                           />
                         </div>
                         <div className="content">
