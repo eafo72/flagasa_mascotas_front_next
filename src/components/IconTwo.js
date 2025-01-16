@@ -15,7 +15,7 @@ export const IconTwo = () => {
         //whileInView={{ opacity: 1, rotate: 0 }} // Se vuelve visible y rota a 0°
         initial={{ opacity: 0, rotateX: -90 }} // Empieza invisible y rotado sobre el eje X
         whileInView={{ opacity: 1, rotateX: 0 }} // Se vuelve visible y regresa a posición normal
-        transition={{ type: "spring", stiffness: 100 }}
+        transition={{ duration: 0.8, ease: "easeOut" }} // Duración y tipo de animación
         viewport={{ once: false, amount: 0.5 }} // Activa la animación cada vez que el 50% del elemento es visible
       >
         <img
