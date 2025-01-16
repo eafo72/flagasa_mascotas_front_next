@@ -385,7 +385,7 @@ export const ProductPreviewCard = ({ item }) => {
             <div className="modal-body">
               <div className="shop_details bg_gray sec_space_small">
                 <div className="container">
-                  <div className="row align-items-center justify-content-center">
+                  <div className="row justify-content-center">
                     <div className="col col-lg-6 col-md-8">
                       <div className="sd_image_carousel p-0">
                         <img
