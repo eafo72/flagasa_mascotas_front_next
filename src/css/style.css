@@ -15722,6 +15722,15 @@ hr {
 }
 /* media screen and (max-width: 1199px) - end
 ================================================== */
+
+/* media screen and (max-width: 1150px) - start
+================================================== */
+@media screen and (max-width: 1150px) {
+  .main_menu_list > li > a {
+    font-size: 16px;
+    padding: 10px 0px;
+  }
+}
 /* media screen and (max-width: 1024px) - start
 ================================================== */
 @media screen and (max-width: 1024px) {
