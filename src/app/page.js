@@ -12,7 +12,7 @@ import { CategoryItemSmall } from "../components/CategoryItemSmall";
 
 import ImportSlickJS from "./importSlickJs";
 
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 const getCategories = async () => {
   try {
