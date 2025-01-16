@@ -13,7 +13,7 @@ export const IconThree = () => {
         //transition={{ duration: 0.8, ease: "easeOut" }} // Duración de la animación con efecto suave
         initial={{ opacity: 0, rotate: -180 }} // Comienza invisible y rotado -180°
         whileInView={{ opacity: 1, rotate: 0 }} // Se vuelve visible y rota a 0°
-        transition={{ type: "spring", stiffness: 100 }}
+        transition={{ type: "spring", stiffness: 120 }} //efecto rebote
         viewport={{ once: false, amount: 0.5 }} // Activa la animación cada vez que el 50% del elemento es visible
       >
         <img
