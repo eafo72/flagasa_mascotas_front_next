@@ -358,7 +358,7 @@ const Page = async () => {
                             src="https://agencianuba.com/flagasamascotas_front_images/icons/icon-insumos.png"
                             alt="image_not_found"
                             style={{ maxHeight: "60px" }}
-                            data-animation="fadeInUp2"
+                            data-animation="fadeInLeft"
                             data-delay=".3s"
                           />
                         </div>
