@@ -113,7 +113,7 @@ const Resellers = () => {
                         src={img_infraestructura}
                         alt={img_infraestructura}
                       />
-                      <h4>Infraestructura</h4>
+                      <h4 style={{minHeight:"77.59px"}}>Infraestructura</h4>
                       <br />
                       <p>
                         Capacidad de compra, almacenamiento y distribución de al
@@ -127,7 +127,7 @@ const Resellers = () => {
                         src={img_vision}
                         alt={img_vision}
                       />
-                      <h4>Visión de crecimiento</h4>
+                      <h4 style={{minHeight:"77.59px"}}>Visión de crecimiento</h4>
                       <br />
                       <p>
                         Distribuidores con una visión de negocio de
@@ -141,7 +141,7 @@ const Resellers = () => {
                         src={img_solvencia}
                         alt={img_solvencia}
                       />
-                      <h4>Solvencia económica</h4>
+                      <h4 style={{minHeight:"77.59px"}}>Solvencia económica</h4>
                       <br />
                       <p>
                         Contar con el capital económico necesario para la
@@ -154,7 +154,7 @@ const Resellers = () => {
                         src={img_potencial}
                         alt={img_potencial}
                       />
-                      <h4>Mercado local o regional</h4>
+                      <h4 style={{minHeight:"77.59px"}}>Mercado local o regional</h4>
                       <br />
                       <p>
                         Que
