@@ -48,7 +48,13 @@ export async function Footer() {
                   <p>
                     Flagasa Mascotas
                     <br />
-                    Poniente 146 #900 Col. Industrial Vallejo, CDMX
+                    <span style={{fontSize:"12px"}}>Productos hechos en México</span>
+                  </p>  
+
+                  <p>
+                    Lotes 3B y 4, Manzana 3 del Fraccionamiento Industrial PLATAH,
+                    <br />
+                    Municipio Villa de Tezontepec, Hidalgo. C.P. 43894
                   </p>
 
                   {/*
