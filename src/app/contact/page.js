@@ -31,7 +31,7 @@ const Contact = async () => {
               <div className="row clearfix pt-3">
                 <iframe
                   title="Map"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.906056914637!2d-99.17264448508955!3d19.502677143489663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f84733c8eed3%3A0x68da0777343fb90f!2sFLAGASA!5e0!3m2!1ses!2smx!4v1576513242693!5m2!1ses!2smx"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.3803745719706!2d-98.83743072402096!3d19.90836962531372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1bd27d8ea0d07%3A0xe650029c3a12c14!2sFlagasa%20mascotas%20-%20PLATAH!5e0!3m2!1ses!2smx!4v1738795675384!5m2!1ses!2smx"
                   style={{ width: "100%", height: "450px", border: "0" }}
                   allowFullScreen=""
                   loading="lazy"
