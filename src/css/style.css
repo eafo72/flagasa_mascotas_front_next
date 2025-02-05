@@ -14322,6 +14322,9 @@ hr {
 .forget_password_section .forget_password_form span a {
   color: #25BC6C;
 }
+.resellers_title{
+  min-height: 77.59px;
+}
 
 /* forget password section - end */
 /* register pages - end
@@ -17716,6 +17719,10 @@ hr {
   .sec_space_small {
     padding-top: 0px;
     padding-bottom: 0px;
+  }
+
+  .resellers_title{
+    min-height: inherit;
   }
 
 }
