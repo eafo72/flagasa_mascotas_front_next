@@ -47,7 +47,7 @@ const About = async () => {
                   <p>
                     Somos una empresa 100% mexicana, líder en la producción de
                     alimento balanceado para animales. Tenemos más de 65 años de
-                    experiencia en el mercado iniciando actividades en 1995
+                    experiencia en el mercado iniciando actividades en 1955
                     produciendo alimento para el establo ganadero Santa Mónica
                     .Tres años más tarde se inicia formalmente la
                     comercialización de alimentos balanceados,ampliando la gama
