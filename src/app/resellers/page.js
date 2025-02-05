@@ -99,7 +99,7 @@ const Resellers = () => {
               <div className="col-lg-12">
                 <div style={{ padding: "30px 0px" }}>
                   <div class="pb-5 text-center">
-                    <h2 class="fw-bold pt-3 pb-3">Distribución Centinela</h2>
+                    <h2 class="fw-bold pt-3 pb-3">Distribución El Centinela</h2>
 
                     <p>
                       Buscamos distribuidores locales y regionales de nuestro
@@ -130,7 +130,7 @@ const Resellers = () => {
                       <h4>Visión de crecimiento</h4>
                       <br />
                       <p>
-                        Buscamos distribuidores con una visión de negocio de
+                        Distribuidores con una visión de negocio de
                         largo plazo para desarrollar mercados locales y
                         regionales de venta.
                       </p>
@@ -157,7 +157,7 @@ const Resellers = () => {
                       <h4>Mercado local o regional</h4>
                       <br />
                       <p>
-                        Buscamos distribuidores locales o regionales que
+                        Que
                         conozcan el potencial de mercado de la zona acordada.
                       </p>
                     </div>
