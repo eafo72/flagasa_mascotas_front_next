@@ -6,8 +6,7 @@ const Contact = async () => {
   return (
     <>
       <main>
-        <section
-          className="breadcrumb_section" >
+        <section className="breadcrumb_section">
           <div className="container">
             <div className="row">
               <div className="col col-lg-6">
@@ -51,8 +50,14 @@ const Contact = async () => {
                     <div className="info_list">
                       <h4>Nuestra ubicación</h4>
                       <ul className="ul_li_block">
-                        <li>Poniente 146 #900 Col. Industrial Vallejo</li>
-                        <li>CDMX</li>
+                        <li>
+                          Lotes 3B y 4, Manzana 3 del Fraccionamiento Industrial
+                          PLATAH,
+                        </li>
+
+                        <li>
+                          Municipio Villa de Tezontepec, Hidalgo. C.P. 43894
+                        </li>
                       </ul>
                     </div>
                     <div className="info_list">
