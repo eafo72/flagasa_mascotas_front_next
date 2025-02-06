@@ -12,11 +12,11 @@ const clienteAxios = axios.create({
 const invalidateVercelCache = async () => {
   try {
     const response = await axios.post("https://api.vercel.com/v1/invalidate", {
-      projectId: "TU_PROJECT_ID", // Reemplaza con tu ID de proyecto
+      projectId: "prj_r5qHjuFUalyh94eD0xGr1uEOZoDd", // Reemplaza con tu ID de proyecto
       paths: ["/categoria/obtener"] // La ruta de tu API que quieres invalidar
     }, {
       headers: {
-        Authorization: `Bearer TU_ACCESS_TOKEN`, // Reemplaza con tu token de acceso
+        Authorization: `Bearer OLxpUkXFKWYPAZyHKRiA4CzY`, // Reemplaza con tu token de acceso
         "Content-Type": "application/json"
       }
     });
