@@ -298,7 +298,7 @@ const Page = async () => {
           <section className="product_section sec_space_custom">
             <div className="space_rl_large">
               <div className="section_title_4 text-center">
-                <h2 className="small_title">Fórmulas</h2>
+                <h2 className="small_title" data-animation="bounceIn" data-delay=".3s">Fórmulas</h2>
                 <span className="big_title">NUESTRAS</span>
               </div>
               {/*Controles*/}
