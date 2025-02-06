@@ -3,8 +3,8 @@ import Image from "next/image";
 import about_image from "../../images/about/about-vision.jpg";
 import about_banner from "../../images/banner/flagasa_banner_quienes_somos.jpg";
 
-import mision_image from "../../images/about/mision_image.png";
-import vision_image from "../../images/about/vision_image.png";
+import mision_image from "../../images/about/icon-misión-vision.png";
+
 
 const About = async () => {
   return (
@@ -103,8 +103,8 @@ const About = async () => {
                         <div class="col-4">
                           <Image
                             class="img-stretch"
-                            src={vision_image}
-                            alt={vision_image}
+                            src={mision_image}
+                            alt={mision_image}
                           />
                         </div>
                         <div class="col-8">
