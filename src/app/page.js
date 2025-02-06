@@ -22,7 +22,7 @@ const getCategories = async () => {
     await invalidateVercelCache();
 
     const res = await clienteAxios.get(`/categoria/obtener`);
-    //console.log(res.data.categorias)
+    console.log(res.data.categorias)
     return res.data.categorias;
   } catch (error) {
     console.log(error);
