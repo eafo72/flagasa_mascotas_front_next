@@ -442,7 +442,7 @@ const Page = async () => {
                 <div className="col col-lg-6 col-md-8">
                   <div className="item_image">
                     <img
-                      src="https://agencianuba.com/flagasamascotas_front_images/banners/img-amor.png"
+                      src="https://agencianuba.com/flagasamascotas_front_images/banners/img-beneficios.png"
                       alt="image_not_found"
                     />
                   </div>
@@ -596,7 +596,7 @@ const Page = async () => {
                     <div className="shop_image_wrap">
                       <div align="center">
                         <img
-                          src="https://agencianuba.com/flagasamascotas_front_images/icons/icon-pasion.png"
+                          src="https://agencianuba.com/flagasamascotas_front_images/icons/icon-new-pasion.png"
                           alt="image_not_found"
                         />
                       </div>
@@ -613,7 +613,7 @@ const Page = async () => {
                     <div className="shop_image_wrap">
                       <div align="center">
                         <img
-                          src="https://agencianuba.com/flagasamascotas_front_images/icons/icon-compromiso.png"
+                          src="https://agencianuba.com/flagasamascotas_front_images/icons/icon-new-compromiso.png"
                           alt="image_not_found"
                         />
                       </div>
@@ -630,7 +630,7 @@ const Page = async () => {
                     <div className="shop_image_wrap">
                       <div align="center">
                         <img
-                          src="https://agencianuba.com/flagasamascotas_front_images/icons/icon-calidad.png"
+                          src="https://agencianuba.com/flagasamascotas_front_images/icons/icon-new-calidad.png"
                           alt="image_not_found"
                         />
                       </div>
@@ -647,7 +647,7 @@ const Page = async () => {
                     <div className="shop_image_wrap">
                       <div align="center">
                         <img
-                          src="https://agencianuba.com/flagasamascotas_front_images/icons/icon-responsabilidad.png"
+                          src="https://agencianuba.com/flagasamascotas_front_images/icons/icon-new-responsabilidad.png"
                           alt="image_not_found"
                         />
                       </div>
@@ -664,7 +664,7 @@ const Page = async () => {
                     <div className="shop_image_wrap">
                       <div align="center">
                         <img
-                          src="https://agencianuba.com/flagasamascotas_front_images/icons/icon-nutricion.png"
+                          src="https://agencianuba.com/flagasamascotas_front_images/icons/icon-new-nutricion.png"
                           alt="image_not_found"
                         />
                       </div>
@@ -681,7 +681,7 @@ const Page = async () => {
                     <div className="shop_image_wrap">
                       <div align="center">
                         <img
-                          src="https://agencianuba.com/flagasamascotas_front_images/icons/icon-respaldo.png"
+                          src="https://agencianuba.com/flagasamascotas_front_images/icons/icon-new-respaldo.png"
                           alt="image_not_found"
                         />
                       </div>
