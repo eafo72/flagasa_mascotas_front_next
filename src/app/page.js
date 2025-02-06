@@ -1,4 +1,4 @@
-import  { clienteAxios, invalidateVercelCache } from "../config/axios";
+import  clienteAxios, { invalidateVercelCache } from "../config/axios";
 
 import Link from "next/link";
 

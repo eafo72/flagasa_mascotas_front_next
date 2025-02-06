@@ -26,5 +26,5 @@ const invalidateVercelCache = async () => {
   }
 };
 
-
-export { clienteAxios, invalidateVercelCache };
+export default clienteAxios;
+export { invalidateVercelCache };
