@@ -1751,10 +1751,15 @@ hr {
   -webkit-transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
   transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
-.main_menu_list > li:hover > a, .main_menu_list > li.active > a {
+.main_menu_list > li:hover > a  {
+  color: #25BC6C;
+}
+
+.main_menu_list > li.active > a {
   color: #25BC6C;
   font-weight: bold;
 }
+
 .main_menu_list .menu_badge {
   top: 0;
   right: -15px;

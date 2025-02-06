@@ -108,12 +108,12 @@ const Page = async () => {
                 <div className="slider_content">
                   <h3
                     className="item_title"
-                    data-animation="fadeInUp2"
+                    data-animation="slideInDown"
                     data-delay=".3s"
                   >
                     Alimento para gato super premium
                   </h3>
-                  <p data-animation="fadeInUp2" data-delay=".5s">
+                  <p data-animation="slideInLeft" data-delay=".5s">
                     con proteínas de salmón y carne.
                   </p>
                   <Link
@@ -142,12 +142,12 @@ const Page = async () => {
                 <div className="slider_content">
                   <h3
                     className="item_title"
-                    data-animation="fadeInUp2"
+                    data-animation="slideInDown"
                     data-delay=".3s"
                   >
                     Fórmula para perro super premium.
                   </h3>
-                  <p data-animation="fadeInUp2" data-delay=".5s">
+                  <p data-animation="slideInLeft" data-delay=".5s">
                     Proteínas de carne como primer ingrediente.
                   </p>
                   <Link
@@ -176,12 +176,12 @@ const Page = async () => {
                 <div className="slider_content">
                   <h3
                     className="item_title"
-                    data-animation="fadeInUp2"
+                    data-animation="slideInDown"
                     data-delay=".3s"
                   >
                     El Centinela®
                   </h3>
-                  <p data-animation="fadeInUp2" data-delay=".5s">
+                  <p data-animation="slideInLeft" data-delay=".5s">
                     Alimento para razas pequeñas.
                   </p>
                   <Link
@@ -210,12 +210,12 @@ const Page = async () => {
                 <div className="slider_content">
                   <h3
                     className="item_title"
-                    data-animation="fadeInUp2"
+                    data-animation="slideInDown"
                     data-delay=".3s"
                   >
                     PetCan® y PetCat®
                   </h3>
-                  <p data-animation="fadeInUp2" data-delay=".5s">
+                  <p data-animation="slideInLeft" data-delay=".5s">
                     Fórmula regular.
                   </p>
                   <Link
