@@ -11,7 +11,7 @@ require("../js/slick.min.js");
     infinite: true,
     autoplay: true,
     slidesToShow: 1,
-    autoplaySpeed: 6000,
+    autoplaySpeed: 3000,
     asNavFor: '.ms_nav_thumbnails',
     prevArrow: ".main_left_arrow",
     nextArrow: ".main_right_arrow"
@@ -86,7 +86,7 @@ require("../js/slick.min.js");
     });
   }
 
-  var $timer = 6000;
+  var $timer = 3000;
   function progressBar() {
     $(".slick-progress").find("span").removeAttr("style");
     $(".slick-progress").find("span").removeClass("active");

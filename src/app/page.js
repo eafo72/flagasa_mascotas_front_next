@@ -74,12 +74,12 @@ const Page = async () => {
                 <div className="slider_content">
                   <h3
                     className="item_title"
-                    data-animation="fadeInUp2"
+                    data-animation="slideInDown"
                     data-delay=".3s"
                   >
                     Nutrición balanceada con proteína de salmón.
                   </h3>
-                  <p data-animation="fadeInUp2" data-delay=".5s">
+                  <p data-animation="slideInLeft" data-delay=".5s">
                     Mejora el desarrollo cognitivo y reduce alergias.
                   </p>
                   <Link

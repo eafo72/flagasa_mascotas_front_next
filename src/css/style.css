@@ -1753,6 +1753,7 @@ hr {
 }
 .main_menu_list > li:hover > a, .main_menu_list > li.active > a {
   color: #25BC6C;
+  font-weight: bold;
 }
 .main_menu_list .menu_badge {
   top: 0;
