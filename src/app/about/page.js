@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import about_image from "../../images/about/fabrica-foto-flaga.png";
-import about_banner from "../../images/banner/flagasa_banner_quienes_somos.jpg";
+import about_banner from "../../images/about/flagasa-nosotros.jpg";
 
 import mision_image from "../../images/about/icon-misión-vision.png";
 
