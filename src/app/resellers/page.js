@@ -9,6 +9,8 @@ import { toast } from "sonner";
 import Link from "next/link";
 import Image from "next/image";
 
+import banner_resellers from "../../images/resellers/banner-distribuidor-centinela.png";
+
 import img_infraestructura from "../../images/resellers/infraestructura.png";
 import img_potencial from "../../images/resellers/potencial.png";
 import img_solvencia from "../../images/resellers/solvencia.png";
@@ -105,6 +107,12 @@ const Resellers = () => {
                       Buscamos distribuidores locales y regionales de nuestro
                       producto estrella: CENTINELA.
                     </p>
+
+                    <Image
+                        class="img-fluid"
+                        src={banner_resellers}
+                        alt={banner_resellers}
+                      />
                   </div>
                   <div class="row">
                     <div class="col-12 col-md-3 text-center">
