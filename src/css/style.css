@@ -8401,6 +8401,8 @@ hr {
 }
 .shop_layout_1 .shop_title {
   margin-bottom: 5px;
+  text-align: center;
+
 }
 .shop_layout_1 .shop_title > a {
   color: #343434;
