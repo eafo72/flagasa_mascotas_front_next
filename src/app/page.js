@@ -1,4 +1,4 @@
-import clienteAxios from "../config/axios";
+import  { clienteAxios, invalidateVercelCache } from "../config/axios";
 
 import Link from "next/link";
 
@@ -18,7 +18,7 @@ import { IconThree } from "../components/IconThree";
 
 const getCategories = async () => {
   try {
-    
+
     await invalidateVercelCache();
 
     const res = await clienteAxios.get(`/categoria/obtener`);
