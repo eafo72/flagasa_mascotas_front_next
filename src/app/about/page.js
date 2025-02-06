@@ -80,7 +80,7 @@ const About = async () => {
                       />
                     </div>
                     <div class="col-12 col-md-6">
-                      <h2 class="fw-bold pt-3 pb-5">NUESTROS VALORES</h2>
+                      <h2 class="fw-bold text-center pt-3 pb-5">NUESTROS VALORES</h2>
 
                       <div class="row align-items-center">
                         <div class="col-4">
