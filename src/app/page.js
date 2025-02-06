@@ -32,7 +32,7 @@ const getCategories = async () => {
 const getCategoriesSix = async () => {
   try {
     const res = await clienteAxios.get(`/categoria/obtenerSeis`);
-    //console.log(res.data.categorias)
+    console.log(res.data.categorias)
     return res.data.categorias;
   } catch (error) {
     console.log(error);
@@ -42,7 +42,7 @@ const getCategoriesSix = async () => {
 const getProducts = async () => {
   try {
     const res = await clienteAxios.get(`/producto/obtener`);
-    //console.log(res.data.productos)
+    console.log(res.data.productos)
     return res.data.productos;
   } catch (error) {
     console.log(error);
