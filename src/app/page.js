@@ -1,4 +1,4 @@
-import  clienteAxios, { invalidateVercelCache } from "../config/axios";
+import clienteAxios from "../config/axios";
 
 import Link from "next/link";
 
@@ -18,11 +18,8 @@ import { IconThree } from "../components/IconThree";
 
 const getCategories = async () => {
   try {
-
-    await invalidateVercelCache();
-
     const res = await clienteAxios.get(`/categoria/obtener`);
-    console.log(res.data.categorias)
+    //console.log(res.data.categorias)
     return res.data.categorias;
   } catch (error) {
     console.log(error);
@@ -32,7 +29,7 @@ const getCategories = async () => {
 const getCategoriesSix = async () => {
   try {
     const res = await clienteAxios.get(`/categoria/obtenerSeis`);
-    console.log(res.data.categorias)
+    //console.log(res.data.categorias)
     return res.data.categorias;
   } catch (error) {
     console.log(error);
@@ -42,7 +39,7 @@ const getCategoriesSix = async () => {
 const getProducts = async () => {
   try {
     const res = await clienteAxios.get(`/producto/obtener`);
-    console.log(res.data.productos)
+    //console.log(res.data.productos)
     return res.data.productos;
   } catch (error) {
     console.log(error);
@@ -62,11 +59,12 @@ const Page = async () => {
           {/* Carrusel */}
           <section className="slider_section main_slider_4">
             <div className="main_slider" data-slick='{"dots": false}'>
+              {/*slide 1*/}
               <div className="slider_item space_rl_large">
                 <div className="slider_image">
                   <div className="image_wrap">
                     <img
-                      src="https://agencianuba.com/flagasamascotas_front_images/banners/banner1NEW.jpg"
+                      src="https://agencianuba.com/flagasamascotas_front_images/banners/formula-premium.jpg"
                       alt="image_not_found"
                       unoptimized={true}
                     />
@@ -95,11 +93,12 @@ const Page = async () => {
                 <span className="item_type">NUTRICIÓN MASCOTAS</span>
               </div>
 
+              {/*slide 2*/}
               <div className="slider_item space_rl_large">
                 <div className="slider_image">
                   <div className="image_wrap">
                     <img
-                      src="https://agencianuba.com/flagasamascotas_front_images/banners/banner2NEW.jpg"
+                      src="https://agencianuba.com/flagasamascotas_front_images/banners/formula-premim-ktyto.jpg"
                       alt="image_not_found"
                       unoptimized={true}
                     />
@@ -114,7 +113,7 @@ const Page = async () => {
                     Alimento para gato super premium
                   </h3>
                   <p data-animation="fadeInUp2" data-delay=".5s">
-                  con proteínas de salmón y carne.
+                    con proteínas de salmón y carne.
                   </p>
                   <Link
                     className="btn btn_primary btn_rounded btn-view"
@@ -128,11 +127,12 @@ const Page = async () => {
                 <span className="item_type">NUTRICIÓN MASCOTAS</span>
               </div>
 
+              {/*slide 3*/}
               <div className="slider_item space_rl_large">
                 <div className="slider_image">
                   <div className="image_wrap">
                     <img
-                      src="https://agencianuba.com/flagasamascotas_front_images/banners/banner3NEW.jpg"
+                      src="https://agencianuba.com/flagasamascotas_front_images/banners/formula-superpremium.jpg"
                       alt="image_not_found"
                       unoptimized={true}
                     />
@@ -147,7 +147,41 @@ const Page = async () => {
                     Fórmula para perro super premium.
                   </h3>
                   <p data-animation="fadeInUp2" data-delay=".5s">
-                  Proteínas de carne como primer ingrediente.
+                    Proteínas de carne como primer ingrediente.
+                  </p>
+                  <Link
+                    className="btn btn_primary btn_rounded btn-view"
+                    href="/shop_details/Premium/Bark-Adulto-todos-los-tama%C3%B1os-20Kg/0030"
+                    data-animation="fadeInUp2"
+                    data-delay=".7s"
+                  >
+                    Ver más
+                  </Link>
+                </div>
+                <span className="item_type">NUTRICIÓN MASCOTAS</span>
+              </div>
+
+              {/*slide 4*/}
+              <div className="slider_item space_rl_large">
+                <div className="slider_image">
+                  <div className="image_wrap">
+                    <img
+                      src="https://agencianuba.com/flagasamascotas_front_images/banners/formula-mantenimiento.jpg"
+                      alt="image_not_found"
+                      unoptimized={true}
+                    />
+                  </div>
+                </div>
+                <div className="slider_content">
+                  <h3
+                    className="item_title"
+                    data-animation="fadeInUp2"
+                    data-delay=".3s"
+                  >
+                    Fórmula para perro super premium.
+                  </h3>
+                  <p data-animation="fadeInUp2" data-delay=".5s">
+                    Proteínas de carne como primer ingrediente.
                   </p>
                   <Link
                     className="btn btn_primary btn_rounded btn-view"
@@ -166,29 +200,42 @@ const Page = async () => {
               className="ms_nav_thumbnails"
               data-slick='{"slidesToShow": 2, "vertical": false}'
             >
+              {/*thumbnail 1*/}
               <div className="thumbnail_item">
                 <img
-                  src="https://agencianuba.com/flagasamascotas_front_images/banners/banner1NEW.jpg"
+                  src="https://agencianuba.com/flagasamascotas_front_images/banners/formula-premium.jpg"
                   alt="image_not_found"
                   unoptimized={true}
                 />
               </div>
 
+              {/*thumbnail 2*/}
               <div className="thumbnail_item">
                 <img
-                  src="https://agencianuba.com/flagasamascotas_front_images/banners/banner2NEW.jpg"
+                  src="https://agencianuba.com/flagasamascotas_front_images/banners/formula-premim-ktyto.jpg"
                   alt="image_not_found"
                   unoptimized={true}
                 />
               </div>
 
+              {/*thumbnail 3*/}
               <div className="thumbnail_item">
                 <img
-                  src="https://agencianuba.com/flagasamascotas_front_images/banners/banner3NEW.jpg"
+                  src="https://agencianuba.com/flagasamascotas_front_images/banners/formula-superpremium.jpg"
                   alt="image_not_found"
                   unoptimized={true}
                 />
               </div>
+
+              {/*thumbnail 4*/}
+              <div className="thumbnail_item">
+                <img
+                  src="https://agencianuba.com/flagasamascotas_front_images/banners/formula-mantenimiento.jpg"
+                  alt="image_not_found"
+                  unoptimized={true}
+                />
+              </div>
+
             </div>
 
             <div className="carousel_nav">
@@ -210,7 +257,10 @@ const Page = async () => {
               </div>
               {/*Controles*/}
               <div className="col ">
-                <ul className="product_tabnav_4 nav ul_li_center" role="tablist">
+                <ul
+                  className="product_tabnav_4 nav ul_li_center"
+                  role="tablist"
+                >
                   {/*Active*/}
                   <li>
                     <button
@@ -430,7 +480,9 @@ const Page = async () => {
                               className="item_title"
                               style={{ textAlign: "center" }}
                             >
-                              <Link href={`/categories/Todas/${item1.nombreSlugged}`}>
+                              <Link
+                                href={`/categories/Todas/${item1.nombreSlugged}`}
+                              >
                                 {item1.nombre}
                               </Link>
                             </h3>
