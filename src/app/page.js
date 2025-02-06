@@ -18,7 +18,10 @@ import { IconThree } from "../components/IconThree";
 
 const getCategories = async () => {
   try {
-    const res = await clienteAxios.get(`/categoria/obtener?nocache=${Date.now()}`);
+    
+    await invalidateVercelCache();
+
+    const res = await clienteAxios.get(`/categoria/obtener`);
     //console.log(res.data.categorias)
     return res.data.categorias;
   } catch (error) {
