@@ -8,6 +8,10 @@
             "value": "no-store, no-cache, must-revalidate, proxy-revalidate"
           },
           {
+            "key": "x-vercel-cache",
+            "value": "MISS"
+          },
+          {
             "key": "Pragma",
             "value": "no-cache"
           },
