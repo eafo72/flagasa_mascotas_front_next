@@ -178,10 +178,44 @@ const Page = async () => {
                     data-animation="fadeInUp2"
                     data-delay=".3s"
                   >
-                    Fórmula para perro super premium.
+                    El Centinela®
                   </h3>
                   <p data-animation="fadeInUp2" data-delay=".5s">
-                    Proteínas de carne como primer ingrediente.
+                    Alimento para razas pequeñas.
+                  </p>
+                  <Link
+                    className="btn btn_primary btn_rounded btn-view"
+                    href="/shop_details/Premium/Bark-Adulto-todos-los-tama%C3%B1os-20Kg/0030"
+                    data-animation="fadeInUp2"
+                    data-delay=".7s"
+                  >
+                    Ver más
+                  </Link>
+                </div>
+                <span className="item_type">NUTRICIÓN MASCOTAS</span>
+              </div>
+
+              {/*slide 5*/}
+              <div className="slider_item space_rl_large">
+                <div className="slider_image">
+                  <div className="image_wrap">
+                    <img
+                      src="https://agencianuba.com/flagasamascotas_front_images/banners/formula-regular.jpg"
+                      alt="image_not_found"
+                      unoptimized={true}
+                    />
+                  </div>
+                </div>
+                <div className="slider_content">
+                  <h3
+                    className="item_title"
+                    data-animation="fadeInUp2"
+                    data-delay=".3s"
+                  >
+                    PetCan® y PetCat®
+                  </h3>
+                  <p data-animation="fadeInUp2" data-delay=".5s">
+                    Fórmula regular.
                   </p>
                   <Link
                     className="btn btn_primary btn_rounded btn-view"
@@ -235,6 +269,17 @@ const Page = async () => {
                   unoptimized={true}
                 />
               </div>
+
+              {/*thumbnail 5*/}
+              <div className="thumbnail_item">
+                <img
+                  src="https://agencianuba.com/flagasamascotas_front_images/banners/formula-regular.jpg"
+                  alt="image_not_found"
+                  unoptimized={true}
+                />
+              </div>
+
+              
 
             </div>
 
