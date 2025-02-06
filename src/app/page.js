@@ -15,6 +15,7 @@ import ImportSlickJS from "./importSlickJs";
 import { IconOne } from "../components/IconOne";
 import { IconTwo } from "../components/IconTwo";
 import { IconThree } from "../components/IconThree";
+import { DogImage } from "../components/DogImage";
 
 const getCategories = async () => {
   try {
@@ -441,10 +442,7 @@ const Page = async () => {
               <div className="row align-items-center justify-content-center">
                 <div className="col col-lg-6 col-md-8">
                   <div className="item_image">
-                    <img
-                      src="https://agencianuba.com/flagasamascotas_front_images/banners/img-beneficios.png"
-                      alt="image_not_found"
-                    />
+                    <DogImage></DogImage>
                   </div>
                 </div>
                 <div className="col col-lg-6 col-md-8">
