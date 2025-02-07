@@ -211,7 +211,7 @@ export const ProductCard = ({
                   <del>$130.00</del>
                    */}
                 </div>
-                <p className="mb-0" dangerouslySetInnerHTML={{ __html: producto && producto.descripcion }}></p>
+                <p className="mb-0 quill-text" dangerouslySetInnerHTML={{ __html: producto && producto.descripcion }}></p>
                 <hr />
                 <a href={producto.link} style={{textDecoration: "none"}} target="_blank">
                   <div style={{display: "flex", alignItems:"center", backgroundColor: "#ffe600", color: "#000", padding: "10px 20px", borderRadius: "5px", fontSize: "16px", fontWeight: "bold", textAlign: "center", width: "fit-content", boxShadow: "0 2px 4px rgba(0,0,0,0.2)"}}>
