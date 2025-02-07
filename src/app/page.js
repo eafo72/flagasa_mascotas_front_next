@@ -18,6 +18,8 @@ import { IconThree } from "../components/IconThree";
 import { DogImage } from "../components/DogImage";
 
 import { HomeTitleOne } from "../components/HomeTitleOne";
+import { HomeTitleTwo } from "../components/HomeTitleTwo";
+import { HomeTitleThree } from "../components/HomeTitleThree";
 
 const getCategories = async () => {
   try {
@@ -493,7 +495,7 @@ const Page = async () => {
           <section className="product_section sec_space_xlarge">
             <div className="space_rl_large">
               <div className="section_title_4 text-center">
-                <h2 className="small_title">Fórmulas especializadas</h2>
+                <HomeTitleTwo></HomeTitleTwo>
                 <span className="big_title">FLAGASA</span>
               </div>
 
@@ -585,7 +587,7 @@ const Page = async () => {
           >
             <div className="space_rl_large">
               <div className="section_title_4 text-center">
-                <h2 className="small_title">Valores</h2>
+                <HomeTitleThree></HomeTitleThree>
                 <span className="big_title">NUESTROS</span>
               </div>
 
