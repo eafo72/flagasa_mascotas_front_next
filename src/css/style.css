@@ -31,6 +31,10 @@
   src: local("Plantagenet"), url("../fonts/plantagenet-cherokee.ttf");
 }
 
+.quill-text p{
+  margin: 0;
+  padding: 0;
+}
 
 
 /* template fonts - end

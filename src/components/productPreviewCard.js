@@ -411,7 +411,7 @@ export const ProductPreviewCard = ({ item }) => {
                           <span className="sale_price">$ {item.precio}</span>
                           */}
                         </div>
-                        <p className="mb-0" dangerouslySetInnerHTML={{ __html: item.descripcion }}></p>
+                        <p className="mb-0 quill-text" dangerouslySetInnerHTML={{ __html: item.descripcion }}></p>
                         <hr />
 
                         <a
