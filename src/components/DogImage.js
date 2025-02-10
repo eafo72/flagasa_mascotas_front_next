@@ -18,7 +18,7 @@ export const DogImage = () => {
         }}
       >
         <img
-          src="https://agencianuba.com/flagasamascotas_front_images/banners/img-beneficios.png"
+          src="https://agencianuba.com/flagasamascotas_front_images/banners/img-beneficios-ver2.jpg"
           alt="image_not_found"
         />
       </motion.div>
