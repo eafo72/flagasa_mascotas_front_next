@@ -21,16 +21,6 @@ import { HomeTitleOne } from "../components/HomeTitleOne";
 import { HomeTitleTwo } from "../components/HomeTitleTwo";
 import { HomeTitleThree } from "../components/HomeTitleThree";
 
-const getCarrusel = async () => {
-  try {
-    const res = await clienteAxios.get(`/carrusel/obtener`);
-    //console.log(res.data.carrusel)
-    return res.data.carrusel;
-  } catch (error) {
-    console.log(error);
-  }
-};
-
 const getCategories = async () => {
   try {
     const res = await clienteAxios.get(`/categoria/obtener`);
@@ -62,7 +52,6 @@ const getProducts = async () => {
 };
 
 const Page = async () => {
-  const carrusel = await getCarrusel();
   const categories = await getCategories();
   const categoriesSix = await getCategoriesSix();
   const products = await getProducts();
@@ -73,51 +62,240 @@ const Page = async () => {
       <div className=".body">
         <main>
           {/* Carrusel */}
-          <section className="slider_section main_slider_9">
-            <div className="main_slider" data-slick='{"arrows": false}'>
-              {carrusel &&
-                carrusel.map((iteM) => (
-                  <div
-                    className="slider_item"
-                    style={{
-                      backgroundImage:`url(${iteM.imagen})`
-                    }}
-                  >
-                    <div className="container width_desktop">
-                      <div className="row justify-content-center">
-                        <div className="col col-md-7 col-sm-9">
-                          <div className="slider_content text-center">
-                            <h3
-                              className="small_title"
-                              data-animation="slideInDown"
-                              data-delay=".2s"
-                            >
-                              {iteM.titulo}
-                            </h3>
-                            <h4
-                              className="big_title text-light"
-                              data-animation="slideInLeft"
-                              data-delay=".4s"
-                            >
-                              {iteM.subtitulo}
-                            </h4>
-                            <Link
-                              className="btn btn_primary btn_rounded btn-view"
-                              href={iteM.enlace}
-                              data-animation="fadeInUp2"
-                              data-delay=".7s"
-                            >
-                              Ver más
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+          <section className="slider_section main_slider_4">
+            <div className="main_slider" data-slick='{"dots": false}'>
+              {/*slide 1*/}
+              <div className="slider_item space_rl_large">
+                <div className="slider_image">
+                  <div className="image_wrap">
+                    <img
+                      src="https://agencianuba.com/flagasamascotas_front_images/banners/formula-premium.jpg"
+                      alt="image_not_found"
+                      unoptimized={true}
+                    />
                   </div>
-                ))}
+                </div>
+                <div className="slider_content">
+                  <h3
+                    className="item_title"
+                    data-animation="slideInDown"
+                    data-delay=".3s"
+                  >
+                    Nutrición balanceada con proteína de salmón.
+                  </h3>
+                  <p data-animation="slideInLeft" data-delay=".5s">
+                    Mejora el desarrollo cognitivo y reduce alergias.
+                  </p>
+                  <Link
+                    className="btn btn_primary btn_rounded btn-view"
+                    href="/shop_details/Premium/Flaga-Can-Adulto-20kg/006"
+                    data-animation="fadeInUp2"
+                    data-delay=".7s"
+                  >
+                    Ver más
+                  </Link>
+                </div>
+                <span className="item_type">NUTRICIÓN MASCOTAS</span>
+              </div>
+
+              {/*slide 2*/}
+              <div className="slider_item space_rl_large">
+                <div className="slider_image">
+                  <div className="image_wrap">
+                    <img
+                      src="https://agencianuba.com/flagasamascotas_front_images/banners/formula-premim-ktyto.jpg"
+                      alt="image_not_found"
+                      unoptimized={true}
+                    />
+                  </div>
+                </div>
+                <div className="slider_content">
+                  <h3
+                    className="item_title"
+                    data-animation="slideInDown"
+                    data-delay=".3s"
+                  >
+                    Alimento para gato super premium
+                  </h3>
+                  <p data-animation="slideInLeft" data-delay=".5s">
+                    con proteínas de salmón y carne.
+                  </p>
+                  <Link
+                    className="btn btn_primary btn_rounded btn-view"
+                    href="/shop_details/Premium/Ktyto-10Kg/0020"
+                    data-animation="fadeInUp2"
+                    data-delay=".7s"
+                  >
+                    Ver más
+                  </Link>
+                </div>
+                <span className="item_type">NUTRICIÓN MASCOTAS</span>
+              </div>
+
+              {/*slide 3*/}
+              <div className="slider_item space_rl_large">
+                <div className="slider_image">
+                  <div className="image_wrap">
+                    <img
+                      src="https://agencianuba.com/flagasamascotas_front_images/banners/formula-superpremium.jpg"
+                      alt="image_not_found"
+                      unoptimized={true}
+                    />
+                  </div>
+                </div>
+                <div className="slider_content">
+                  <h3
+                    className="item_title"
+                    data-animation="slideInDown"
+                    data-delay=".3s"
+                  >
+                    Fórmula para perro super premium.
+                  </h3>
+                  <p data-animation="slideInLeft" data-delay=".5s">
+                    Proteínas de carne como primer ingrediente.
+                  </p>
+                  <Link
+                    className="btn btn_primary btn_rounded btn-view"
+                    href="/shop_details/Premium/Bark-Adulto-todos-los-tama%C3%B1os-20Kg/0030"
+                    data-animation="fadeInUp2"
+                    data-delay=".7s"
+                  >
+                    Ver más
+                  </Link>
+                </div>
+                <span className="item_type">NUTRICIÓN MASCOTAS</span>
+              </div>
+
+              {/*slide 4*/}
+              <div className="slider_item space_rl_large">
+                <div className="slider_image">
+                  <div className="image_wrap">
+                    <img
+                      src="https://agencianuba.com/flagasamascotas_front_images/banners/formula-mantenimiento.jpg"
+                      alt="image_not_found"
+                      unoptimized={true}
+                    />
+                  </div>
+                </div>
+                <div className="slider_content">
+                  <h3
+                    className="item_title"
+                    data-animation="slideInDown"
+                    data-delay=".3s"
+                  >
+                    El Centinela®
+                  </h3>
+                  <p data-animation="slideInLeft" data-delay=".5s">
+                    Alimento para razas pequeñas.
+                  </p>
+                  <Link
+                    className="btn btn_primary btn_rounded btn-view"
+                    href="/shop_details/Premium/Bark-Adulto-todos-los-tama%C3%B1os-20Kg/0030"
+                    data-animation="fadeInUp2"
+                    data-delay=".7s"
+                  >
+                    Ver más
+                  </Link>
+                </div>
+                <span className="item_type">NUTRICIÓN MASCOTAS</span>
+              </div>
+
+              {/*slide 5*/}
+              <div className="slider_item space_rl_large">
+                <div className="slider_image">
+                  <div className="image_wrap">
+                    <img
+                      src="https://agencianuba.com/flagasamascotas_front_images/banners/formula-regular.jpg"
+                      alt="image_not_found"
+                      unoptimized={true}
+                    />
+                  </div>
+                </div>
+                <div className="slider_content">
+                  <h3
+                    className="item_title"
+                    data-animation="slideInDown"
+                    data-delay=".3s"
+                  >
+                    PetCan® y PetCat®
+                  </h3>
+                  <p data-animation="slideInLeft" data-delay=".5s">
+                    Fórmula regular.
+                  </p>
+                  <Link
+                    className="btn btn_primary btn_rounded btn-view"
+                    href="/shop_details/Premium/Bark-Adulto-todos-los-tama%C3%B1os-20Kg/0030"
+                    data-animation="fadeInUp2"
+                    data-delay=".7s"
+                  >
+                    Ver más
+                  </Link>
+                </div>
+                <span className="item_type">NUTRICIÓN MASCOTAS</span>
+              </div>
             </div>
 
-            <div class="ms_nav_thumbnails d-none"></div>
+            <div
+              className="ms_nav_thumbnails"
+              data-slick='{"slidesToShow": 2, "vertical": false}'
+            >
+              {/*thumbnail 1*/}
+              <div className="thumbnail_item">
+                <img
+                  src="https://agencianuba.com/flagasamascotas_front_images/banners/formula-premium.jpg"
+                  alt="image_not_found"
+                  unoptimized={true}
+                />
+              </div>
+
+              {/*thumbnail 2*/}
+              <div className="thumbnail_item">
+                <img
+                  src="https://agencianuba.com/flagasamascotas_front_images/banners/formula-premim-ktyto.jpg"
+                  alt="image_not_found"
+                  unoptimized={true}
+                />
+              </div>
+
+              {/*thumbnail 3*/}
+              <div className="thumbnail_item">
+                <img
+                  src="https://agencianuba.com/flagasamascotas_front_images/banners/formula-superpremium.jpg"
+                  alt="image_not_found"
+                  unoptimized={true}
+                />
+              </div>
+
+              {/*thumbnail 4*/}
+              <div className="thumbnail_item">
+                <img
+                  src="https://agencianuba.com/flagasamascotas_front_images/banners/formula-mantenimiento.jpg"
+                  alt="image_not_found"
+                  unoptimized={true}
+                />
+              </div>
+
+              {/*thumbnail 5*/}
+              <div className="thumbnail_item">
+                <img
+                  src="https://agencianuba.com/flagasamascotas_front_images/banners/formula-regular.jpg"
+                  alt="image_not_found"
+                  unoptimized={true}
+                />
+              </div>
+
+              
+
+            </div>
+
+            <div className="carousel_nav">
+              <button type="button" className="main_left_arrow">
+                <i className="far fa-arrow-left"></i>
+              </button>
+              <button type="button" className="main_right_arrow">
+                <i className="far fa-arrow-right"></i>
+              </button>
+            </div>
           </section>
 
           {/* Productos */}
