@@ -93,7 +93,7 @@ const Page = async () => {
                   >
                     <div className="container width_desktop">
                       <div className="row">
-                        <div className="col col-md-7 col-sm-9">
+                        <div className="col col-md-7">
                           <div className="slider_content">
                             <h3
                               className="small_title"
