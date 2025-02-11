@@ -13,7 +13,7 @@ export const HomeTitleOne = () => {
          stiffness: 300, // Controla la fuerza del resorte
          damping: 10, // Controla la cantidad de rebote
        }}
-       viewport={{ once: false, amount: 0.2 }} // Se ejecuta cada vez que entra al 75% en pantalla
+       viewport={{ once: true }} // Se ejecuta cada vez que entra al 75% en pantalla
      
       >
        
