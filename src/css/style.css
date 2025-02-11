@@ -17451,6 +17451,13 @@ hr {
   .slider_section .small_title, .slider_section .big_title  {
     display: none;
   }
+  .slider_content  {
+    text-align: center !important;
+  }
+  .slider_content .btn-view{
+    margin-top: 350px;
+  }
+
   /* section title - start */
   .section_title .title_text {
     font-size: 36px;
