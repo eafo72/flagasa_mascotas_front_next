@@ -16413,6 +16413,9 @@ hr {
 /* media screen and (max-width: 991px) - start
 ================================================== */
 @media screen and (max-width: 991px) {
+  .category_selector{
+    max-width: none;
+  }
   .custom_slider{
     top:50px;
   }
@@ -19375,4 +19378,8 @@ p strong, p span {
   object-fit: cover; /* Hace que la imagen llene el contenedor sin distorsión */
   width: 100%;
   height: 100%;
+}
+
+.category_selector{
+  max-width: 33vw;
 }

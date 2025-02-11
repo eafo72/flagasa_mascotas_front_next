@@ -47,7 +47,7 @@ export const CategorySelector = ({ brand_name, category_name, category_slugged_n
   };
 
   return (
-    <div style={{maxWidth:"33vw"}}>
+    <div class="category_selector">
     <Select
       instanceId={'categorias'}
       styles={customStyles}
