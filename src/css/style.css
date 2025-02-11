@@ -19235,6 +19235,10 @@ hr {
   color:#25bc6c !important;
 }
 
+.text-color-black{
+  color:#222 !important;
+}
+
 /*AJUSTE DE COLORES CUANDO SE USA EL EDITOR DE TEXTOS QUILL*/
 p strong, p span {
   background-color: transparent !important;

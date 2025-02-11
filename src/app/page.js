@@ -104,7 +104,7 @@ const Page = async () => {
                               {iteM.titulo}
                             </h3>
                             <h4
-                              className="big_title text-light"
+                              className="big_title text-color-black"
                               data-animation="slideInLeft"
                               data-delay=".4s"
                             >
