@@ -20,6 +20,7 @@ import { DogImage } from "../components/DogImage";
 import { HomeTitleOne } from "../components/HomeTitleOne";
 import { HomeTitleTwo } from "../components/HomeTitleTwo";
 import { HomeTitleThree } from "../components/HomeTitleThree";
+import { HomeTitleFour } from "../components/HomeTitleFour";
 
 const getCarrusel = async () => {
   try {
@@ -288,9 +289,7 @@ const Page = async () => {
                 </div>
                 <div className="col col-lg-6 col-md-8">
                   <div className="item_content">
-                    <h2 className="item_title">
-                      Libera el potencial de tu mascota
-                    </h2>
+                    <HomeTitleFour></HomeTitleFour>
 
                     <ul className="info_list ul_li_block">
                       <li>
