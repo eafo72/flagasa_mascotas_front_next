@@ -1860,7 +1860,7 @@ hr {
   position: fixed;
   border-radius: 0;
   padding: 60px 0;
-  background-color: #ffffff;
+  background-color: black;
   -webkit-box-shadow: 0px 20px 60px 0px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 20px 60px 0px rgba(0, 0, 0, 0.15);
 }
@@ -1873,7 +1873,7 @@ hr {
 }
 .megamenu .homepage_list a {
   width: 100%;
-  color: #030303;
+  color: white;
   display: block;
   font-size: 16px;
   font-weight: 500;
