@@ -83,14 +83,14 @@ const About = async () => {
                       <h2 class="fw-bold text-center pt-5 pb-5">NUESTROS VALORES</h2>
 
                       <div class="row align-items-center">
-                        <div class="col-4">
+                        <div class="col-3">
                           <Image
                             class="img-stretch"
                             src={mision_image}
                             alt={mision_image}
                           />
                         </div>
-                        <div class="col-8">
+                        <div class="col-9">
                           <h4 class="fw-bold">Misión</h4>
                           <p>
                             Fabricar alimentos balanceados de la más alta
@@ -100,14 +100,14 @@ const About = async () => {
                       </div>
 
                       <div class="row align-items-center">
-                        <div class="col-4">
+                        <div class="col-3">
                           <Image
                             class="img-stretch"
                             src={mision_image}
                             alt={mision_image}
                           />
                         </div>
-                        <div class="col-8">
+                        <div class="col-9">
                           <h4 class="fw-bold">Visión</h4>
                           <p>
                             Contribuir al bienestar de todos los integrantes de
