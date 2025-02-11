@@ -18620,7 +18620,8 @@ hr {
   /* section title - end */
   /* teb - start */
   .product_tabnav_4 button {
-    font-size: 18px;
+    font-size: 14px;
+    padding: 10px 15px;
   }
 
   /*
