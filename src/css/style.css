@@ -338,12 +338,12 @@ hr {
   margin-top: 60px;
 }
 .btn-view{
-  color: #25bc6c !important; 
-  background-color: transparent !important;
-}
-.btn-view:hover{
   color: white !important; 
   background-color: #25bc6c !important;
+}
+.btn-view:hover{
+  color: #25bc6c !important; 
+  background-color: transparent !important;
 }
 
 .btn {
