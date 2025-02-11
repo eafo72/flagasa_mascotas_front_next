@@ -78,6 +78,7 @@ const AllCategories = async ({ params }) => {
                         Inicio
                       </Link>
                     </li>
+                    <li>Fórmulas especializadas</li>
                     <li>{categoryName}</li>
                   </ul>
                 </div>
@@ -92,7 +93,6 @@ const AllCategories = async ({ params }) => {
               <form action="#">
                 <ul className="items_col ul_li">
                   <li class="categories_control">
-                    <h4 className="item_title text-uppercase">Fórmulas especializadas</h4>
                     <div className="select_option clearfix">
                       <CategorySelector
                         brand_name={params.marca.replace("-", " ")}

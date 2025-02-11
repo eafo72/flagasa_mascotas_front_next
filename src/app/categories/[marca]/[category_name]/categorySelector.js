@@ -47,7 +47,7 @@ export const CategorySelector = ({ brand_name, category_name, category_slugged_n
   };
 
   return (
-    
+    <div style={{maxWidth:"33vw"}}>
     <Select
       instanceId={'categorias'}
       styles={customStyles}
@@ -57,6 +57,7 @@ export const CategorySelector = ({ brand_name, category_name, category_slugged_n
       onChange={handleCategoryChange}
       isSearchable={true}
     ></Select>
+    </div>
 
     
   );
