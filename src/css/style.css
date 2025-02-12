@@ -19403,5 +19403,5 @@ p strong, p span {
 }
 
 .category_selector{
-  max-width: 33vw;
+  max-width: fit-content;
 }
