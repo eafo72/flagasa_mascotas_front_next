@@ -220,7 +220,7 @@ export const ProductPreviewCard = ({ item }) => {
                   src={`${item.foto_principal}?v=${Date.now()}`}
                   alt={`${item.foto_principal}`}
                   className="img-fluid"
-                  unoptimized={true}
+                  unoptimized={'true'}
                 />
               </Link>
             </div>
@@ -241,7 +241,7 @@ export const ProductPreviewCard = ({ item }) => {
                       src={`${item2.image}?v=${Date.now()}`}
                       alt={`${item2.image}`}
                       className="img-fluid"
-                      unoptimized={true}
+                      unoptimized={'true'}
                     />
                   </Link>
                 </div>

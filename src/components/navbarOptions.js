@@ -271,7 +271,7 @@ export const NavbarOptions = ({ categories }) => {
             <i className="fal fa-times"></i>
           </button>
 
-          <div align="center" class="pb-3">
+          <div align="center" className="pb-3">
             <Image
               style={{ height: "100px", width: "100px" }}
               src={logo_footer}
@@ -281,7 +281,7 @@ export const NavbarOptions = ({ categories }) => {
 
           
           <button
-            class={`sidenav_menu_item ${pathname === "/" ? "text-color-green" : ""}`}
+            className={`sidenav_menu_item ${pathname === "/" ? "text-color-green" : ""}`}
             onClick={() => {
               closeNav(); // Llama a la función para cerrar el menú
               window.location.href = "/"; // Redirige a la página de inicio
@@ -293,7 +293,7 @@ export const NavbarOptions = ({ categories }) => {
 
           <div className="accordion-item">
             <button
-              class={`collapsed sidenav_menu_item separator d-flex justify-content-between align-items-center ${pathname.startsWith("/categories") ? "text-color-green" : ""}`}
+              className={`collapsed sidenav_menu_item separator d-flex justify-content-between align-items-center ${pathname.startsWith("/categories") ? "text-color-green" : ""}`}
               type="button"
               data-bs-toggle="collapse"
               data-bs-target={`#accordion_primary`}
@@ -332,7 +332,7 @@ export const NavbarOptions = ({ categories }) => {
           </div>
 
           <Link
-            class={`sidenav_menu_item separator ${pathname === "/about" ? "text-color-green" : ""}`}
+            className={`sidenav_menu_item separator ${pathname === "/about" ? "text-color-green" : ""}`}
             href="/about"
             onClick={() => {
               closeNav();
@@ -342,7 +342,7 @@ export const NavbarOptions = ({ categories }) => {
           </Link>
 
           <Link
-            class={`sidenav_menu_item separator ${pathname === "/resellers" ? "text-color-green" : ""}`}
+            className={`sidenav_menu_item separator ${pathname === "/resellers" ? "text-color-green" : ""}`}
             href="/resellers"
             onClick={() => {
               closeNav();
@@ -352,7 +352,7 @@ export const NavbarOptions = ({ categories }) => {
           </Link>
 
           <Link
-            class={`sidenav_menu_item separator ${pathname === "/faq" ? "text-color-green" : ""}`}
+            className={`sidenav_menu_item separator ${pathname === "/faq" ? "text-color-green" : ""}`}
             href="/faq"
             onClick={() => {
               closeNav();
@@ -362,7 +362,7 @@ export const NavbarOptions = ({ categories }) => {
           </Link>
 
           <Link
-            class={`sidenav_menu_item separator ${pathname === "/contact" ? "text-color-green" : ""}`}
+            className={`sidenav_menu_item separator ${pathname === "/contact" ? "text-color-green" : ""}`}
             href="/contact"
             onClick={() => {
               closeNav();

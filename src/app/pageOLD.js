@@ -71,7 +71,7 @@ const Page = async () => {
                     <img
                       src="https://agencianuba.com/flagasamascotas_front_images/banners/formula-premium.jpg"
                       alt="image_not_found"
-                      unoptimized={true}
+                      unoptimized={'true'}
                     />
                   </div>
                 </div>
@@ -105,7 +105,7 @@ const Page = async () => {
                     <img
                       src="https://agencianuba.com/flagasamascotas_front_images/banners/formula-premim-ktyto.jpg"
                       alt="image_not_found"
-                      unoptimized={true}
+                      unoptimized={'true'}
                     />
                   </div>
                 </div>
@@ -139,7 +139,7 @@ const Page = async () => {
                     <img
                       src="https://agencianuba.com/flagasamascotas_front_images/banners/formula-superpremium.jpg"
                       alt="image_not_found"
-                      unoptimized={true}
+                      unoptimized={'true'}
                     />
                   </div>
                 </div>
@@ -173,7 +173,7 @@ const Page = async () => {
                     <img
                       src="https://agencianuba.com/flagasamascotas_front_images/banners/formula-mantenimiento.jpg"
                       alt="image_not_found"
-                      unoptimized={true}
+                      unoptimized={'true'}
                     />
                   </div>
                 </div>
@@ -207,7 +207,7 @@ const Page = async () => {
                     <img
                       src="https://agencianuba.com/flagasamascotas_front_images/banners/formula-regular.jpg"
                       alt="image_not_found"
-                      unoptimized={true}
+                      unoptimized={'true'}
                     />
                   </div>
                 </div>
@@ -244,7 +244,7 @@ const Page = async () => {
                 <img
                   src="https://agencianuba.com/flagasamascotas_front_images/banners/formula-premium.jpg"
                   alt="image_not_found"
-                  unoptimized={true}
+                  unoptimized={'true'}
                 />
               </div>
 
@@ -253,7 +253,7 @@ const Page = async () => {
                 <img
                   src="https://agencianuba.com/flagasamascotas_front_images/banners/formula-premim-ktyto.jpg"
                   alt="image_not_found"
-                  unoptimized={true}
+                  unoptimized={'true'}
                 />
               </div>
 
@@ -262,7 +262,7 @@ const Page = async () => {
                 <img
                   src="https://agencianuba.com/flagasamascotas_front_images/banners/formula-superpremium.jpg"
                   alt="image_not_found"
-                  unoptimized={true}
+                  unoptimized={'true'}
                 />
               </div>
 
@@ -271,7 +271,7 @@ const Page = async () => {
                 <img
                   src="https://agencianuba.com/flagasamascotas_front_images/banners/formula-mantenimiento.jpg"
                   alt="image_not_found"
-                  unoptimized={true}
+                  unoptimized={'true'}
                 />
               </div>
 
@@ -280,7 +280,7 @@ const Page = async () => {
                 <img
                   src="https://agencianuba.com/flagasamascotas_front_images/banners/formula-regular.jpg"
                   alt="image_not_found"
-                  unoptimized={true}
+                  unoptimized={'true'}
                 />
               </div>
 
@@ -517,7 +517,7 @@ const Page = async () => {
                                 <img
                                   src={`${item1.imagen}?v=${Date.now()}`}
                                   alt={`${item1.imagen}`}
-                                  unoptimized={true}
+                                  unoptimized={'true'}
                                 />
                               </Link>
                             </div>

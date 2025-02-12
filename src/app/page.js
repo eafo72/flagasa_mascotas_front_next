@@ -24,10 +24,12 @@ import { HomeTitleFour } from "../components/HomeTitleFour";
 
 const getCarrusel = async () => {
   try {
-    const res = await clienteAxios.get(`/carrusel/obtener`);
+    //const res = await clienteAxios.get(`/carrusel/obtener`);
     //console.log(res.data.carrusel)
-    //const res = await fetch('https://flagasa-mascotas-back.onrender.com/carrusel/obtener', { cache: 'no-store' });
-    return res.data.carrusel;
+    const res = await fetch('https://flagasa-mascotas-back.onrender.com/carrusel/obtener', { cache: 'no-store' });
+    const data = await res.json();
+    return data['carrusel'];
+
   } catch (error) {
     console.log(error);
   }
@@ -35,9 +37,14 @@ const getCarrusel = async () => {
 
 const getCategories = async () => {
   try {
-    const res = await clienteAxios.get(`/categoria/obtener`);
+    //const res = await clienteAxios.get(`/categoria/obtener`);
     //console.log(res.data.categorias)
-    return res.data.categorias;
+    //return res.data.categorias;
+
+    const res = await fetch('https://flagasa-mascotas-back.onrender.com/categoria/obtener', { cache: 'no-store' });
+    const data = await res.json();
+    return data['categorias'];
+
   } catch (error) {
     console.log(error);
   }
@@ -45,9 +52,14 @@ const getCategories = async () => {
 
 const getCategoriesSix = async () => {
   try {
-    const res = await clienteAxios.get(`/categoria/obtenerSeis`);
+    //const res = await clienteAxios.get(`/categoria/obtenerSeis`);
     //console.log(res.data.categorias)
-    return res.data.categorias;
+    //return res.data.categorias;
+
+    const res = await fetch('https://flagasa-mascotas-back.onrender.com/categoria/obtenerSeis', { cache: 'no-store' });
+    const data = await res.json();
+    return data['categorias'];
+
   } catch (error) {
     console.log(error);
   }
@@ -55,9 +67,14 @@ const getCategoriesSix = async () => {
 
 const getProducts = async () => {
   try {
-    const res = await clienteAxios.get(`/producto/obtener`);
+    //const res = await clienteAxios.get(`/producto/obtener`);
     //console.log(res.data.productos)
-    return res.data.productos;
+    //return res.data.productos;
+
+    const res = await fetch('https://flagasa-mascotas-back.onrender.com/producto/obtener', { cache: 'no-store' });
+    const data = await res.json();
+    return data['productos'];
+
   } catch (error) {
     console.log(error);
   }
@@ -127,7 +144,7 @@ const Page = async () => {
                 ))}
             </div>
 
-            <div class="ms_nav_thumbnails d-none"></div>
+            <div className="ms_nav_thumbnails d-none"></div>
           </section>
 
           {/* Productos */}
@@ -176,7 +193,7 @@ const Page = async () => {
                       .map((item) => (
                         <li key={item._id}>
                           <button
-                            class={`btn ${item.nombre == 'PREMIUM'? 'active' : ''}`}
+                            className={`btn ${item.nombre == 'PREMIUM'? 'active' : ''}`}
                             data-bs-toggle="tab"
                             data-bs-target={`#${item.nombre
                               .split(" ")
@@ -348,13 +365,13 @@ const Page = async () => {
                           <div className="shop_image_wrap">
                             <div className="tab-content">
                               <Link
-                                className="shop_image"
+                                className="shop_image text-center"
                                 href={`/categories/Todas/${item1.nombreSlugged}`}
                               >
                                 <img
                                   src={`${item1.imagen}?v=${Date.now()}`}
                                   alt={`${item1.imagen}`}
-                                  unoptimized={true}
+                                  unoptimized={'true'}
                                 />
                               </Link>
                             </div>
