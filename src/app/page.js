@@ -24,8 +24,9 @@ import { HomeTitleFour } from "../components/HomeTitleFour";
 
 const getCarrusel = async () => {
   try {
-    const res = await clienteAxios.get(`/carrusel/obtener`);
+    //const res = await clienteAxios.get(`/carrusel/obtener`);
     //console.log(res.data.carrusel)
+    const res = await fetch('https://flagasa-mascotas-back.onrender.com/carrusel/obtener', { cache: 'no-store' });
     return res.data.carrusel;
   } catch (error) {
     console.log(error);
