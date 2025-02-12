@@ -13,14 +13,14 @@ const Contact = async () => {
                 <div className="breadcrumb_content">
                   <ul className="breadcrumb_nav ul_li_center">
                     <li>
-                      <button
+                      <a
                         className="home_btn"
                         onClick={() => {
                           window.location.href = "/"; // Redirige a la página de inicio
                         }}
                       >
                       Inicio
-                      </button>
+                      </a>
                     </li>
                     <li>Contacto</li>
                   </ul>
