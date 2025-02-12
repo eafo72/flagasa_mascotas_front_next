@@ -37,13 +37,13 @@ export async function Footer() {
               <div className="col col-lg-4 col-md-5 col-sm-6">
                 <div className="footer_widget footer_about">
                   <div className="brand_logo">
-                    <Link className="brand_link" href="/">
+                    <a className="brand_link" href="/">
                       <Image
                         style={{ height: "100px", width: "100px" }}
                         src={logo_footer}
                         alt={logo_footer}
                       />
-                    </Link>
+                    </a>
                   </div>
                   <p>
                     Flagasa Mascotas
