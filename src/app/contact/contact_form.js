@@ -107,7 +107,7 @@ export const ContactForm = () => {
             id="mensaje"
           ></textarea>
         </div>
-        <button className="btn btn_primary btn_rounded" type="submit">
+        <button className="btn btn_rounded btn-view2" type="submit">
           Enviar
         </button>
       </form>

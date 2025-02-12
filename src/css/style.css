@@ -340,12 +340,26 @@ hr {
 .btn-view{
   color: white !important; 
   background: linear-gradient(35deg, #3eaf29, #1e8c45);
-  border-color: linear-gradient(35deg, #3eaf29, #1e8c45);
+  border-color:  transparent;
 }
 .btn-view:hover{
-  color: #25bc6c !important; 
-  background-color: transparent !important;
+  color: white !important; 
+  background: transparent !important;
+  border-color:#3eaf29;
 }
+
+.btn-view2{
+  color: white !important; 
+  background: linear-gradient(35deg, #3eaf29, #1e8c45);
+  border-color:  transparent;
+}
+.btn-view2:hover{
+  color: black !important; 
+  background: transparent !important;
+  border-color:#3eaf29;
+}
+
+
 
 .btn {
   outline: none;
@@ -10412,6 +10426,7 @@ hr {
 }
 .shop_details p {
   color: #7b7d7f;
+  text-align: justify;
 }
 .shop_details hr {
   margin: 35px 0;
@@ -19169,7 +19184,7 @@ hr {
 	top: 0; /* Stay at the top */
 	right: 0;
 	/*background-image: linear-gradient(115deg, rgba(194,88,133,1), rgba(255,211,211,1), rgba(246,153,126,1));*/
-  background-color: #000;
+  background-color: #333333;
 	overflow: hidden; /* Disable horizontal scroll */
 	padding-top: 60px;
 	transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */

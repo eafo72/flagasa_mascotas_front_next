@@ -217,7 +217,7 @@ const Resellers = () => {
                   </div>
                   <div class="text-center">
                     <button
-                      className="btn btn_primary btn_rounded"
+                      className="btn btn_rounded btn-view2"
                       type="submit"
                     >
                       Enviar
