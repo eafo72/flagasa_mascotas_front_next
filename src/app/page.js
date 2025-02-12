@@ -28,7 +28,7 @@ const getCarrusel = async () => {
     //console.log(res.data.carrusel)
     const res = await fetch('https://flagasa-mascotas-back.onrender.com/carrusel/obtener', { cache: 'no-store' });
     console.log(res);
-    return res.data.carrusel;
+    return res.carrusel;
   } catch (error) {
     console.log(error);
   }
