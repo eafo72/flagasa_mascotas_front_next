@@ -74,9 +74,9 @@ const AllCategories = async ({ params }) => {
                 <div className="breadcrumb_content">
                   <ul className="breadcrumb_nav ul_li_center">
                     <li>
-                      <Link className="home_btn" href="/">
+                      <a className="home_btn" href="/">
                         Inicio
-                      </Link>
+                      </a>
                     </li>
                     <li>Fórmulas especializadas</li>
                     <li>{categoryName}</li>

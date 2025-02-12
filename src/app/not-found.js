@@ -10,9 +10,8 @@ export default function NotFound() {
         Lo sentimos, la página que buscas no existe o ha sido movida.
       </p>
       
-      <Link href="/">
-        <a className="btn btn-primary mt-3">Volver al inicio</a>
-      </Link>
+      <a href="/" className="btn btn-primary mt-3">Volver al inicio</a>
+
     </div>
   );
 }
