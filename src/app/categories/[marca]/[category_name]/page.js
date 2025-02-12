@@ -13,9 +13,9 @@ const AllCategories = async ({ params }) => {
 
   const getCategories = async () => {
     try {
-      const res = await clienteAxios.get(`/categoria/obtener`);
-      //console.log(res.data.categorias)
-      return res.data.categorias;
+      const res = await fetch('https://flagasa-mascotas-back.onrender.com/categoria/obtener', { cache: 'no-store' });
+      const data = await res.json();
+      return data['categorias'];
     } catch (error) {
       console.log(error);
     }
@@ -23,9 +23,9 @@ const AllCategories = async ({ params }) => {
 
   const getBrands = async () => {
     try {
-      const res = await clienteAxios.get(`/marca/obtener`);
-      //console.log(res.data.marcas)
-      return res.data.marcas;
+      const res = await fetch('https://flagasa-mascotas-back.onrender.com/marca/obtener', { cache: 'no-store' });
+      const data = await res.json();
+      return data['marcas'];
     } catch (error) {
       console.log(error);
     }
@@ -33,9 +33,9 @@ const AllCategories = async ({ params }) => {
 
   const getProducts = async () => {
     try {
-      const res = await clienteAxios.get(`/producto/obtener`);
-      //console.log(res.data.productos)
-      return res.data.productos;
+      const res = await fetch('https://flagasa-mascotas-back.onrender.com/producto/obtener', { cache: 'no-store' });
+      const data = await res.json();
+      return data['productos'];
     } catch (error) {
       console.log(error);
     }

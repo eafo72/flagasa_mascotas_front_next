@@ -43,23 +43,6 @@ export const ProductPreviewCard = ({ item }) => {
     setColor({ value: codigo, label: label });
   };
 
-  /*
-  const getStock = async (size, colour) => {
-    try {
-      //getStock
-      const res2 = await clienteAxios.get(
-        `/almacen/stock-codigo/` + item.codigo + `-` + size + `-` + colour
-      );
-
-      //console.log(res2.data.stock[0].stockTotal);
-
-      setStockTotal(res2.data.stock[0].stockTotal);
-    } catch (error) {
-      console.log(error);
-    }
-  };
- */
-
   const mostrarMensaje = (mensaje) => {
     toast.error(mensaje);
   };

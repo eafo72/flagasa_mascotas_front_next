@@ -17,9 +17,9 @@ export async function Footer() {
 
   const getCategories = async () => {
     try {
-      const res = await clienteAxios.get(`/categoria/obtener`);
-      //console.log(res.data.categorias)
-      return res.data.categorias;
+      const res = await fetch('https://flagasa-mascotas-back.onrender.com/categoria/obtener', { cache: 'no-store' });
+      const data = await res.json();
+      return data['categorias'];
     } catch (error) {
       console.log(error);
     }

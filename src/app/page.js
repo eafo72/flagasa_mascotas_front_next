@@ -24,12 +24,9 @@ import { HomeTitleFour } from "../components/HomeTitleFour";
 
 const getCarrusel = async () => {
   try {
-    //const res = await clienteAxios.get(`/carrusel/obtener`);
-    //console.log(res.data.carrusel)
     const res = await fetch('https://flagasa-mascotas-back.onrender.com/carrusel/obtener', { cache: 'no-store' });
     const data = await res.json();
     return data['carrusel'];
-
   } catch (error) {
     console.log(error);
   }
@@ -37,14 +34,9 @@ const getCarrusel = async () => {
 
 const getCategories = async () => {
   try {
-    //const res = await clienteAxios.get(`/categoria/obtener`);
-    //console.log(res.data.categorias)
-    //return res.data.categorias;
-
     const res = await fetch('https://flagasa-mascotas-back.onrender.com/categoria/obtener', { cache: 'no-store' });
     const data = await res.json();
     return data['categorias'];
-
   } catch (error) {
     console.log(error);
   }
@@ -52,14 +44,9 @@ const getCategories = async () => {
 
 const getCategoriesSix = async () => {
   try {
-    //const res = await clienteAxios.get(`/categoria/obtenerSeis`);
-    //console.log(res.data.categorias)
-    //return res.data.categorias;
-
     const res = await fetch('https://flagasa-mascotas-back.onrender.com/categoria/obtenerSeis', { cache: 'no-store' });
     const data = await res.json();
     return data['categorias'];
-
   } catch (error) {
     console.log(error);
   }
@@ -67,14 +54,9 @@ const getCategoriesSix = async () => {
 
 const getProducts = async () => {
   try {
-    //const res = await clienteAxios.get(`/producto/obtener`);
-    //console.log(res.data.productos)
-    //return res.data.productos;
-
     const res = await fetch('https://flagasa-mascotas-back.onrender.com/producto/obtener', { cache: 'no-store' });
     const data = await res.json();
     return data['productos'];
-
   } catch (error) {
     console.log(error);
   }

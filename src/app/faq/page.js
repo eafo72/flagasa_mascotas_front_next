@@ -6,9 +6,9 @@ import clienteAxios from "../../config/axios";
 const Faq = async () => {
   const getFaqs = async () => {
     try {
-      const res = await clienteAxios.get(`/faq/obtener`);
-      console.log(res.data.faqs)
-      return res.data.faqs;
+      const res = await fetch('https://flagasa-mascotas-back.onrender.com/faq/obtener', { cache: 'no-store' });
+      const data = await res.json();
+      return data['faqs'];
     } catch (error) {
       console.log(error);
     }
