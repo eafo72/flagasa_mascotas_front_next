@@ -398,8 +398,8 @@ export const ProductPreviewCard = ({ item }) => {
                           dangerouslySetInnerHTML={{ __html: item.descripcion }}
                         ></p>
                         <hr />
-                        {producto.link != "Empty" &&
-                        producto.link != "empty" ? (
+                        {item.link != "Empty" &&
+                        item.link != "empty" ? (
                           <a
                             href={item.link}
                             style={{ textDecoration: "none" }}

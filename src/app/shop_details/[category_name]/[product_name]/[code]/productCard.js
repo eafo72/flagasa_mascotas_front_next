@@ -215,7 +215,7 @@ export const ProductCard = ({
                 ></p>
                 <hr />
 
-                {producto.link != "Empty" && producto.link != "empty" ? (
+                {(producto && producto.link != "Empty") && (producto && producto.link != "empty") ? (
                   <a
                     href={producto.link}
                     style={{ textDecoration: "none" }}
