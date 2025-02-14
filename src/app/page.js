@@ -341,7 +341,11 @@ const Page = async () => {
               <div className="row">
                 {categories &&
                   categories
-                  .sort((a, b) => categoriesOrder.indexOf(a.nombre) - ordenDeseado.indexOf(b.nombre))
+                  .sort((a, b) => {
+                    let indexA = ordenDeseado.indexOf(a.nombre);
+                    let indexB = ordenDeseado.indexOf(b.nombre);
+                    return (indexA === -1 ? 999 : indexA) - (indexB === -1 ? 999 : indexB);
+                  })
                   .map((item1, index) => {
                     return index < 4 ? (
                       <div
