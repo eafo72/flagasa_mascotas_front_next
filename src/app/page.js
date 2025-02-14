@@ -62,6 +62,9 @@ const getProducts = async () => {
   }
 };
 
+
+const categoriesOrder = ["MANTENIMIENTO", "REGULAR", "PREMIUM", "SÚPER PREMIUM"];
+
 const Page = async () => {
   const carrusel = await getCarrusel();
   const categories = await getCategories();
@@ -337,7 +340,9 @@ const Page = async () => {
 
               <div className="row">
                 {categories &&
-                  categories.map((item1, index) => {
+                  categories
+                  .sort((a, b) => categoriesOrder.indexOf(a.nombre) - ordenDeseado.indexOf(b.nombre))
+                  .map((item1, index) => {
                     return index < 4 ? (
                       <div
                         key={index}
