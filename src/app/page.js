@@ -94,7 +94,7 @@ const Page = async () => {
                   >
                     <div className="container width_desktop">
                       <div className="row">
-                        <div className="col col-md-7">
+                        <div className="col col-md-6">
                           <div className="slider_content">
                             <h3
                               className="small_title"
@@ -338,10 +338,10 @@ const Page = async () => {
               <div className="row">
                 {categories &&
                   categories.map((item1, index) => {
-                    return index < 3 ? (
+                    return index < 4 ? (
                       <div
                         key={index}
-                        className="col col-lg-4 col-md-4 col-sm-4"
+                        className="col col-lg-3 col-md-3 col-sm-3"
                       >
                         <div className="shop_layout_4">
                           <div className="shop_image_wrap">
