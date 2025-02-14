@@ -14386,6 +14386,9 @@ hr {
   }
 }
 @media screen and (max-width: 1460px) {
+  .slider_section .small_title, .slider_section .big_title  {
+    display: none;
+  }
   /* space - start */
   .sec_space_large {
     padding-top: 30px;
