@@ -197,13 +197,15 @@ export const ProductPreviewCard = ({ item }) => {
             >
               <Link
                 className="shop_image"
-                href={`/shop_details/${item.categoriaSlugged}/${item.nombre.trim().replace(/\s/g, "-")}/${item.codigo}`}
+                href={`/shop_details/${item.categoriaSlugged}/${item.nombre
+                  .trim()
+                  .replace(/\s/g, "-")}/${item.codigo}`}
               >
                 <img
                   src={`${item.foto_principal}?v=${Date.now()}`}
                   alt={`${item.foto_principal}`}
                   className="img-fluid"
-                  unoptimized={'true'}
+                  unoptimized={"true"}
                 />
               </Link>
             </div>
@@ -218,13 +220,15 @@ export const ProductPreviewCard = ({ item }) => {
                 >
                   <Link
                     className="shop_image"
-                    href={`/shop_details/${item.categoriaSlugged}/${item.nombre.trim().replace(/\s/g, "-")}/${item.codigo}`}
+                    href={`/shop_details/${item.categoriaSlugged}/${item.nombre
+                      .trim()
+                      .replace(/\s/g, "-")}/${item.codigo}`}
                   >
                     <img
                       src={`${item2.image}?v=${Date.now()}`}
                       alt={`${item2.image}`}
                       className="img-fluid"
-                      unoptimized={'true'}
+                      unoptimized={"true"}
                     />
                   </Link>
                 </div>
@@ -381,50 +385,52 @@ export const ProductPreviewCard = ({ item }) => {
 
                     <div className="col col-lg-6 col-md-8">
                       <div className="shop_details_content">
-                        
                         <h2 className="item_subtitle pt-4">{item.categoria}</h2>
-                        <h3
-                          className="item_title"
-                        >
-                          {item.nombre}
-                        </h3>
+                        <h3 className="item_title">{item.nombre}</h3>
                         <h4>{item.marca}</h4>
                         <div className="item_price">
                           {/*
                           <span className="sale_price">$ {item.precio}</span>
                           */}
                         </div>
-                        <p className="mb-0 quill-text" dangerouslySetInnerHTML={{ __html: item.descripcion }}></p>
+                        <p
+                          className="mb-0 quill-text"
+                          dangerouslySetInnerHTML={{ __html: item.descripcion }}
+                        ></p>
                         <hr />
-
-                        <a
-                          href={item.link}
-                          style={{ textDecoration: "none" }}
-                          target="_blank"
-                        >
-                          <div
-                            style={{
-                              display: "flex",
-                              alignItems: "center",
-                              backgroundColor: "#ffe600",
-                              color: "#000",
-                              padding: "10px 20px",
-                              borderRadius: "5px",
-                              fontSize: "16px",
-                              fontWeight: "bold",
-                              textAlign: "center",
-                              width: "fit-content",
-                              boxShadow: "0 2px 4px rgba(0,0,0,0.2)",
-                            }}
+                        {producto.link != "Empty" &&
+                        producto.link != "empty" ? (
+                          <a
+                            href={item.link}
+                            style={{ textDecoration: "none" }}
+                            target="_blank"
                           >
-                            <img
-                              src="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.22.12/mercadolibre/logo__small.png"
-                              alt="Mercado Libre"
-                              style={{ height: "24px", marginRight: "10px" }}
-                            />
-                            Comprar en Mercado Libre
-                          </div>
-                        </a>
+                            <div
+                              style={{
+                                display: "flex",
+                                alignItems: "center",
+                                backgroundColor: "#ffe600",
+                                color: "#000",
+                                padding: "10px 20px",
+                                borderRadius: "5px",
+                                fontSize: "16px",
+                                fontWeight: "bold",
+                                textAlign: "center",
+                                width: "fit-content",
+                                boxShadow: "0 2px 4px rgba(0,0,0,0.2)",
+                              }}
+                            >
+                              <img
+                                src="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.22.12/mercadolibre/logo__small.png"
+                                alt="Mercado Libre"
+                                style={{ height: "24px", marginRight: "10px" }}
+                              />
+                              Comprar en Mercado Libre
+                            </div>
+                          </a>
+                        ) : (
+                          <></>
+                        )}
 
                         {/*
                         <div className="sd_info_layout">

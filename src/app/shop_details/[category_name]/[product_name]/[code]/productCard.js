@@ -195,11 +195,7 @@ export const ProductCard = ({
                 <h2 className="item_subtitle pt-4">
                   {producto && producto.categoria}
                 </h2>
-                <h3
-                  className="item_title"
-                >
-                  {producto && producto.nombre}
-                </h3>
+                <h3 className="item_title">{producto && producto.nombre}</h3>
                 <h4>{producto && producto.marca}</h4>
                 <div className="item_price">
                   <span className="sale_price">
@@ -211,14 +207,46 @@ export const ProductCard = ({
                   <del>$130.00</del>
                    */}
                 </div>
-                <p className="mb-0 quill-text" dangerouslySetInnerHTML={{ __html: producto && producto.descripcion }}></p>
+                <p
+                  className="mb-0 quill-text"
+                  dangerouslySetInnerHTML={{
+                    __html: producto && producto.descripcion,
+                  }}
+                ></p>
                 <hr />
-                <a href={producto.link} style={{textDecoration: "none"}} target="_blank">
-                  <div style={{display: "flex", alignItems:"center", backgroundColor: "#ffe600", color: "#000", padding: "10px 20px", borderRadius: "5px", fontSize: "16px", fontWeight: "bold", textAlign: "center", width: "fit-content", boxShadow: "0 2px 4px rgba(0,0,0,0.2)"}}>
-                    <img src="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.22.12/mercadolibre/logo__small.png" alt="Mercado Libre" style={{height: "24px", marginRight: "10px"}}/>
-                    Comprar en Mercado Libre
-                  </div>
-                </a>
+
+                {producto.link != "Empty" && producto.link != "empty" ? (
+                  <a
+                    href={producto.link}
+                    style={{ textDecoration: "none" }}
+                    target="_blank"
+                  >
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        backgroundColor: "#ffe600",
+                        color: "#000",
+                        padding: "10px 20px",
+                        borderRadius: "5px",
+                        fontSize: "16px",
+                        fontWeight: "bold",
+                        textAlign: "center",
+                        width: "fit-content",
+                        boxShadow: "0 2px 4px rgba(0,0,0,0.2)",
+                      }}
+                    >
+                      <img
+                        src="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.22.12/mercadolibre/logo__small.png"
+                        alt="Mercado Libre"
+                        style={{ height: "24px", marginRight: "10px" }}
+                      />
+                      Comprar en Mercado Libre
+                    </div>
+                  </a>
+                ) : (
+                  <></>
+                )}
 
                 {/*
               <div className="sd_info_layout">
