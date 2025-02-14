@@ -15932,7 +15932,7 @@ hr {
   /* home 1 - end */
   /* home 2 - start */
   .main_slider_9 .slider_item {
-    min-height: 500px;
+    height: 500px;
   }
 
   .main_slider_9 .big_title {
@@ -16435,9 +16435,6 @@ hr {
 /* media screen and (max-width: 991px) - start
 ================================================== */
 @media screen and (max-width: 991px) {
-  .main_slider_9 .slider_item {
-    height: 900px;
-  }  
   .shop_layout_4 .shop_image_wrap img{
     max-width: 60%;
   }
