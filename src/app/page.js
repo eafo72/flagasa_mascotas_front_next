@@ -100,7 +100,7 @@ const Page = async () => {
                         <div className="col col-md-6">
                           <div className="slider_content">
                             <h3
-                              className="small_title pb-2"
+                              className="small_title pb-3"
                               data-animation="slideInDown"
                               data-delay=".2s"
                             >
