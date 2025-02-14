@@ -15931,9 +15931,7 @@ hr {
 
   /* home 1 - end */
   /* home 2 - start */
-  .main_slider_9 .slider_item {
-    height: 500px;
-  }
+ 
 
   .main_slider_9 .big_title {
     font-size: 40px;
@@ -17476,6 +17474,9 @@ hr {
 /* media screen and (max-width: 767px) - start
 ================================================== */
 @media screen and (max-width: 767px) {
+  .main_slider_9 .slider_item {
+    height: 500px;
+  }
   .slider_section .small_title, .slider_section .big_title  {
     display: none;
   }
