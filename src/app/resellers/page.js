@@ -9,7 +9,7 @@ import { toast } from "sonner";
 import Link from "next/link";
 import Image from "next/image";
 
-import banner_resellers from "../../images/resellers/banner-distribuidor-centinela.png";
+import banner_resellers from "../../images/resellers/centinela-distribuidor.jpg";
 
 import img_infraestructura from "../../images/resellers/infraestructura.png";
 import img_potencial from "../../images/resellers/potencial.png";
