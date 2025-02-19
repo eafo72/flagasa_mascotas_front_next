@@ -21,6 +21,8 @@ export const NavbarOptions = ({ categories }) => {
 
   const pathname = usePathname();
 
+  const categoriesOrder = ["MANTENIMIENTO", "REGULAR", "PREMIUM", "SÚPER PREMIUM"];
+
   function openNav() {
     document.getElementById("mySidenav").style.width = "320px";
   }
@@ -151,7 +153,13 @@ export const NavbarOptions = ({ categories }) => {
                     <div className="container">
                       <ul className="homepage_list ul_li">
                         {categories &&
-                          categories.map((item, index) => (
+                          categories
+                          .sort((a, b) => {
+                            let indexA = categoriesOrder.indexOf(a.nombre);
+                            let indexB = categoriesOrder.indexOf(b.nombre);
+                            return (indexA === -1 ? 999 : indexA) - (indexB === -1 ? 999 : indexB);
+                          })
+                          .map((item, index) => (
                             <li key={index}>
                               <a
                                 href={`/categories/Todas/${item.nombreSlugged}`}
@@ -314,7 +322,13 @@ export const NavbarOptions = ({ categories }) => {
             >
               <div className="accordion-body">
                 {categories &&
-                  categories.map((item, index) => (
+                  categories
+                  .sort((a, b) => {
+                    let indexA = categoriesOrder.indexOf(a.nombre);
+                    let indexB = categoriesOrder.indexOf(b.nombre);
+                    return (indexA === -1 ? 999 : indexA) - (indexB === -1 ? 999 : indexB);
+                  })
+                  .map((item, index) => (
                     <Link
                       style={{ borderTop: "1px solid #a2a2a2" }}
                       href={`/categories/Todas/${item.nombreSlugged}`}
