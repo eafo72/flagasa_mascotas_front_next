@@ -175,6 +175,11 @@ const Page = async () => {
                           element.nombre !== categoriesSix[0]["nombre"]
                       )
                       */  
+                      .sort((a, b) => {
+                        let indexA = categoriesOrder.indexOf(a.nombre);
+                        let indexB = categoriesOrder.indexOf(b.nombre);
+                        return (indexA === -1 ? 999 : indexA) - (indexB === -1 ? 999 : indexB);
+                      })
                       .map((item) => (
                         <li key={item._id}>
                           <button
