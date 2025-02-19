@@ -1,21 +1,20 @@
 import Link from "next/link";
 
-
 import clienteAxios from "../../../../config/axios";
-
 
 import { CategorySelector } from "./categorySelector";
 import { BrandSelector } from "./brandSelector";
-import {ProductPreviewCard} from "../../../../components/productPreviewCard"
+import { ProductPreviewCard } from "../../../../components/productPreviewCard";
 
 const AllCategories = async ({ params }) => {
-
-
   const getCategories = async () => {
     try {
-      const res = await fetch('https://flagasa-mascotas-back.onrender.com/categoria/obtener', { cache: 'no-store' });
+      const res = await fetch(
+        "https://flagasa-mascotas-back.onrender.com/categoria/obtener",
+        { cache: "no-store" }
+      );
       const data = await res.json();
-      return data['categorias'];
+      return data["categorias"];
     } catch (error) {
       console.log(error);
     }
@@ -23,9 +22,12 @@ const AllCategories = async ({ params }) => {
 
   const getBrands = async () => {
     try {
-      const res = await fetch('https://flagasa-mascotas-back.onrender.com/marca/obtener', { cache: 'no-store' });
+      const res = await fetch(
+        "https://flagasa-mascotas-back.onrender.com/marca/obtener",
+        { cache: "no-store" }
+      );
       const data = await res.json();
-      return data['marcas'];
+      return data["marcas"];
     } catch (error) {
       console.log(error);
     }
@@ -33,41 +35,60 @@ const AllCategories = async ({ params }) => {
 
   const getProducts = async () => {
     try {
-      const res = await fetch('https://flagasa-mascotas-back.onrender.com/producto/obtener', { cache: 'no-store' });
+      const res = await fetch(
+        "https://flagasa-mascotas-back.onrender.com/producto/obtener",
+        { cache: "no-store" }
+      );
       const data = await res.json();
-      return data['productos'];
+      return data["productos"];
     } catch (error) {
       console.log(error);
     }
   };
 
   const categories = await getCategories();
+
+  const categoriesOrder = [
+    "MANTENIMIENTO",
+    "REGULAR",
+    "PREMIUM",
+    "SÚPER PREMIUM",
+  ];
+
+  // Ordenar las categorías antes de mapearlas
+  categories.sort((a, b) => {
+    let indexA = categoriesOrder.indexOf(a.nombre);
+    let indexB = categoriesOrder.indexOf(b.nombre);
+    return (indexA === -1 ? 999 : indexA) - (indexB === -1 ? 999 : indexB);
+  });
+
   const allCategories = [];
 
   let categoryName;
 
-  for(let i = 0; i < categories.length; i++){
-    allCategories.push({"value": categories[i]['nombreSlugged'], "label": categories[i]['nombre']});
-    if(categories[i]['nombreSlugged'] == params.category_name){
-      categoryName = categories[i]['nombre'];
+  for (let i = 0; i < categories.length; i++) {
+    allCategories.push({
+      value: categories[i]["nombreSlugged"],
+      label: categories[i]["nombre"],
+    });
+    if (categories[i]["nombreSlugged"] == params.category_name) {
+      categoryName = categories[i]["nombre"];
     }
   }
 
   const brands = await getBrands();
   const allBrands = [];
-  allBrands.push({"value": "Todas", "label": "Todas"});
-  for(let i = 0; i < brands.length; i++){
-    allBrands.push({"value": brands[i]['nombre'], "label": brands[i]['nombre']});
+  allBrands.push({ value: "Todas", label: "Todas" });
+  for (let i = 0; i < brands.length; i++) {
+    allBrands.push({ value: brands[i]["nombre"], label: brands[i]["nombre"] });
   }
-
 
   const products = await getProducts();
 
   return (
     <>
       <main>
-        <section
-          className="breadcrumb_section" >
+        <section className="breadcrumb_section">
           <div className="container">
             <div className="row">
               <div className="col col-lg-6">
@@ -128,8 +149,7 @@ const AllCategories = async ({ params }) => {
               >
                 {categories &&
                   categories.map((item) => {
-                    return item.nombreSlugged ===
-                      params.category_name ? (
+                    return item.nombreSlugged === params.category_name ? (
                       <li key={item._id}>
                         <button
                           id={`${item.nombre.split(" ").join("_")}_btn`}
@@ -175,8 +195,7 @@ const AllCategories = async ({ params }) => {
             <div className="tab-content">
               {categories &&
                 categories.map((item1) => {
-                  return item1.nombreSlugged ===
-                    params.category_name ? (
+                  return item1.nombreSlugged === params.category_name ? (
                     <div
                       key={item1._id}
                       className="tab-pane fade show active"
@@ -192,13 +211,11 @@ const AllCategories = async ({ params }) => {
                                 ? element.categoria === item1.nombre &&
                                   element.marca ===
                                     params.marca.replace("-", " ")
-                                : element.categoria === item1.nombre 
+                                : element.categoria === item1.nombre
                             )
                             .map((item) => (
                               <div key={item._id} className="col">
-                              
-                                <ProductPreviewCard item={item}/>
-                          
+                                <ProductPreviewCard item={item} />
                               </div>
                             ))}
                         {/*fin producto*/}
@@ -220,11 +237,11 @@ const AllCategories = async ({ params }) => {
                                 ? element.categoria === item1.nombre &&
                                   element.marca ===
                                     params.marca.replace("-", " ")
-                                : element.categoria === item1.nombre 
+                                : element.categoria === item1.nombre
                             )
                             .map((item) => (
                               <div key={item._id} className="col">
-                                <ProductPreviewCard item={item}/>
+                                <ProductPreviewCard item={item} />
                               </div>
                             ))}
                         {/*fin producto*/}
