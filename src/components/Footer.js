@@ -25,6 +25,8 @@ export async function Footer() {
     }
   };
 
+  const categoriesOrder = ["MANTENIMIENTO", "REGULAR", "PREMIUM", "SÚPER PREMIUM"];
+
   const Allcategories = await getCategories();
   const categories = shuffle(Allcategories); 
 
@@ -75,7 +77,13 @@ export async function Footer() {
                   <h3 className="footer_widget_title text-white">Fórmulas especializadas</h3>
                   <ul className="ul_li_block">
                     {categories &&
-                      categories.map((item, index) => {
+                      categories
+                      .sort((a, b) => {
+                        let indexA = categoriesOrder.indexOf(a.nombre);
+                        let indexB = categoriesOrder.indexOf(b.nombre);
+                        return (indexA === -1 ? 999 : indexA) - (indexB === -1 ? 999 : indexB);
+                      })
+                      .map((item, index) => {
                       return index < 6 ? (
                       <li key={index}>
                           <Link href={`/categories/Todas/${item.nombre.trim().replace(/\s/g,"-")}`} style={{textDecoration:"none"}}>
