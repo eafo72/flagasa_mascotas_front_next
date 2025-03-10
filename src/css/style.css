@@ -345,7 +345,7 @@ hr {
 .btn-view:hover{
   color: white !important; 
   background: transparent !important;
-  border: 2px solid #3eaf29;
+  border: 2px solid #3eaf29 !important;
 }
 
 .btn-view2{
