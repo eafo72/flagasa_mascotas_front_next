@@ -17,6 +17,7 @@ export const RelatedProducts = ({ productosRelacionados, codigo }) => {
                 (element) =>
                   element.codigo !== codigo 
               )
+              .sort((a, b) => a.orden - b.orden) // Ordena de menor a mayor según el campo "orden" 
               .map((item, index) => (
                 <div key={index} className="col-6 col-md-4 col-lg-3">
                   <ProductPreviewCard item={item}/>
