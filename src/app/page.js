@@ -115,7 +115,7 @@ const Page = async () => {
                             </h4>
                             <Link
                               className="btn btn_rounded btn-view"
-                              style={{border:"none"}}
+                              style={{border:"2px solid transparent"}}
                               href={iteM.enlace}
                               data-animation="fadeInUp2"
                               data-delay=".7s"
