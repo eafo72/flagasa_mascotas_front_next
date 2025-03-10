@@ -340,7 +340,7 @@ hr {
 .btn-view{
   color: white !important; 
   background: linear-gradient(35deg, #3eaf29, #1e8c45);
-  border: none;
+  border: none !important;
 }
 .btn-view:hover{
   color: white !important; 
