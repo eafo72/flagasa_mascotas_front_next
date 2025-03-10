@@ -258,11 +258,10 @@ const Page = async () => {
 
                           {products &&
                             products
-                            
                               .filter(
                                 (element) => element.categoria === item1.nombre
                               )
-                                
+                              .sort((a, b) => a.orden - b.orden) // Ordena de menor a mayor según el campo "orden" 
                               .map((item, index) => {
                                 return index < 8 ? (
                                   <div
