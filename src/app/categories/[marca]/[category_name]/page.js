@@ -213,6 +213,7 @@ const AllCategories = async ({ params }) => {
                                     params.marca.replace("-", " ")
                                 : element.categoria === item1.nombre
                             )
+                            .sort((a, b) => a.orden - b.orden) // Ordena de menor a mayor según el campo "orden" 
                             .map((item) => (
                               <div key={item._id} className="col">
                                 <ProductPreviewCard item={item} />
@@ -239,6 +240,7 @@ const AllCategories = async ({ params }) => {
                                     params.marca.replace("-", " ")
                                 : element.categoria === item1.nombre
                             )
+                            .sort((a, b) => a.orden - b.orden) // Ordena de menor a mayor según el campo "orden" 
                             .map((item) => (
                               <div key={item._id} className="col">
                                 <ProductPreviewCard item={item} />
