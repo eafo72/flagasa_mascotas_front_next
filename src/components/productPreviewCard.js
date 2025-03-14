@@ -201,8 +201,8 @@ export const ProductPreviewCard = ({ item }) => {
                   .trim()
                   .replace(/\s/g, "-")}/${item.codigo}`}
               >
-                <img
-                  src={`${item.foto_principal}?v=${Date.now()}`}
+                <Image
+                  src={`${item.foto_principal}`}
                   alt={`${item.foto_principal}`}
                   className="img-fluid"
                   unoptimized={"true"}
