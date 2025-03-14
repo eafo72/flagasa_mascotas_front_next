@@ -364,7 +364,7 @@ const Page = async () => {
                                 href={`/categories/Todas/${item1.nombreSlugged}`}
                               >
                                 <img
-                                  src={`${item1.imagen}?v=${Date.now()}`}
+                                  src={`${item1.imagen}`}
                                   alt={`${item1.imagen}`}
                                   unoptimized={'true'}
                                 />

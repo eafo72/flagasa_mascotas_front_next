@@ -265,7 +265,7 @@ export const ProductPreviewCard = ({ item }) => {
               aria-selected="true"
             >
               <img
-                src={`${item.foto_principal}?v=${Date.now()}`}
+                src={`${item.foto_principal}`}
                 alt={`${item.foto_principal}`}
                 className="img-fluid"
               />
@@ -282,7 +282,7 @@ export const ProductPreviewCard = ({ item }) => {
                   aria-selected="false"
                 >
                   <img
-                    src={`${item2.image}?v=${Date.now()}`}
+                    src={`${item2.image}`}
                     alt={`${item2.image}`}
                     className="img-fluid"
                   />
@@ -376,7 +376,7 @@ export const ProductPreviewCard = ({ item }) => {
                     <div className="col col-lg-6 col-md-8">
                       <div className="sd_image_carousel p-0">
                         <img
-                          src={`${item.foto_principal}?v=${Date.now()}`}
+                          src={`${item.foto_principal}`}
                           alt={`${item.foto_principal}`}
                           className="img-fluid"
                         />

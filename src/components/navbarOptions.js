@@ -118,7 +118,7 @@ export const NavbarOptions = ({ categories }) => {
                                   style={{ backgroundColor: "transparent" }}
                                 >
                                   <img
-                                    src={`${item.imagen}?v=${Date.now()}`}
+                                    src={item.imagen}
                                     style={{ height: "60px" }}
                                     alt={item.imagen}
                                     className="img-fluid"
@@ -169,7 +169,7 @@ export const NavbarOptions = ({ categories }) => {
                                   style={{ backgroundColor: "transparent" }}
                                 >
                                   <img
-                                    src={`${item.imagen}?v=${Date.now()}`}
+                                    src={item.imagen}
                                     style={{ height: "60px" }}
                                     alt={item.imagen}
                                     className="img-fluid"
