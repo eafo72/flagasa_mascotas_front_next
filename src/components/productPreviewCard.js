@@ -201,7 +201,7 @@ export const ProductPreviewCard = ({ item }) => {
                   .trim()
                   .replace(/\s/g, "-")}/${item.codigo}`}
               >
-                <Image
+                <img
                   src={`${item.foto_principal}`}
                   alt={`${item.foto_principal}`}
                   className="img-fluid"
@@ -225,7 +225,7 @@ export const ProductPreviewCard = ({ item }) => {
                       .replace(/\s/g, "-")}/${item.codigo}`}
                   >
                     <img
-                      src={`${item2.image}?v=${Date.now()}`}
+                      src={`${item2.image}`}
                       alt={`${item2.image}`}
                       className="img-fluid"
                       unoptimized={"true"}
@@ -398,8 +398,7 @@ export const ProductPreviewCard = ({ item }) => {
                           dangerouslySetInnerHTML={{ __html: item.descripcion }}
                         ></p>
                         <hr />
-                        {item.link != "Empty" &&
-                        item.link != "empty" ? (
+                        {item.link != "Empty" && item.link != "empty" ? (
                           <a
                             href={item.link}
                             style={{ textDecoration: "none" }}
